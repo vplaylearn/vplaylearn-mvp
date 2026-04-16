@@ -44,8 +44,15 @@ module.exports = {
     }),
   ],
 
-  devServer: {
-    static: path.join(__dirname, 'dist'),
+  // devServer: {
+  //   static: path.join(__dirname, 'dist'),
+  //   port: 3000,
+  //   open: true,
+  //   hot: true,
+  //   historyApiFallback: true, // for React Router
+  // },
+   devServer: {
+    static: "./public",
     port: 3000,
     open: true,
     hot: true,

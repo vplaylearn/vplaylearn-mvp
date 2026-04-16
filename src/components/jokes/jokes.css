@@ -1,0 +1,49 @@
+.quote-wrapper {
+  padding: 20px;
+}
+
+.quote-title {
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* CARD */
+.chat-card {
+  background: #1e3b21;
+  padding: 5px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* TITLE */
+.chat-title {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+/* MESSAGES */
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* BUBBLE */
+.chat-bubble {
+  background: #0f2a14;
+  /* padding: 10px 14px; */
+  border-radius: 10px;
+}
+
+/* ROLE */
+.chat-role {
+  font-weight: bold;
+  color: #22c55e;
+  margin-right: 5px;
+}
+
+/* TEXT */
+.chat-text {
+  color: #e2e8f0;
+}

@@ -1,0 +1,25 @@
+.simple-container {
+  padding: 16px;
+}
+
+.simple-card {
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.simple-card h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.simple-card p {
+  margin: 4px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.simple-card a {
+  font-size: 13px;
+  color: #007bff;
+  text-decoration: none;
+}

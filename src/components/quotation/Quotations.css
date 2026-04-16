@@ -1,0 +1,54 @@
+/* Right pane layout */
+.right-pane {
+  padding: 5px;
+  background: #0f172a;
+  height: 100vh;
+}
+
+/* Wrapper */
+.quote-wrapper {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* Title */
+.quote-title {
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* Card */
+.quote-card {
+  background: #1e293b;
+  padding: 5px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.quote-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Text */
+.quote-text {
+  font-size: 18px;
+  color: #e2e8f0;
+  line-height: 1.5;
+}
+
+/* Button */
+.quote-btn {
+    float:right;
+  /* margin-top: 20px; */
+  padding: 8px 14px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.quote-btn:hover {
+  background: #1d4ed8;
+}

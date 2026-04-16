@@ -3,7 +3,7 @@ import React from "react";
 const Topbar = () => {
   return (
     <div style={styles.topbar}>
-      <h2>My Dashboard</h2>
+      <h2>vPlayLearn</h2>
     </div>
   );
 };
