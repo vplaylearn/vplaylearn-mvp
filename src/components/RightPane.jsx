@@ -8,10 +8,11 @@ import RiddleCard from "./riddle/riddle";
 const RightPane = () => {
   return (
   <div className="right-pane">
-      <Quotation title="Daily Quote" content="quotes" />
+      {/* <Quotation title="Daily Quote" content="quotes" /> */}
       <Jokes title="Joke" content="jokes" />
-      <PublishedStories title="Published Stories" content="stories" />
       <RiddleCard/>
+      <PublishedStories title="Published Stories" content="stories" />
+      {/* <RiddleCard/> */}
 
   </div>  
   );

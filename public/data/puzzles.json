@@ -23,32 +23,6 @@
         "id": "5",
         "title": "Profit and Loss",
         "description": "If 3 toys are sold at the cost price of 4 toys of the same kind , what is the profit %"
-    },
-      {
-        "id": "1",
-        "title": "Weighing Bricks",
-        "description": "A bricklayer has 9 bricks. 8 bricks weigh the same amount, but one brick is slightly heavier than the rest. The bricklayer wants to find the heavy brick. He has a balance scale. How can he find the heavy brick in only two weighings?"
-    },
-    {
-        "id": "2",
-        "title": "When do they meet",
-        "description": "Akhilesh, Lakshana and Jaga were friends. They supply vegetables, flowers and fruits to a Hotel. Akhilesh visits the hotel every 2nd day. Lakshana visits the hotel every 3rd day. Jaga visits the hotel every 5th day. All three of them met on 11th of November. When would they all meet again"
-    },
-    {
-        "id": "3",
-        "title": "Number game 1",
-        "description": "Use Numbers 1 to 9 only once and by using any of the four basic operations make them equal to 100"
-    },
-     {
-        "id": "4",
-        "title": "Number game 2",
-        "description": "Using 16 four's make a total of 1000"
-    },
-     {
-        "id": "5",
-        "title": "Profit and Loss",
-        "description": "If 3 toys are sold at the cost price of 4 toys of the same kind , what is the profit %"
     }
-
 
 ]

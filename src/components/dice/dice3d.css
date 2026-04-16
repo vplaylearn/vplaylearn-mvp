@@ -1,0 +1,107 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.scene {
+  width: 120px;
+  height: 120px;
+  margin: 40px auto;
+  perspective: 600px;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: transform 5s;
+}
+
+/* Faces */
+/* .face {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: #1e90ff;
+  border: 2px solid #fff;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.face {
+  
+  position: absolute;
+  width: 120px;
+  height: 120px;
+
+  /* Wood texture using gradients */
+  background: linear-gradient(
+      90deg,
+      #8b5a2b 0%,
+      #a0522d 20%,
+      #8b5a2b 40%,
+      #a0522d 60%,
+      #8b5a2b 80%,
+      #a0522d 100%
+  );
+
+  border: 2px solid #5c3a1a;
+  color: #fff8dc;
+
+  font-size: 40px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Depth + realism */
+  box-shadow:
+    inset 0 0 10px rgba(0,0,0,0.4),
+    0 5px 10px rgba(0,0,0,0.3);
+
+  border-radius: 8px;
+}
+
+/* Position each face */
+.front  { transform: rotateY(0deg) translateZ(60px); }
+.back   { transform: rotateY(180deg) translateZ(60px); }
+.right  { transform: rotateY(90deg) translateZ(60px); }
+.left   { transform: rotateY(-90deg) translateZ(60px); }
+.top    { transform: rotateX(90deg) translateZ(60px); }
+.bottom { transform: rotateX(-90deg) translateZ(60px); }
+
+/* Show faces */
+.show-1 { transform: rotateX(0deg) rotateY(0deg); }
+.show-2 { transform: rotateX(90deg) rotateY(0deg); }
+.show-3 { transform: rotateY(-90deg); }
+.show-4 { transform: rotateY(90deg); }
+.show-5 { transform: rotateX(-90deg); }
+.show-6 { transform: rotateY(180deg); }
+
+/* Rolling animation */
+.rolling .cube {
+  animation: roll 1s ease;
+}
+
+.face .front span {
+  width :200px;
+}
+@keyframes roll {
+  0%   { transform: rotateX(0) rotateY(0); }
+  50%  { transform: rotateX(180deg) rotateY(180deg); }
+  100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
