@@ -1,6 +1,6 @@
 .right-pane {
   width: 25%;
   background: #0f172a;
-  padding: 20px;
+  padding-left: 5px;
   overflow-y: auto;
 }

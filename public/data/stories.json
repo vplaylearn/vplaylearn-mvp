@@ -1,4 +1,4 @@
 [
-    { "title" : "An episode in an explorer's life" , "Author" :"Yukthi" , "language" : "english", "link" : "/"},
-    { "title" : "An episode in an explorer's life" , "Author" :"Yukthi" , "language" : "english","link" : "/"}
+    { "title" : "An episode in an explorer's life" , "author" :"Yukthi" , "language" : "english", "link" : "/"},
+    { "title" : "An episode in an explorer's life" , "author" :"Yukthi" , "language" : "english","link" : "/"}
 ]

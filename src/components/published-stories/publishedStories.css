@@ -1,6 +1,17 @@
 .list-container {
   padding: 20px;
 }
+/* Button */
+.stories-btn {
+    float:right;
+   margin-top: -20px; 
+  /* padding: 8px 14px; */
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
 .list-item {
   margin-bottom: 20px;
@@ -21,4 +32,9 @@
   font-size: 14px;
   color: blue;
   text-decoration: underline;
+}
+
+.quote-title {
+  color: black;
+  margin-bottom: 15px;
 }

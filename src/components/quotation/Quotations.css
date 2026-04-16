@@ -19,7 +19,7 @@
 
 /* Card */
 .quote-card {
-  background: #1e293b;
+  background: white;
   padding: 5px;
   border-radius: 16px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.3);
@@ -33,15 +33,15 @@
 /* Text */
 .quote-text {
   font-size: 18px;
-  color: #e2e8f0;
+  color: black;
   line-height: 1.5;
 }
 
 /* Button */
 .quote-btn {
     float:right;
-  /* margin-top: 20px; */
-  padding: 8px 14px;
+  margin-top: -20px; 
+  /* padding: 8px 14px; */
   border: none;
   background: #2563eb;
   color: white;

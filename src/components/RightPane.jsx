@@ -3,6 +3,7 @@ import Quotation from "./quotation/Quotation";
 import Jokes from "./jokes/jokes";
 import "./rightpane.css";
 import PublishedStories from "./published-stories/PublishedStories";
+import RiddleCard from "./riddle/riddle";
 
 const RightPane = () => {
   return (
@@ -10,6 +11,7 @@ const RightPane = () => {
       <Quotation title="Daily Quote" content="quotes" />
       <Jokes title="Joke" content="jokes" />
       <PublishedStories title="Published Stories" content="stories" />
+      <RiddleCard/>
 
   </div>  
   );

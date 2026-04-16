@@ -13,10 +13,11 @@ export default function Jokes({ title, content }) {
 
   return (
     <>
-      <h2 className="quote-title">{title}</h2>
+      
 
       {data.map((conv) => (
         <div className="chat-card" key={conv.conversationId}>
+          <h2 className="quote-title">{title}</h2>
           <h3 className="chat-title">{conv.title}</h3>
 
           <div className="chat-messages">
@@ -26,9 +27,14 @@ export default function Jokes({ title, content }) {
                 <span className="chat-text">{msg.message}</span>
               </div>
             ))}
+            
           </div>
+          <button className="jokes-btn" >
+           More Jokes
+        </button>
         </div>
       ))}
+      
     </>
   );
 }

@@ -21,9 +21,9 @@ export default function Quotation({ title, content }) {
 
   return (
     <>
+    <div className="quote-card">
       <h2 className="quote-title">{title}</h2>
 
-      <div className="quote-card">
         <p className="quote-text">
           {quote ? quote.quote || quote : "Loading..."}
         </p>
