@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 import "./publishedStories.css";
 
-export default function PublishedStories({ title, content }) {
+export default function PublishedStories({ title, content , page}) {
   const [data, setData] = useState([]);
+  const navigate = useNavigate();
 
   const loadData = () => {
     fetch(`/data/${content}.json`)
@@ -40,9 +43,10 @@ export default function PublishedStories({ title, content }) {
             </span></p>         
         </div>
         ))}
-        <button className="stories-btn" >
+        {
+        !page && <button className="stories-btn" onClick={() => navigate("/stories")}>
            More stories
-        </button>
+        </button> }
         </div>
     </>
   );

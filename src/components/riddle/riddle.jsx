@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import './riddle.css';
 
-function RiddleCard() {
+function RiddleCard({page}) {
   const [data, setData] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("/data/riddles.json")
@@ -24,9 +27,9 @@ function RiddleCard() {
         
         ))}
       </div>
-      <button className="riddles-btn" >
+      {!page && <button className="riddles-btn" onClick={() => navigate("/riddles") }>
            check  answer and more
-        </button>
+        </button> }
     </div>
   );
 }

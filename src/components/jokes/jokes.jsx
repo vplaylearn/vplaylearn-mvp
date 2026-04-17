@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./jokes.css";
 
-export default function Jokes({ title, content }) {
+export default function Jokes({ title, content , page }) {
   const [data, setData] = useState([]);
-  console.log(content);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`/data/${content}.json`)
@@ -29,9 +30,9 @@ export default function Jokes({ title, content }) {
             ))}
             
           </div>
-          <button className="jokes-btn" >
+          {!page && <button className="jokes-btn" onClick={() => navigate("/jokes")}>
            More Jokes
-        </button>
+        </button>}
         </div>
       ))}
       

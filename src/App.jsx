@@ -16,6 +16,10 @@ import Sales from "./pages/Sales";
 import Puzzles from "./features/Puzzles/Puzzles.jsx";
 import Games from "./pages/Games.jsx";
 import Story from "./pages/Story.jsx";
+import PublishedStories from "./pages/PublishedStoriesPage.jsx";
+import PublishedStoriesPage from "./pages/PublishedStoriesPage.jsx";
+import RiddlesPage from "./pages/RiddlesPage.jsx";
+import JokesPage from "./pages/JokesPage.jsx";
 
 const App = () => {
   return (
@@ -37,6 +41,11 @@ const App = () => {
           <Route path="/reports" element={<Reports />} />
           <Route path="/sales" element={<Sales />} />
           <Route path="/story" element={<Story />} />
+
+          {/* more button routes */}
+          <Route path="/stories" element={<PublishedStoriesPage />} />
+          <Route path="/riddles" element={<RiddlesPage />} />
+          <Route path="/jokes" element={<JokesPage />} />
           </Routes>
         </div>
 
