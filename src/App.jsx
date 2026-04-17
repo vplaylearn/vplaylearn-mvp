@@ -20,6 +20,7 @@ import PublishedStories from "./pages/PublishedStoriesPage.jsx";
 import PublishedStoriesPage from "./pages/PublishedStoriesPage.jsx";
 import RiddlesPage from "./pages/RiddlesPage.jsx";
 import JokesPage from "./pages/JokesPage.jsx";
+import KannadaIdiomsPage from "./pages/KannadaIdiomsPage.jsx";
 
 const App = () => {
   return (
@@ -46,6 +47,9 @@ const App = () => {
           <Route path="/stories" element={<PublishedStoriesPage />} />
           <Route path="/riddles" element={<RiddlesPage />} />
           <Route path="/jokes" element={<JokesPage />} />
+
+          {/* Idoms Routes */}
+           <Route path="/kannada-idioms" element={<KannadaIdiomsPage />} />
           </Routes>
         </div>
 
