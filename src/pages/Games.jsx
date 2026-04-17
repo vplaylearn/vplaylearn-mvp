@@ -2,7 +2,7 @@ import { useState } from "react";
 import Scramble from "../features/Games/Scramble/Scramble";
 import GamesHub from "../features/Games/GamesHub/GamesHub";
 import MemoryGame from "../features/Games/memory/Memory";
-import AnagramGame from "../features/Games/Anagram/anagram";
+import AnagramGame from "../features/Games/Anagram/Anagram";
 
 
 
