@@ -1,4 +1,11 @@
 [
-    { "title" : "An episode in an explorer's life" , "author" :"Yukthi" , "language" : "english", "link" : "/"},
-    { "title" : "An episode in an explorer's life" , "author" :"Yukthi" , "language" : "english","link" : "/"}
+  {
+    "title": "Exploration into the unknown world",
+    "author": "Yukthi",
+    "language": "english",
+    "pages" : [
+        "/assets/images/page1.jpg",
+         "/assets/images/page2.jpg"
+      ]
+  }
 ]

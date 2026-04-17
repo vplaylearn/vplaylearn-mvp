@@ -15,6 +15,7 @@ import Reports from "./pages/Reports";
 import Sales from "./pages/Sales";
 import Puzzles from "./features/Puzzles/Puzzles.jsx";
 import Games from "./pages/Games.jsx";
+import Story from "./pages/Story.jsx";
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="/security" element={<Security />} />
           <Route path="/reports" element={<Reports />} />
           <Route path="/sales" element={<Sales />} />
+          <Route path="/story" element={<Story />} />
           </Routes>
         </div>
 

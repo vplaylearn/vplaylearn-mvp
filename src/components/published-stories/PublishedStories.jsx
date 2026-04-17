@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 import "./publishedStories.css";
 
 export default function PublishedStories({ title, content }) {
@@ -27,7 +29,15 @@ export default function PublishedStories({ title, content }) {
       {data.map((item, index) => (
         <div key={index}>
           <h3 style={styles.title}>{item.title}</h3>
-          <p style={styles.text}>By {item.author}<span><a href={item.link}> Read</a></span></p>         
+          <p style={styles.text}>By {item.author}
+            <span>
+              <Link
+                to="/story"
+                state={{ book: item }}
+              >
+                Read
+              </Link>
+            </span></p>         
         </div>
         ))}
         <button className="stories-btn" >
