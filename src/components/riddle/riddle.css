@@ -1,4 +1,4 @@
-.card {
+.riddle-card {
   padding: 6px 6px 15px 6px;
   border-radius: 12px;
   background: #fff;
@@ -6,7 +6,7 @@
   max-width: 400px;
 }
 
-.items {
+.riddle-items {
   margin-top: 12px;
   display: flex;
   flex-direction: column;

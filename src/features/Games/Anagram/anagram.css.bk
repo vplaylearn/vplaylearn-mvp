@@ -1,0 +1,59 @@
+/* .anagram-wrapper {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.scrambled {
+  font-size: 32px;
+  letter-spacing: 6px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.input-row {
+  margin: 10px 0;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.result {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.answers {
+  margin-top: 15px;
+}
+
+.answers span {
+  display: inline-block;
+  margin: 5px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.hidden {
+  background: #444;
+  color: transparent;
+}
+
+.found {
+  background: #4ade80;
+  color: black;
+}
+
+.score {
+  margin-top: 15px;
+  font-weight: bold;
+} */

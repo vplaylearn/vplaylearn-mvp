@@ -1,0 +1,32 @@
+.mini-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 12px;
+  padding: 16px;
+}
+
+.mini-card {
+  background: #1f1f2e;
+  color: white;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.mini-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  background: #2a2a40;
+}
+
+.mini-icon {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.mini-title {
+  font-size: 12px;
+  font-weight: 500;
+}

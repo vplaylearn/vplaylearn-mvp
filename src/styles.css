@@ -2,3 +2,19 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
+
+.card-global {
+  /* background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eee;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; */
+  background: #1e1e2f;
+  color: #f5f5f5;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid #2c2c3a;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}

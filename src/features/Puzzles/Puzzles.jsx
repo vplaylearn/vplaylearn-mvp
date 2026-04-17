@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./puzzles.css";
-import Dice3D from "../components/dice/dice";
+import Dice3D from "../../components/dice/dice";
 
 function Puzzles() {
   const [data, setData] = useState(null);

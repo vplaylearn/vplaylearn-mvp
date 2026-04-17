@@ -1,105 +1,45 @@
 import { useState } from "react";
+import Scramble from "../features/Games/Scramble/Scramble";
+import GamesHub from "../features/Games/GamesHub/Gameshub";
+import MemoryGame from "../features/Games/memory/Memory";
+import AnagramGame from "../features/Games/Anagram/anagram";
 
-const WORDS = [
-  "finance",
-  "leap",
-  "seed",
-  "table",
-  "chair",
-  "cricket",
-  "pillow",
-  "hook"
-];
 
-// shuffle function
-const shuffleWord = (word) => {
-  return word
-    .split("")
-    .sort(() => Math.random() - 0.5)
-    .join("");
-};
 
 export default function Games() {
-  const [currentWord, setCurrentWord] = useState("");
-  const [scrambled, setScrambled] = useState("");
-  const [input, setInput] = useState("");
-  const [message, setMessage] = useState("");
-  const [score, setScore] = useState(0);
 
-  const startGame = () => {
-    const word = WORDS[Math.floor(Math.random() * WORDS.length)];
-    setCurrentWord(word);
-    setScrambled(shuffleWord(word));
-    setInput("");
-    setMessage("");
-  };
+ const [game, setGame] = useState(null);
+ 
+   if (game === null) {
+    return <GamesHub onSelectGame={setGame} />;
+  }
 
-  const checkAnswer = () => {
-    if (input.toLowerCase() === currentWord) {
-      setMessage("🎉 Correct!");
-      setScore(score + 1);
-    } else {
-      setMessage(`❌ Wrong! Answer was "${currentWord}"`);
-    }
-  };
-
+ 
   return (
-    <div style={styles.container}>
-      <h1>Jumble Word Game</h1>
+    <>
+      <div style={{ padding: 20 }}>
+      <button onClick={() => setGame(null)}>⬅ Back to Hub</button>
 
-      {scrambled ? (
-        <>
-          <h2>Scrambled Word:</h2>
-          <div style={styles.word}>{scrambled}</div>
+        {game === "scramble" && <div class="card-gloabl">
+          <Scramble />
+        </div>}
+        {game === "flipGame" && <MemoryGame/>}
+        {game === "anagram" && <AnagramGame/>}
+      </div>
+     {/* <div>
+      <h2>Which game do you want to play?</h2>
 
-          <input
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            placeholder="Guess the word"
-            style={styles.input}
-          />
-
-          <div>
-            <button onClick={checkAnswer} style={styles.button}>
-              Check
-            </button>
-
-            <button onClick={startGame} style={styles.button}>
-              Next Word
-            </button>
-          </div>
-
-          <p>{message}</p>
-          <h3>Score: {score}</h3>
-        </>
-      ) : (
-        <button onClick={startGame} style={styles.button}>
-          Start Game
+      {gamesList.map((game) => (
+        <button key={game.id} onClick={() => onSelect(game.id)}>
+          {game.label}
         </button>
-      )}
-    </div>
+      ))}
+    </div> */}
+    {/* <h3>Which game you want to play</h3>
+    <div class="card-global">
+     <Scramble/>
+    </div> */}
+    </>
   );
 }
 
-const styles = {
-  container: {
-    textAlign: "center",
-    fontFamily: "Arial",
-    padding: "20px"
-  },
-  word: {
-    fontSize: "30px",
-    letterSpacing: "5px",
-    margin: "15px"
-  },
-  input: {
-    padding: "10px",
-    fontSize: "16px",
-    margin: "10px"
-  },
-  button: {
-    padding: "10px 15px",
-    margin: "5px",
-    cursor: "pointer"
-  }
-};

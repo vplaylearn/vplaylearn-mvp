@@ -25,10 +25,10 @@ export default function PublishedStories({ title, content }) {
     <div style={styles.card}>
       <h2 className="quote-title">{title}</h2>
       {data.map((item, index) => (
-        <>
+        <div key={index}>
           <h3 style={styles.title}>{item.title}</h3>
           <p style={styles.text}>By {item.author}<span><a href={item.link}> Read</a></span></p>         
-        </>
+        </div>
         ))}
         <button className="stories-btn" >
            More stories

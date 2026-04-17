@@ -14,13 +14,13 @@ function RiddleCard() {
   if (!data) return <p>Loading...</p>;
 
   return (
-    <div className="card">
+    <div className="riddle-card">
       <h2>Riddles</h2>
 
-      <div className="items">
-        {data.map((item) => (
+      <div className="riddle-items">
+        {data.map((item,index) => (
           
-            <span>{item.text}</span>
+            <span key={index}>{item.text}</span>
         
         ))}
       </div>

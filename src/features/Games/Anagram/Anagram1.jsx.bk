@@ -1,0 +1,110 @@
+import { useEffect, useState } from "react";
+import { ANAGRAM_MODES } from "../../../utils/gameConfig";
+import { shuffleWord } from "../../../utils/anagramUtils";
+import "./anagram.css";
+
+export default function AnagramGame1() {
+  const [mode, setMode] = useState("MEDIUM");
+  const [currentSet, setCurrentSet] = useState(null);
+  const [scrambled, setScrambled] = useState("");
+  const [input, setInput] = useState("");
+  const [foundAnswers, setFoundAnswers] = useState([]);
+  const [result, setResult] = useState("");
+  const [score, setScore] = useState(0);
+
+  const config = ANAGRAM_MODES[mode];
+
+  useEffect(() => {
+    nextWord();
+  }, [mode]);
+
+  const nextWord = () => {
+    const item =
+      config.words[Math.floor(Math.random() * config.words.length)];
+
+    setCurrentSet(item);
+    setScrambled(shuffleWord(item.base));
+    setFoundAnswers([]);
+    setInput("");
+    setResult("");
+  };
+
+  const checkAnswer = () => {
+    if (!currentSet) return;
+
+    const guess = input.toLowerCase().trim();
+
+    if (
+      currentSet.answers.includes(guess) &&
+      !foundAnswers.includes(guess)
+    ) {
+      setFoundAnswers((prev) => [...prev, guess]);
+      setScore((s) => s + 1);
+      setResult("✅ Correct!");
+    } else if (foundAnswers.includes(guess)) {
+      setResult("⚠️ Already found!");
+    } else {
+      setResult("❌ Try again");
+    }
+
+    setInput("");
+  };
+
+  // move to next word when all answers found
+  useEffect(() => {
+    if (
+      currentSet &&
+      foundAnswers.length === currentSet.answers.length
+    ) {
+      setTimeout(nextWord, 1200);
+    }
+  }, [foundAnswers]);
+
+  return (
+    <div className="anagram-wrapper">
+      <h2>🔤 Anagram Challenge</h2>
+
+      {/* Mode Selector */}
+      <select value={mode} onChange={(e) => setMode(e.target.value)}>
+        {Object.keys(ANAGRAM_MODES).map((m) => (
+          <option key={m}>{m}</option>
+        ))}
+      </select>
+
+      {/* Scrambled Word */}
+      <p className="scrambled">{scrambled}</p>
+
+      {/* Input */}
+      <div className="input-row">
+        <input
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Enter a word..."
+          onKeyDown={(e) => e.key === "Enter" && checkAnswer()}
+        />
+        <button onClick={checkAnswer}>Submit</button>
+      </div>
+
+      {/* Result */}
+      <p className="result">{result}</p>
+
+      {/* Found Answers */}
+      <div className="answers">
+        {currentSet &&
+          currentSet.answers.map((ans, i) => (
+            <span
+              key={i}
+              className={
+                foundAnswers.includes(ans) ? "found" : "hidden"
+              }
+            >
+              {foundAnswers.includes(ans) ? ans : "????"}
+            </span>
+          ))}
+      </div>
+
+      {/* Score */}
+      <p className="score">Score: {score}</p>
+    </div>
+  );
+}

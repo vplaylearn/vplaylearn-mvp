@@ -13,7 +13,7 @@ import Profile from "./pages/Profile";
 import Security from "./pages/Security";
 import Reports from "./pages/Reports";
 import Sales from "./pages/Sales";
-import Puzzles from "./pages/Puzzles.jsx";
+import Puzzles from "./features/Puzzles/Puzzles.jsx";
 import Games from "./pages/Games.jsx";
 
 const App = () => {

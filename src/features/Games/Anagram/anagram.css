@@ -1,0 +1,96 @@
+.anagram-wrapper {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.scrambled {
+  font-size: 32px;
+  letter-spacing: 6px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.input-row {
+  margin: 10px 0;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.btn-row {
+  margin-top: 10px;
+}
+
+.result {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.answers {
+  margin-top: 15px;
+}
+
+.answers span {
+  display: inline-block;
+  margin: 5px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.hidden {
+  background: #444;
+  color: transparent;
+}
+
+.found {
+  background: #4ade80;
+  color: black;
+}
+
+.next-btn {
+  background: #60a5fa;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.next-btn:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.reset-btn {
+  background: #f87171;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.reset-btn:hover {
+  background: #ef4444;
+}
+
+.score {
+  margin-top: 15px;
+  font-weight: bold;
+}
