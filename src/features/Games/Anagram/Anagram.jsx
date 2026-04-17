@@ -35,7 +35,7 @@ export default function AnagramGame() {
     setResult("");
     setShowAnswers(false);
 
-    if (autoTimer) clearTimeout(autoTimer);
+    // if (autoTimer) clearTimeout(autoTimer);
   };
 
   const resetGame = () => {
