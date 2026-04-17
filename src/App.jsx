@@ -66,9 +66,9 @@ const styles = {
   },
   main: {
     flex: 1,
-    padding: "20px",
-    marginLeft: "20px", // sidebar width
-    marginRight: "25px", // right pane width
+    padding: "0px",
+    marginLeft: "10px", // sidebar width
+    marginRight: "10px", // right pane width
   },
 };
 

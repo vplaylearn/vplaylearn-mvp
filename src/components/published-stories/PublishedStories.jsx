@@ -60,11 +60,13 @@ const styles = {
     padding: "20px",
   },
   card: {
-    padding: "14px",
+    padding: "5px 10px",
+    overflowY: "hidden",
     borderRadius: "10px",
     border: "1px solid #e5e5e5",
     background: "#fff",
     boxShadow: "0 2px 6px rgba(0,0,0,0.05)",
+   
   },
   title: {
     fontSize: "16px",
