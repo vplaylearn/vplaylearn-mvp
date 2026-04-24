@@ -14,7 +14,7 @@ export default function Sidebar() {
     { title: "Games", path: "/games" },
     { title: "Puzzles", path: "/puzzles" },
     {
-      title: "Idioms and phrases",
+      title: "Idioms and proverbs",
       key: "idioms",
       children: [
         { title: "English", path: "/english-idioms" },

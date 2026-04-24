@@ -30,7 +30,13 @@ export default function Jokes({ title, content , page }) {
             ))}
             
           </div>
-          {!page && <button className="jokes-btn" onClick={() => navigate("/jokes")}>
+          {!page && <button className="jokes-btn" onClick={() => 
+            {window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+              navigate("/jokes")
+          }}>
            More Jokes
         </button>}
         </div>

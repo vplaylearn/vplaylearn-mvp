@@ -44,9 +44,15 @@ export default function PublishedStories({ title, content , page}) {
         </div>
         ))}
         {
-        !page && <button className="stories-btn" onClick={() => navigate("/stories")}>
-           More stories
-        </button> }
+          !page && <button className="stories-btn" onClick={() => {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
+            navigate("/stories")
+          }}>
+            More stories
+          </button>}
         </div>
     </>
   );

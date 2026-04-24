@@ -1,4 +1,103 @@
- [
-    { "id": 1, "text": "I speak without a mouth..." },
-    { "id": 2, "text": "What has keys but can't open locks?" }
-  ]
+[
+  {
+    "riddle": "I speak without a mouth and hear without ears. What am I?",
+    "answer": "Echo",
+    "explanation": "An echo repeats sound without having a physical body."
+  },
+  {
+    "riddle": "What has keys but can't open locks?",
+    "answer": "Piano",
+    "explanation": "A piano has musical keys, not keys for locks."
+  },
+  {
+    "riddle": "What has hands but cannot clap?",
+    "answer": "Clock",
+    "explanation": "A clock has hands to show time but cannot clap."
+  },
+  {
+    "riddle": "What has a head and a tail but no body?",
+    "answer": "Coin",
+    "explanation": "A coin has a head and tail side but no body."
+  },
+  {
+    "riddle": "What gets wetter the more it dries?",
+    "answer": "Towel",
+    "explanation": "A towel absorbs water while drying other things."
+  },
+  {
+    "riddle": "What has a neck but no head?",
+    "answer": "Bottle",
+    "explanation": "A bottle has a neck but no head."
+  },
+  {
+    "riddle": "What can travel around the world while staying in a corner?",
+    "answer": "Stamp",
+    "explanation": "A stamp stays in the corner of an envelope but travels globally."
+  },
+  {
+    "riddle": "What has one eye but cannot see?",
+    "answer": "Needle",
+    "explanation": "A needle has an eye (hole) but cannot see."
+  },
+  {
+    "riddle": "What is full of holes but still holds water?",
+    "answer": "Sponge",
+    "explanation": "A sponge has holes but can absorb and hold water."
+  },
+  {
+    "riddle": "What comes down but never goes up?",
+    "answer": "Rain",
+    "explanation": "Rain falls from the sky but does not go back up."
+  },
+
+  {
+    "riddle": "What has legs but doesn’t walk?",
+    "answer": "Table",
+    "explanation": "A table has legs but cannot move."
+  },
+  {
+    "riddle": "What can you catch but not throw?",
+    "answer": "Cold",
+    "explanation": "You can catch a cold but cannot throw it."
+  },
+  {
+    "riddle": "What begins with T, ends with T, and has T in it?",
+    "answer": "Teapot",
+    "explanation": "The word starts and ends with T and contains tea."
+  },
+  {
+    "riddle": "What has a face and two hands but no arms or legs?",
+    "answer": "Clock",
+    "explanation": "A clock has a face and hands to show time."
+  },
+  {
+    "riddle": "What runs but never walks?",
+    "answer": "Water",
+    "explanation": "Water flows (runs) but does not walk."
+  },
+  {
+    "riddle": "What has an eye but cannot see?",
+    "answer": "Needle",
+    "explanation": "A needle’s eye is just a hole for thread."
+  },
+  {
+    "riddle": "What goes up but never comes down?",
+    "answer": "Age",
+    "explanation": "Age only increases over time."
+  },
+  {
+    "riddle": "What has many teeth but cannot bite?",
+    "answer": "Comb",
+    "explanation": "A comb has teeth but does not bite."
+  },
+  {
+    "riddle": "What is always in front of you but can’t be seen?",
+    "answer": "Future",
+    "explanation": "The future is ahead but not visible."
+  },
+  {
+    "riddle": "What can fill a room but takes up no space?",
+    "answer": "Light",
+    "explanation": "Light spreads everywhere without occupying physical space."
+  }
+]

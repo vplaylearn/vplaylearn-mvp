@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import IdiomCard from "../../../components/idiomCard/IdiomCard";
 
-export default function KannadaIdioms() {
+export default function TamilIdioms() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("/data/kannada-idioms.json")
+    fetch("/data/tamil-proverbs.json")
       .then((res) => res.json())
       .then(setData);
   }, []);
@@ -13,7 +13,7 @@ export default function KannadaIdioms() {
   return (
     <div style={{ maxWidth: "600px", margin: "auto" }}>
       {data.map((item) => (
-        <IdiomCard key={item.id} item={item} language={"kannada"} />
+        <IdiomCard key={item.id} item={item} language={"tamil"}/>
       ))}
     </div>
   );

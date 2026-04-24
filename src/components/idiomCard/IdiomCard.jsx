@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-export default function IdiomCard({ item }) {
+export default function IdiomCard({ item , language}) {
   const [showMeaning, setShowMeaning] = useState(false);
 
   return (
     <div style={styles.card}>
-      <h2 style={styles.kannada}>{item.kannada}</h2>
+      <h2 style={styles.kannada}>{item[language]}</h2>
 
       <p style={styles.transliteration}>
         {item.transliteration}

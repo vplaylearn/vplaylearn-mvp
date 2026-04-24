@@ -3,7 +3,7 @@ import KannadaIdioms from "../features/IdiomsAndPhrases/kannada/KannadaIdioms";
 export default function KannadaIdiomsPage() {
     return (
         <>
-            <h1>Kannada Idioms</h1>
+            <h1>Kannada Proverbs</h1>
             <div style={styles.kIdiomsContainer}><KannadaIdioms /></div>
         </>
     );

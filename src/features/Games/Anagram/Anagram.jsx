@@ -29,7 +29,7 @@ export default function AnagramGame() {
       config.words[Math.floor(Math.random() * config.words.length)];
 
     setCurrentSet(item);
-    setScrambled(shuffleWord(item.base));
+    setScrambled(item.base);
     setFoundAnswers([]);
     setInput("");
     setResult("");

@@ -21,6 +21,10 @@ import PublishedStoriesPage from "./pages/PublishedStoriesPage.jsx";
 import RiddlesPage from "./pages/RiddlesPage.jsx";
 import JokesPage from "./pages/JokesPage.jsx";
 import KannadaIdiomsPage from "./pages/KannadaIdiomsPage.jsx";
+import TamilIdiomsPage from "./pages/TamilIdiomsPage.jsx";
+import TeluguIdiomsPage from "./pages/TeluguIdiomsPage.jsx";
+import HindiIdiomsPage from "./pages/HindiIdiomsPage.jsx";
+import EnglishIdiomsPage from "./pages/EnglishIdiomsPage.jsx";
 
 const App = () => {
   return (
@@ -50,6 +54,11 @@ const App = () => {
 
           {/* Idoms Routes */}
            <Route path="/kannada-idioms" element={<KannadaIdiomsPage />} />
+            <Route path="/tamil-idioms" element={<TamilIdiomsPage />} />
+            <Route path="/telugu-idioms" element={<TeluguIdiomsPage />} />
+            <Route path="/hindi-idioms" element={<HindiIdiomsPage />} />
+            <Route path="/english-idioms" element={<EnglishIdiomsPage />} />
+
           </Routes>
         </div>
 
