@@ -25,6 +25,7 @@ import TamilIdiomsPage from "./pages/TamilIdiomsPage.jsx";
 import TeluguIdiomsPage from "./pages/TeluguIdiomsPage.jsx";
 import HindiIdiomsPage from "./pages/HindiIdiomsPage.jsx";
 import EnglishIdiomsPage from "./pages/EnglishIdiomsPage.jsx";
+import WritingCoachPage from "./pages/WritingCoachPage.jsx";
 
 const App = () => {
   return (
@@ -58,6 +59,9 @@ const App = () => {
             <Route path="/telugu-idioms" element={<TeluguIdiomsPage />} />
             <Route path="/hindi-idioms" element={<HindiIdiomsPage />} />
             <Route path="/english-idioms" element={<EnglishIdiomsPage />} />
+
+          {/* Writing Coach */}
+          <Route path="/writing-coach" element={<WritingCoachPage />} />
 
           </Routes>
         </div>
