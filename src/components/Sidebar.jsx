@@ -13,6 +13,7 @@ export default function Sidebar() {
     { title: "Home", path: "/"},
     { title: "Games", path: "/games" },
     { title: "Puzzles", path: "/puzzles" },
+    { title: "Writing Coach", path: "/writing-coach" },
     {
       title: "Idioms and proverbs",
       key: "idioms",

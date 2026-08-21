@@ -12,9 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "pdfjs-dist": "^6.2.108",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
-    "react-router-dom": "^7.14.1"
+    "react-router-dom": "^7.14.1",
+    "tesseract.js": "^7.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",

@@ -66,6 +66,18 @@ module.exports = {
     port: 3000,
     open: true,
     hot: true,
-    historyApiFallback: true, // for React Router
+    historyApiFallback: {
+      rewrites: [
+        { from: /^\/api/, to: (context) => context.parsedUrl.pathname }, // don't rewrite /api routes
+      ],
+    },
+    proxy: [
+      {
+        context: ['/api'],
+        target: 'https://ai-cloud-server-delta.vercel.app',
+        changeOrigin: true,
+        secure: true,
+      },
+    ],
   },
 };
