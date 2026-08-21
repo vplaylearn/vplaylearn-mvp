@@ -11,11 +11,5 @@
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/api/(.*)", "dest": "https://ai-cloud-server-delta.vercel.app/api/$1" },
-    { "src": "/data/(.*)", "dest": "/data/$1" },
-    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
