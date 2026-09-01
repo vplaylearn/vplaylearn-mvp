@@ -5,23 +5,39 @@ const AI_ENDPOINT = "/api/chat";
 const STORAGE_KEY = "vpl_daily_words_history";
 const MAX_HISTORY = 200; // cap stored words to avoid unbounded growth
 
-// Read the list of words already shown to this user
-function loadHistory() {
+// Read the list of words already shown to this user for a given language
+function loadHistory(language = "english") {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(`${STORAGE_KEY}_${language}`);
     return raw ? JSON.parse(raw) : [];
   } catch {
     return [];
   }
 }
 
-// Persist the history back to localStorage
-function saveHistory(words) {
+// Persist the history back to localStorage for a given language
+function saveHistory(words, language = "english") {
   try {
     const trimmed = words.slice(-MAX_HISTORY);
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(trimmed));
+    localStorage.setItem(`${STORAGE_KEY}_${language}`, JSON.stringify(trimmed));
   } catch {
     /* ignore quota errors */
+  }
+}
+
+// Persist a full word object per-language so switching tabs can restore it
+function saveWordObj(obj, language = "english") {
+  try {
+    localStorage.setItem(`${STORAGE_KEY}_obj_${language}`, JSON.stringify(obj));
+  } catch {}
+}
+
+function loadSavedWord(language = "english") {
+  try {
+    const raw = localStorage.getItem(`${STORAGE_KEY}_obj_${language}`);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
   }
 }
 
@@ -29,12 +45,21 @@ export default function DailyWords() {
   const [word, setWord] = useState(null);
   const [status, setStatus] = useState("idle"); // idle | loading | done | error
   const [errorMsg, setErrorMsg] = useState("");
+  const [language, setLanguage] = useState("english");
 
-  const fetchWord = useCallback(async () => {
+  const LANGUAGES = [
+    { id: "english", label: "English" },
+    { id: "hindi", label: "Hindi" },
+    { id: "telugu", label: "Telugu" },
+    { id: "tamil", label: "Tamil" },
+    { id: "kannada", label: "Kannada" },
+  ];
+
+  const fetchWord = useCallback(async (lang = language) => {
     setStatus("loading");
     setErrorMsg("");
 
-    const history = loadHistory();
+    const history = loadHistory(lang);
     // Only send the most recent words to keep the prompt small
     const recentWords = history.slice(-40);
 
@@ -42,10 +67,15 @@ export default function DailyWords() {
       ? `Do NOT use any of these already-used words: ${recentWords.join(", ")}.`
       : "";
 
-    const prompt = `You are a vocabulary teacher for school students. Give ONE interesting English word suitable for students to learn today. ${avoidList}
-
-Respond with ONLY valid JSON in this exact format:
-{"word":"the word","partOfSpeech":"noun/verb/adjective/etc","meaning":"simple student-friendly definition","example":"a clear example sentence using the word","synonyms":["syn1","syn2"]}`;
+    let prompt;
+    if (lang === "english") {
+      prompt = `You are a vocabulary teacher for school students. Give ONE interesting English word suitable for students to learn today. ${avoidList}\n\nRespond with ONLY valid JSON in this exact format:\n{"word":"the word","partOfSpeech":"noun/verb/adjective/etc","meaning":"simple student-friendly definition","example":"a clear example sentence using the word","synonyms":["syn1","syn2"]}`;
+    } else {
+      // For non-English languages request word + transliteration + meaning in English
+      // Also include synonyms and an example transliteration field
+      const langName = lang[0].toUpperCase() + lang.slice(1);
+      prompt = `You are a vocabulary teacher for school students. Give ONE interesting ${langName} word suitable for students to learn today. ${avoidList}\n\nRespond with ONLY valid JSON in this exact format:\n{"word":"the word in ${langName}","transliteration":"romanized form (if applicable)","partOfSpeech":"noun/verb/adjective/etc","meaning":"simple student-friendly definition in English","example":"a clear example sentence using the word (in ${langName})","exampleTransliteration":"romanized example sentence","synonyms":["syn1","syn2"]}`;
+    }
 
     try {
       const body = {
@@ -103,9 +133,11 @@ Respond with ONLY valid JSON in this exact format:
 
       if (!parsed?.word) throw new Error("Response missing a word");
 
-      // Record the word so it won't repeat
+      // Record the word so it won't repeat (per-language)
       const updated = [...history, parsed.word.toLowerCase()];
-      saveHistory(updated);
+      saveHistory(updated, lang);
+      // Persist the full parsed object for the language so tab switches restore it
+      saveWordObj(parsed, lang);
 
       setWord(parsed);
       setStatus("done");
@@ -116,18 +148,36 @@ Respond with ONLY valid JSON in this exact format:
     }
   }, []);
 
-  // Fetch a word on first mount
+  // On mount or when language changes, restore saved word for that language if present
   useEffect(() => {
-    fetchWord();
-  }, [fetchWord]);
+    const saved = loadSavedWord(language);
+    if (saved) {
+      setWord(saved);
+      setStatus("done");
+    } else {
+      fetchWord(language);
+    }
+  }, [fetchWord, language]);
 
   return (
     <div className="daily-words">
       <div className="dw-header">
         <h3>📚 Word of the Day</h3>
+        <div className="dw-tabs">
+          {LANGUAGES.map((l) => (
+            <button
+              key={l.id}
+              className={`dw-tab ${language === l.id ? "active" : ""}`}
+              onClick={() => setLanguage(l.id)}
+              disabled={status === "loading" && language === l.id}
+            >
+              {l.label}
+            </button>
+          ))}
+        </div>
         <button
           className="dw-refresh"
-          onClick={fetchWord}
+          onClick={() => fetchWord(language)}
           disabled={status === "loading"}
           title="Get a new word"
         >
@@ -153,8 +203,16 @@ Respond with ONLY valid JSON in this exact format:
             {word.partOfSpeech && <span className="dw-pos">{word.partOfSpeech}</span>}
           </div>
           <p className="dw-meaning">{word.meaning}</p>
+          {word.transliteration && (
+            <p className="dw-translit">{word.transliteration}</p>
+          )}
           {word.example && (
-            <p className="dw-example">"{word.example}"</p>
+            <>
+              <p className="dw-example">"{word.example}"</p>
+              {word.exampleTransliteration && (
+                <p className="dw-example-translit">{word.exampleTransliteration}</p>
+              )}
+            </>
           )}
           {Array.isArray(word.synonyms) && word.synonyms.length > 0 && (
             <div className="dw-synonyms">
