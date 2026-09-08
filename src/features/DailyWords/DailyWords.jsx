@@ -5,6 +5,11 @@ const AI_ENDPOINT = "/api/chat";
 const STORAGE_KEY = "vpl_daily_words_history";
 const MAX_HISTORY = 200; // cap stored words to avoid unbounded growth
 
+function getCurrentDayKey() {
+  const now = new Date();
+  return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+}
+
 // Read the list of words already shown to this user for a given language
 function loadHistory(language = "english") {
   try {
@@ -28,14 +33,25 @@ function saveHistory(words, language = "english") {
 // Persist a full word object per-language so switching tabs can restore it
 function saveWordObj(obj, language = "english") {
   try {
-    localStorage.setItem(`${STORAGE_KEY}_obj_${language}`, JSON.stringify(obj));
+    localStorage.setItem(
+      `${STORAGE_KEY}_obj_${language}`,
+      JSON.stringify({ day: getCurrentDayKey(), word: obj })
+    );
   } catch {}
 }
 
 function loadSavedWord(language = "english") {
   try {
     const raw = localStorage.getItem(`${STORAGE_KEY}_obj_${language}`);
-    return raw ? JSON.parse(raw) : null;
+    if (!raw) return null;
+
+    const saved = JSON.parse(raw);
+    if (saved.day !== getCurrentDayKey()) {
+      localStorage.removeItem(`${STORAGE_KEY}_obj_${language}`);
+      return null;
+    }
+
+    return saved.word || null;
   } catch {
     return null;
   }
@@ -159,6 +175,52 @@ export default function DailyWords() {
     }
   }, [fetchWord, language]);
 
+  const speakText = useCallback(
+    (text) => {
+      if (!text || typeof window === "undefined" || !("speechSynthesis" in window)) {
+        return;
+      }
+
+      const langMap = {
+        english: "en-US",
+        hindi: "hi-IN",
+        telugu: "te-IN",
+        tamil: "ta-IN",
+        kannada: "kn-IN",
+      };
+
+      const langCode = langMap[language] || "en-US";
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = langCode;
+      utterance.rate = 1;
+      utterance.pitch = 1.2;
+
+      const voices = window.speechSynthesis.getVoices();
+      const normalizedLang = langCode.toLowerCase().replace(/_/g, "-");
+      const preferredVoice =
+        voices.find((voice) => {
+          const match = voice.lang.toLowerCase().replace(/_/g, "-");
+          return match.startsWith(normalizedLang) && /female|woman|girl|samantha|zira|google uk english female|google us english female|voice 2/i.test(voice.name);
+        }) ||
+        voices.find((voice) => {
+          const match = voice.lang.toLowerCase().replace(/_/g, "-");
+          return match.startsWith(normalizedLang) && /female|woman|girl|samantha|zira|google.*female|voice.*2/i.test(voice.name);
+        }) ||
+        voices.find((voice) => voice.lang.toLowerCase().replace(/_/g, "-").startsWith(normalizedLang)) ||
+        voices.find((voice) => voice.lang.toLowerCase().replace(/_/g, "-").startsWith(normalizedLang.split("-")[0])) ||
+        voices.find((voice) => /female|woman|girl|samantha|zira/i.test(voice.name)) ||
+        voices[0];
+
+      if (preferredVoice) {
+        utterance.voice = preferredVoice;
+      }
+
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(utterance);
+    },
+    [language]
+  );
+
   return (
     <div className="daily-words">
       <div className="dw-header">
@@ -201,14 +263,47 @@ export default function DailyWords() {
           <div className="dw-word-row">
             <span className="dw-word">{word.word}</span>
             {word.partOfSpeech && <span className="dw-pos">{word.partOfSpeech}</span>}
+            <button
+              type="button"
+              className="dw-voice-btn"
+              onClick={() => speakText(word.word)}
+              title={`Read the word aloud in ${LANGUAGES.find((item) => item.id === language)?.label || "this language"}`}
+              aria-label="Read word aloud"
+            >
+              🔊
+            </button>
           </div>
-          <p className="dw-meaning">{word.meaning}</p>
+
+          <div className="dw-meaning-row">
+            <p className="dw-meaning">{word.meaning}</p>
+            <button
+              type="button"
+              className="dw-voice-btn small"
+              onClick={() => speakText(`${word.meaning}. ${word.example || ""}`.trim())}
+              title={`Read the meaning and example aloud in ${LANGUAGES.find((item) => item.id === language)?.label || "this language"}`}
+              aria-label="Read meaning and example aloud"
+            >
+              🔊
+            </button>
+          </div>
+
           {word.transliteration && (
             <p className="dw-translit">{word.transliteration}</p>
           )}
           {word.example && (
             <>
-              <p className="dw-example">"{word.example}"</p>
+              <div className="dw-example-row">
+                <p className="dw-example">"{word.example}"</p>
+                <button
+                  type="button"
+                  className="dw-voice-btn small"
+                  onClick={() => speakText(word.example)}
+                  title={`Read the example aloud in ${LANGUAGES.find((item) => item.id === language)?.label || "this language"}`}
+                  aria-label="Read example aloud"
+                >
+                  🔊
+                </button>
+              </div>
               {word.exampleTransliteration && (
                 <p className="dw-example-translit">{word.exampleTransliteration}</p>
               )}
@@ -218,7 +313,18 @@ export default function DailyWords() {
             <div className="dw-synonyms">
               <span className="dw-syn-label">Similar words:</span>
               {word.synonyms.map((s, i) => (
-                <span className="dw-syn-chip" key={i}>{s}</span>
+                <span className="dw-syn-chip" key={i}>
+                  {s}
+                  <button
+                    type="button"
+                    className="dw-mini-voice"
+                    onClick={() => speakText(s)}
+                    title={`Read ${s} aloud`}
+                    aria-label={`Read ${s} aloud`}
+                  >
+                    🔊
+                  </button>
+                </span>
               ))}
             </div>
           )}
