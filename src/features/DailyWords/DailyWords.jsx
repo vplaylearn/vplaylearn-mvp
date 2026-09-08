@@ -237,14 +237,6 @@ export default function DailyWords() {
             </button>
           ))}
         </div>
-        <button
-          className="dw-refresh"
-          onClick={() => fetchWord(language)}
-          disabled={status === "loading"}
-          title="Get a new word"
-        >
-          {status === "loading" ? "…" : "🔄 New Word"}
-        </button>
       </div>
 
       {status === "loading" && (
@@ -271,6 +263,14 @@ export default function DailyWords() {
               aria-label="Read word aloud"
             >
               🔊
+            </button>
+            <button
+              className="dw-refresh"
+              onClick={() => fetchWord(language)}
+              disabled={status === "loading"}
+              title="Get a new word"
+            >
+              🔄 New Word
             </button>
           </div>
 
