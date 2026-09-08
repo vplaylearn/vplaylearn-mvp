@@ -57,7 +57,7 @@ function loadSavedWord(language = "english") {
   }
 }
 
-export default function DailyWords() {
+export default function DailyWords({ isCollapsed = false, onExpand }) {
   const [word, setWord] = useState(null);
   const [status, setStatus] = useState("idle"); // idle | loading | done | error
   const [errorMsg, setErrorMsg] = useState("");
@@ -222,35 +222,44 @@ export default function DailyWords() {
   );
 
   return (
-    <div className="daily-words">
+    <div className={`daily-words ${isCollapsed ? "is-collapsed" : ""}`}>
       <div className="dw-header">
-        <h3>📚 Word of the Day</h3>
-        <div className="dw-tabs">
-          {LANGUAGES.map((l) => (
-            <button
-              key={l.id}
-              className={`dw-tab ${language === l.id ? "active" : ""}`}
-              onClick={() => setLanguage(l.id)}
-              disabled={status === "loading" && language === l.id}
-            >
-              {l.label}
+        <div className="dw-title-row">
+          <h3>📚 Word of the Day</h3>
+          {isCollapsed && (
+            <button type="button" className="dw-expand" onClick={onExpand}>
+              Expand
             </button>
-          ))}
+          )}
         </div>
+        {!isCollapsed && (
+          <div className="dw-tabs">
+            {LANGUAGES.map((l) => (
+              <button
+                key={l.id}
+                className={`dw-tab ${language === l.id ? "active" : ""}`}
+                onClick={() => setLanguage(l.id)}
+                disabled={status === "loading" && language === l.id}
+              >
+                {l.label}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
-      {status === "loading" && (
+      {!isCollapsed && status === "loading" && (
         <div className="dw-loading">
           <div className="dw-spinner"></div>
           <span>Finding a great word for you…</span>
         </div>
       )}
 
-      {status === "error" && (
+      {!isCollapsed && status === "error" && (
         <div className="dw-error">⚠️ {errorMsg}</div>
       )}
 
-      {status === "done" && word && (
+      {!isCollapsed && status === "done" && word && (
         <div className="dw-card">
           <div className="dw-word-row">
             <span className="dw-word">{word.word}</span>

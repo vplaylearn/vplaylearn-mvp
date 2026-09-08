@@ -24,14 +24,21 @@ const SPEECH_LANGUAGES = {
   kannada: "kn-IN",
 };
 
-export default function WordSearch() {
+export default function WordSearch({ isExpanded: expandedProp, onExpandedChange }) {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState(null);
   const [status, setStatus] = useState("idle");
   const [error, setError] = useState("");
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [internalExpanded, setInternalExpanded] = useState(false);
   const [language, setLanguage] = useState("english");
   const [isListening, setIsListening] = useState(false);
+  const isExpanded = expandedProp ?? internalExpanded;
+
+  function toggleExpanded() {
+    const nextExpanded = !isExpanded;
+    setInternalExpanded(nextExpanded);
+    onExpandedChange?.(nextExpanded);
+  }
 
   function speakText(text, speechLanguage = language) {
     if (!text || typeof window === "undefined" || !("speechSynthesis" in window)) return;
@@ -192,7 +199,7 @@ export default function WordSearch() {
           <button
             type="button"
             className="word-search-toggle"
-            onClick={() => setIsExpanded((expanded) => !expanded)}
+            onClick={toggleExpanded}
             aria-expanded={isExpanded}
             aria-controls="word-search-content"
           >

@@ -1,14 +1,23 @@
+import { useState } from "react";
 import DailyWords from "../features/DailyWords/DailyWords.jsx";
 import WordSearch from "../features/WordSearch/WordSearch.jsx";
 
 export default function Home() {
+  const [wordSearchExpanded, setWordSearchExpanded] = useState(false);
+
   return (
     <>
       <h3>vPlayLearn welcomes you to the world of fun and learning.</h3>
 
-      <DailyWords />
+      <DailyWords
+        isCollapsed={wordSearchExpanded}
+        onExpand={() => setWordSearchExpanded(false)}
+      />
 
-      <WordSearch />
+      <WordSearch
+        isExpanded={wordSearchExpanded}
+        onExpandedChange={setWordSearchExpanded}
+      />
 
       <div>
         <span>Here we have </span>

@@ -8,6 +8,10 @@
   box-shadow: 0 4px 12px rgba(99, 102, 241, 0.08);
 }
 
+.daily-words.is-collapsed {
+  padding-bottom: 16px;
+}
+
 .dw-header {
   display: flex;
   flex-direction: column;
@@ -20,9 +24,30 @@
   margin: 0;
   font-size: 18px;
   color: #4338ca;
-  width: 100%;
-  text-align: left;
   white-space: nowrap;
+}
+
+.dw-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+}
+
+.dw-expand {
+  margin-left: auto;
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+  padding: 6px 10px;
+  background: #fff;
+  color: #4338ca;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.dw-expand:hover {
+  background: #eef2ff;
 }
 
 .dw-refresh {
