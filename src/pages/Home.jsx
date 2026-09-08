@@ -1,4 +1,5 @@
 import DailyWords from "../features/DailyWords/DailyWords.jsx";
+import WordSearch from "../features/WordSearch/WordSearch.jsx";
 
 export default function Home() {
   return (
@@ -6,6 +7,8 @@ export default function Home() {
       <h3>vPlayLearn welcomes you to the world of fun and learning.</h3>
 
       <DailyWords />
+
+      <WordSearch />
 
       <div>
         <span>Here we have </span>
