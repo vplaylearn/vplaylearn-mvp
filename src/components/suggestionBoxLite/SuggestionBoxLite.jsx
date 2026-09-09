@@ -100,15 +100,16 @@ export default function SuggestionBoxLite() {
         />
 
         <div className="suggestion-box-lite-action">
-          <button type="submit" disabled={status === "sending"}>
-            {status === "sending" ? "Sending..." : "Send"}
-          </button>
+         
 
           {feedback && (
             <span className={`suggestion-box-lite-feedback ${status}`}>
               {feedback}
             </span>
           )}
+           <button type="submit" disabled={status === "sending"}>
+            {status === "sending" ? "Sending..." : "Send"}
+          </button>
         </div>
       </form>
     </section>
