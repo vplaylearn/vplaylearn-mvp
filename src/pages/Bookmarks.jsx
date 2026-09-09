@@ -6,7 +6,11 @@ import "./bookmarks.css";
 export default function Bookmarks() {
   const [bookmarks, setBookmarks] = useState(() => getBookmarks());
   const [searchParams] = useSearchParams();
-  const initialType = searchParams.get("type") === "searched" ? "Searched word" : "Daily word";
+  const initialType = searchParams.get("type") === "searched"
+    ? "Searched word"
+    : searchParams.get("type") === "idiom"
+      ? "Idiom / phrase"
+      : "Daily word";
   const [activeType, setActiveType] = useState(initialType);
   const [activeLanguage, setActiveLanguage] = useState("all");
   const groups = [

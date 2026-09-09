@@ -20,11 +20,7 @@ import PublishedStories from "./pages/PublishedStoriesPage.jsx";
 import PublishedStoriesPage from "./pages/PublishedStoriesPage.jsx";
 import RiddlesPage from "./pages/RiddlesPage.jsx";
 import JokesPage from "./pages/JokesPage.jsx";
-import KannadaIdiomsPage from "./pages/KannadaIdiomsPage.jsx";
-import TamilIdiomsPage from "./pages/TamilIdiomsPage.jsx";
-import TeluguIdiomsPage from "./pages/TeluguIdiomsPage.jsx";
-import HindiIdiomsPage from "./pages/HindiIdiomsPage.jsx";
-import EnglishIdiomsPage from "./pages/EnglishIdiomsPage.jsx";
+import IdiomsPage from "./pages/IdiomsPage.jsx";
 import WritingCoachPage from "./pages/WritingCoachPage.jsx";
 import Bookmarks from "./pages/Bookmarks.jsx";
 
@@ -80,11 +76,11 @@ const App = () => {
           <Route path="/jokes" element={<JokesPage />} />
 
           {/* Idoms Routes */}
-           <Route path="/kannada-idioms" element={<KannadaIdiomsPage />} />
-            <Route path="/tamil-idioms" element={<TamilIdiomsPage />} />
-            <Route path="/telugu-idioms" element={<TeluguIdiomsPage />} />
-            <Route path="/hindi-idioms" element={<HindiIdiomsPage />} />
-            <Route path="/english-idioms" element={<EnglishIdiomsPage />} />
+           <Route path="/kannada-idioms" element={<IdiomsPage />} />
+            <Route path="/tamil-idioms" element={<IdiomsPage />} />
+            <Route path="/telugu-idioms" element={<IdiomsPage />} />
+            <Route path="/hindi-idioms" element={<IdiomsPage />} />
+            <Route path="/english-idioms" element={<IdiomsPage />} />
 
           {/* Writing Coach */}
           <Route path="/writing-coach" element={<WritingCoachPage />} />
