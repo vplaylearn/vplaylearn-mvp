@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./about.css";
 
@@ -21,6 +22,32 @@ const FEATURES = [
 ];
 
 export default function About() {
+  const [suggestion, setSuggestion] = useState("");
+  const [status, setStatus] = useState("idle");
+  const [message, setMessage] = useState("");
+
+  async function submitSuggestion(event) {
+    event.preventDefault();
+    setStatus("sending");
+    setMessage("");
+
+    try {
+      const response = await fetch("/api/suggestions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ suggestion, website: "" }),
+      });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || "Unable to send suggestion.");
+      setSuggestion("");
+      setStatus("sent");
+      setMessage("Thanks. Your suggestion was sent.");
+    } catch (error) {
+      setStatus("error");
+      setMessage(error.message);
+    }
+  }
+
   return (
     <article className="about-page">
       <header className="about-hero">
@@ -57,6 +84,26 @@ export default function About() {
         <p>
           Explore idioms and proverbs in English, Hindi, Telugu, Tamil, and Kannada. Bookmark daily words, searched words, and phrases into separate categories, then filter them by language when you revise.
         </p>
+      </section>
+
+      <section className="about-suggestion" aria-labelledby="suggestion-title">
+        <p className="about-eyebrow">Help shape vPlayLearn</p>
+        <h2 id="suggestion-title">Have a suggestion?</h2>
+        <p>Tell us what would make play and learning more useful for you.</p>
+        <form onSubmit={submitSuggestion}>
+          <textarea
+            value={suggestion}
+            onChange={(event) => setSuggestion(event.target.value)}
+            placeholder="Share an idea, activity, or improvement..."
+            maxLength={2000}
+            required
+            aria-label="Your suggestion"
+          />
+          <button type="submit" disabled={status === "sending"}>
+            {status === "sending" ? "Sending..." : "Send suggestion"}
+          </button>
+        </form>
+        {message && <p className={`suggestion-message ${status}`}>{message}</p>}
       </section>
 
       <footer className="about-footer">
