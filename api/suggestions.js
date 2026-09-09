@@ -8,7 +8,7 @@ module.exports = async function handler(request, response) {
     return response.status(405).json({ error: "Method not allowed" });
   }
 
-  const { suggestion, website } = request.body || {};
+  const { suggestion, email, website } = request.body || {};
 
   if (website) {
     return response.status(200).json({ ok: true });
@@ -22,17 +22,24 @@ module.exports = async function handler(request, response) {
     return response.status(400).json({ error: "Suggestion is too long." });
   }
 
+  if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return response.status(400).json({ error: "Please enter a valid email address." });
+  }
+
   if (!process.env.RESEND_API_KEY || !process.env.SUGGESTIONS_TO_EMAIL || !process.env.RESEND_FROM_EMAIL) {
     return response.status(500).json({ error: "Suggestion service is not configured." });
   }
 
   try {
-    await resend.emails.send({
+    const emailPayload = {
       from: process.env.RESEND_FROM_EMAIL,
       to: process.env.SUGGESTIONS_TO_EMAIL,
       subject: "New vPlayLearn suggestion",
-      text: suggestion.trim(),
-    });
+      text: `${suggestion.trim()}${email ? `\n\nSuggested by: ${email}` : "\n\nSuggested anonymously"}`,
+    };
+
+    if (email) emailPayload.replyTo = email;
+    await resend.emails.send(emailPayload);
 
     return response.status(200).json({ ok: true });
   } catch (error) {

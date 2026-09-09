@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./about.css";
 
@@ -23,8 +23,67 @@ const FEATURES = [
 
 export default function About() {
   const [suggestion, setSuggestion] = useState("");
+  const [email, setEmail] = useState("");
   const [status, setStatus] = useState("idle");
   const [message, setMessage] = useState("");
+  const [isListening, setIsListening] = useState(false);
+  const recognitionRef = useRef(null);
+  const shouldKeepListeningRef = useRef(false);
+
+  function startSpeechToText() {
+    if (isListening) {
+      shouldKeepListeningRef.current = false;
+      recognitionRef.current?.stop();
+      setIsListening(false);
+      return;
+    }
+
+    const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!Recognition) {
+      setStatus("error");
+      setMessage("Speech input is not supported in this browser.");
+      return;
+    }
+
+    const recognition = new Recognition();
+  recognitionRef.current = recognition;
+  shouldKeepListeningRef.current = true;
+    recognition.lang = "en-US";
+  recognition.continuous = true;
+    recognition.interimResults = false;
+    recognition.onstart = () => {
+      setIsListening(true);
+      setMessage("");
+    };
+    recognition.onresult = (event) => {
+      const transcript = event.results?.[0]?.[0]?.transcript?.trim();
+      if (transcript) {
+        setSuggestion((current) => `${current}${current ? " " : ""}${transcript}`);
+      }
+    };
+    recognition.onerror = () => {
+      shouldKeepListeningRef.current = false;
+      setIsListening(false);
+      recognitionRef.current = null;
+      setStatus("error");
+      setMessage("Could not recognize speech. Please try again.");
+    };
+    recognition.onend = () => {
+      if (shouldKeepListeningRef.current) {
+        try {
+          recognition.start();
+        } catch {
+          shouldKeepListeningRef.current = false;
+          setIsListening(false);
+          recognitionRef.current = null;
+        }
+      } else {
+        setIsListening(false);
+        recognitionRef.current = null;
+      }
+    };
+    recognition.start();
+  }
 
   async function submitSuggestion(event) {
     event.preventDefault();
@@ -35,11 +94,12 @@ export default function About() {
       const response = await fetch("/api/suggestions", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ suggestion, website: "" }),
+        body: JSON.stringify({ suggestion, email, website: "" }),
       });
       const result = await response.json();
       if (!response.ok) throw new Error(result.error || "Unable to send suggestion.");
       setSuggestion("");
+      setEmail("");
       setStatus("sent");
       setMessage("Thanks. Your suggestion was sent.");
     } catch (error) {
@@ -91,14 +151,37 @@ export default function About() {
         <h2 id="suggestion-title">Have a suggestion?</h2>
         <p>Tell us what would make play and learning more useful for you.</p>
         <form onSubmit={submitSuggestion}>
-          <textarea
-            value={suggestion}
-            onChange={(event) => setSuggestion(event.target.value)}
-            placeholder="Share an idea, activity, or improvement..."
-            maxLength={2000}
-            required
-            aria-label="Your suggestion"
+          <label className="suggestion-email-label" htmlFor="suggestion-email">
+            Email address <span>(optional)</span>
+          </label>
+          <input
+            id="suggestion-email"
+            type="email"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+            placeholder="For a reply, enter your email"
+            autoComplete="email"
           />
+          <div className="suggestion-input-wrap">
+            <textarea
+              value={suggestion}
+              onChange={(event) => setSuggestion(event.target.value)}
+              placeholder="Share an idea, activity, or improvement..."
+              maxLength={2000}
+              required
+              aria-label="Your suggestion"
+            />
+            <button
+              type="button"
+              className={`suggestion-mic ${isListening ? "active" : ""}`}
+              onClick={startSpeechToText}
+              disabled={status === "sending"}
+              aria-label={isListening ? "Stop speech to text" : "Start speech to text"}
+              title={isListening ? "Stop speech to text" : "Start speech to text"}
+            >
+              {isListening ? "■ Stop" : "🎙️ Start"}
+            </button>
+          </div>
           <button type="submit" disabled={status === "sending"}>
             {status === "sending" ? "Sending..." : "Send suggestion"}
           </button>

@@ -75,9 +75,17 @@
 .about-suggestion h2 { margin: 0; color: #183b3b; font-size: 27px; }
 .about-suggestion > p:not(.about-eyebrow) { margin: 10px 0 16px; color: #637878; }
 .about-suggestion form { display: grid; gap: 10px; }
-.about-suggestion textarea { min-height: 120px; resize: vertical; border: 1px solid #b8d7d2; border-radius: 9px; padding: 12px; color: #294646; font: inherit; }
+.suggestion-email-label { color: #486363; font-size: 13px; font-weight: 700; }
+.suggestion-email-label span { color: #637878; font-weight: 400; }
+.about-suggestion input[type="email"] { width: 100%; box-sizing: border-box; border: 1px solid #b8d7d2; border-radius: 9px; padding: 11px 12px; color: #294646; font: inherit; }
+.about-suggestion input[type="email"]:focus { outline: 2px solid #99d5ca; outline-offset: 1px; }
+.suggestion-input-wrap { position: relative; }
+.about-suggestion textarea { display: block; width: 100%; box-sizing: border-box; min-height: 120px; resize: vertical; border: 1px solid #b8d7d2; border-radius: 9px; padding: 12px 52px 12px 12px; color: #294646; font: inherit; }
 .about-suggestion textarea:focus { outline: 2px solid #99d5ca; outline-offset: 1px; }
 .about-suggestion button { justify-self: start; border: 0; border-radius: 8px; padding: 10px 15px; background: #0f766e; color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+.about-suggestion .suggestion-mic { position: absolute; right: 10px; top: 10px; min-width: 34px; height: 34px; padding: 0 7px; border: 1px solid #b8d7d2; border-radius: 8px; background: #fff; color: #0f766e; font-size: 12px; }
+.about-suggestion .suggestion-mic:hover:not(:disabled), .about-suggestion .suggestion-mic.active { background: #dff3ee; }
+.about-suggestion .suggestion-mic.active { color: #b42318; }
 .about-suggestion button:hover:not(:disabled) { background: #115e59; }
 .about-suggestion button:disabled { cursor: wait; opacity: 0.7; }
 .suggestion-message { margin: 12px 0 0; font-size: 14px; }
