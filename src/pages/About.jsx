@@ -148,7 +148,7 @@ export default function About() {
 
       <section className="about-suggestion" aria-labelledby="suggestion-title">
         <p className="about-eyebrow">Help shape vPlayLearn</p>
-        <h2 id="suggestion-title">Have a suggestion?</h2>
+        <h2 id="suggestion-title">Have a suggestion or idea, or want to get in touch?</h2>
         <p>Tell us what would make play and learning more useful for you.</p>
         <form onSubmit={submitSuggestion}>
           <label className="suggestion-email-label" htmlFor="suggestion-email">
@@ -171,7 +171,7 @@ export default function About() {
               required
               aria-label="Your suggestion"
             />
-            <button
+            {/* <button
               type="button"
               className={`suggestion-mic ${isListening ? "active" : ""}`}
               onClick={startSpeechToText}
@@ -180,7 +180,7 @@ export default function About() {
               title={isListening ? "Stop speech to text" : "Start speech to text"}
             >
               {isListening ? "■ Stop" : "🎙️ Start"}
-            </button>
+            </button> */}
           </div>
           <button type="submit" disabled={status === "sending"}>
             {status === "sending" ? "Sending..." : "Send suggestion"}

@@ -1,0 +1,166 @@
+.suggestion-section {
+  margin-top: 4rem;
+  padding: 2.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+}
+
+.suggestion-header {
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+.suggestion-header h2 {
+  margin: 0.35rem 0 0.75rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #111827;
+}
+
+.suggestion-header > p:last-child {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.suggestion-form {
+  max-width: 800px;
+}
+
+.suggestion-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.suggestion-field {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.suggestion-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.suggestion-field label span {
+  font-weight: 400;
+  color: #9ca3af;
+}
+
+.suggestion-field input,
+.suggestion-field select,
+.suggestion-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #fff;
+  color: #111827;
+  font: inherit;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.suggestion-field input,
+.suggestion-field select {
+  height: 46px;
+  padding: 0 0.9rem;
+}
+
+.suggestion-field textarea {
+  min-height: 140px;
+  padding: 0.9rem;
+  resize: vertical;
+}
+
+.suggestion-field input::placeholder,
+.suggestion-field textarea::placeholder {
+  color: #9ca3af;
+}
+
+.suggestion-field input:focus,
+.suggestion-field select:focus,
+.suggestion-field textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.suggestion-counter {
+  margin-top: 0.35rem;
+  text-align: right;
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.suggestion-submit {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.suggestion-submit button {
+  min-width: 150px;
+  padding: 0.75rem 1.25rem;
+  border: 0;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.suggestion-submit button:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.suggestion-submit button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.suggestion-feedback {
+  margin: 1rem 0 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.suggestion-feedback.sent {
+  color: #15803d;
+}
+
+.suggestion-feedback.error {
+  color: #dc2626;
+}
+
+@media (max-width: 650px) {
+  .suggestion-section {
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+
+  .suggestion-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .suggestion-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .suggestion-submit button {
+    width: 100%;
+  }
+}

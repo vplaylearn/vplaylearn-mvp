@@ -1,0 +1,122 @@
+.suggestion-box-lite {
+  margin-top: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid #edf0f4;
+  border-radius: 14px;
+  background: #fafbfc;
+}
+
+.suggestion-box-lite-heading {
+  margin-bottom: 1rem;
+}
+
+.suggestion-box-lite-heading h2 {
+  margin: 0.2rem 0 0.3rem;
+  font-size: 1.25rem;
+  color: #202124;
+}
+
+.suggestion-box-lite-heading p:last-child {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #747b84;
+}
+
+/* .suggestion-box-lite-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+  margin-bottom: 0.7rem;
+} */
+
+.suggestion-box-lite-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.suggestion-box-lite input,
+.suggestion-box-lite textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e1e5ea;
+  border-radius: 8px;
+  background: #fff;
+  color: #333;
+  font: inherit;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.suggestion-box-lite input {
+  height: 40px;
+  padding: 0 0.75rem;
+}
+
+.suggestion-box-lite textarea {
+  display: block;
+  min-height: 90px;
+  padding: 0.7rem 0.75rem;
+  resize: vertical;
+}
+
+.suggestion-box-lite input::placeholder,
+.suggestion-box-lite textarea::placeholder {
+  color: #a5abb3;
+}
+
+.suggestion-box-lite input:focus,
+.suggestion-box-lite textarea:focus {
+  border-color: #b8c9e8;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.06);
+}
+
+.suggestion-box-lite-action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.7rem;
+}
+
+.suggestion-box-lite-action button {
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 7px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.suggestion-box-lite-action button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.suggestion-box-lite-action button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.suggestion-box-lite-feedback {
+  font-size: 0.8rem;
+}
+
+.suggestion-box-lite-feedback.sent {
+  color: #16803c;
+}
+
+.suggestion-box-lite-feedback.error {
+  color: #c62828;
+}
+
+@media (max-width: 600px) {
+  .suggestion-box-lite {
+    padding: 1.2rem;
+  }
+
+  .suggestion-box-lite-fields {
+    grid-template-columns: 1fr;
+  }
+}

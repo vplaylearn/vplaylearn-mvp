@@ -4,6 +4,8 @@ import Jokes from "./jokes/jokes";
 import "./rightpane.css";
 import PublishedStories from "./published-stories/PublishedStories";
 import RiddleCard from "./riddle/riddle";
+import Suggestion from "./suggestionBox/Suggestion";
+import SuggestionBoxLite from "./suggestionBoxLite/SuggestionBoxLite";
 
 const RightPane = () => {
   return (
@@ -12,6 +14,7 @@ const RightPane = () => {
       <Jokes title="Joke" content="jokes" />
       <RiddleCard/>
       <PublishedStories title="Published Stories" content="stories" />
+      <SuggestionBoxLite/>
       {/* <RiddleCard/> */}
 
   </div>  
