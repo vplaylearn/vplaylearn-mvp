@@ -11,6 +11,7 @@ export default function Sidebar({ isOpen = false, onClose }) {
 
   const menu = [
     { title: "Home", path: "/"},
+    { title: "About", path: "/about" },
     { title: "Bookmarks", path: "/bookmarks" },
     { title: "Writing Coach", path: "/writing-coach", badge: "AI-powered" },
     { title: "Games", path: "/games" },

@@ -23,6 +23,7 @@ import JokesPage from "./pages/JokesPage.jsx";
 import IdiomsPage from "./pages/IdiomsPage.jsx";
 import WritingCoachPage from "./pages/WritingCoachPage.jsx";
 import Bookmarks from "./pages/Bookmarks.jsx";
+import About from "./pages/About.jsx";
 
 const App = () => {
   const location = useLocation();
@@ -85,6 +86,7 @@ const App = () => {
           {/* Writing Coach */}
           <Route path="/writing-coach" element={<WritingCoachPage />} />
             <Route path="/bookmarks" element={<Bookmarks />} />
+            <Route path="/about" element={<About />} />
 
           </Routes>
         </div>
