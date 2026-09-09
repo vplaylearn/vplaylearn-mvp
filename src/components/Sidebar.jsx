@@ -5,7 +5,7 @@ import "./sidebar.css";
 
 
 
-export default function Sidebar() {
+export default function Sidebar({ isOpen = false, onClose }) {
   const [open, setOpen] = useState(null);
   const location = useLocation();
 
@@ -68,7 +68,7 @@ export default function Sidebar() {
     //     ))}
     //   </ul>
     // </div>
-    <div className="sidebar">
+    <aside className={`sidebar ${isOpen ? "sidebar-open" : ""}`}>
   <ul>
     {menu.map((item) => (
       <li key={item.title}>
@@ -77,6 +77,7 @@ export default function Sidebar() {
         {item.path ? (
           <NavLink
             to={item.path}
+            onClick={onClose}
             className={({ isActive }) =>
               `menu-item link ${isActive ? "active" : ""}`
             }
@@ -100,6 +101,7 @@ export default function Sidebar() {
               <li key={sub.title}>
                 <NavLink
                   to={sub.path}
+                  onClick={onClose}
                   className={({ isActive }) =>
                     `submenu-item link ${isActive ? "active" : ""}`
                   }
@@ -114,6 +116,6 @@ export default function Sidebar() {
       </li>
     ))}
   </ul>
-</div>
+  </aside>
   );
 }

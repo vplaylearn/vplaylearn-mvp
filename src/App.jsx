@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 
 import Topbar from "./components/Topbar";
@@ -30,13 +30,25 @@ import WritingCoachPage from "./pages/WritingCoachPage.jsx";
 const App = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
     <div>
-      <Topbar />
+      <Topbar onMenuClick={() => setIsSidebarOpen(true)} />
 
       <div style={styles.layout}>
-        <Sidebar /> 
+        {isSidebarOpen && (
+          <button
+            type="button"
+            className="sidebar-overlay"
+            aria-label="Close navigation"
+            onClick={() => setIsSidebarOpen(false)}
+          />
+        )}
+        <Sidebar
+          isOpen={isSidebarOpen}
+          onClose={() => setIsSidebarOpen(false)}
+        />
 
         <div style={styles.main}>
           {location.pathname !== "/" && (

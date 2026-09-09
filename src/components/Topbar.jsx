@@ -1,8 +1,17 @@
 import React from "react";
 
-const Topbar = () => {
+const Topbar = ({ onMenuClick }) => {
   return (
     <div style={styles.topbar}>
+      <button
+        type="button"
+        className="sidebar-menu-button"
+        onClick={onMenuClick}
+        aria-label="Open navigation"
+        title="Open navigation"
+      >
+        <span aria-hidden="true">☰</span>
+      </button>
       <h2>vPlayLearn</h2>
     </div>
   );

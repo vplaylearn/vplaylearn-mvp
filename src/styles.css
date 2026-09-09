@@ -3,6 +3,41 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.sidebar-menu-button {
+  display: none;
+  margin-right: 14px;
+  border: 1px solid #475569;
+  border-radius: 7px;
+  padding: 6px 9px;
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.sidebar-overlay {
+  display: none;
+}
+
+@media (max-width: 1099px) {
+  .sidebar-menu-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    inset: 60px 0 0;
+    z-index: 1090;
+    border: 0;
+    background: rgba(15, 23, 42, 0.42);
+    cursor: pointer;
+  }
+}
+
 .route-back-button {
   display: inline-flex;
   align-items: center;
