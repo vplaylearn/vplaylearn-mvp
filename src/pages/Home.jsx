@@ -30,7 +30,7 @@ export default function Home() {
         <div className="home-section-heading">
           <div>
             <p className="home-eyebrow">Keep exploring</p>
-            <h2 id="explore-title">More ways to learn</h2>
+            <h2 id="explore-title">More ways to play and learn</h2>
           </div>
           <span>Choose your next activity</span>
         </div>
@@ -40,7 +40,13 @@ export default function Home() {
           <NavLink to="/puzzles">Puzzles <span>Solve</span></NavLink>
           <NavLink to="/jokes">Jokes <span>Laugh</span></NavLink>
           <NavLink to="/riddles">Riddles <span>Think</span></NavLink>
-          <NavLink to="/writing-coach">Writing Coach <span>Create</span></NavLink>
+          <NavLink to="/writing-coach">
+            <span className="home-feature-title">
+              Writing Coach
+              <span className="home-ai-badge">AI-powered</span>
+            </span>
+            <span>Create</span>
+          </NavLink>
           <NavLink to="/english-idioms">Idioms <span>Discover</span></NavLink>
         </div>
       </section>

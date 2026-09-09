@@ -9,6 +9,21 @@
   margin-bottom: 6px;
 }
 
+.writing-coach-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.writing-coach-ai-tag {
+  border-radius: 999px;
+  padding: 4px 9px;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .writing-coach .subtitle {
   color: #666;
   margin-bottom: 20px;

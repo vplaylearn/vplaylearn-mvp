@@ -12,9 +12,9 @@ export default function Sidebar({ isOpen = false, onClose }) {
   const menu = [
     { title: "Home", path: "/"},
     { title: "Bookmarks", path: "/bookmarks" },
+    { title: "Writing Coach", path: "/writing-coach", badge: "AI-powered" },
     { title: "Games", path: "/games" },
     { title: "Puzzles", path: "/puzzles" },
-    { title: "Writing Coach", path: "/writing-coach" },
     {
       title: "Idioms and proverbs",
       key: "idioms",
@@ -83,7 +83,7 @@ export default function Sidebar({ isOpen = false, onClose }) {
               `menu-item link ${isActive ? "active" : ""}`
             }
           >
-            <span>{item.title}</span>
+            <span>{item.title}{item.badge && <small className="menu-badge">{item.badge}</small>}</span>
           </NavLink>
         ) : (
           <div

@@ -331,7 +331,10 @@ ${numberedLines}`;
 
   return (
     <div className="writing-coach">
-      <h1>📝 Writing Coach</h1>
+      <div className="writing-coach-title-row">
+        <h1>📝 Writing Coach</h1>
+        <span className="writing-coach-ai-tag">AI-powered</span>
+      </div>
       <p className="subtitle">
         Upload your handwritten notes — get grammar corrections and writing suggestions from AI
       </p>

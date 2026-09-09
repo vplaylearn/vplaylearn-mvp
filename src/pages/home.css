@@ -100,6 +100,25 @@
   font-weight: 600;
 }
 
+.home-feature-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #183b3b !important;
+  font-size: inherit !important;
+  font-weight: 700 !important;
+}
+
+.home-feature-title .home-ai-badge {
+  border-radius: 999px;
+  padding: 2px 5px;
+  background: #e36f4b;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+
 .home-explore-links a:hover {
   border-color: #99d5ca;
   background: #f1fbf8;
