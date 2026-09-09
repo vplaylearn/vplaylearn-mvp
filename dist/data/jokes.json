@@ -1,0 +1,28 @@
+[
+    {
+        "conversationId": "1",
+        "title": "In a mental hospital",
+        "messages": [
+            {
+                "id": 1,
+                "role": "Patient A",
+                "message": "Bro! i am planning to buy this world"
+            },
+            {
+                "id": 2,
+                "role": "Patient B",
+                "message": "You can't bro!"
+            },
+            {
+                "id": 1,
+                "role": "Patient A",
+                "message": "Why"
+            },
+            {
+                "id": 2,
+                "role": "Patient B",
+                "message": "I am not going to sell it"
+            }
+        ]
+    }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "kannada": "ಹಸಿದವನಿಗೆ ಹಣ್ಣು ಸಿಹಿ",
+    "transliteration": "hasidavanige hannu sihi",
+    "english": "To a hungry person, even a fruit tastes sweet",
+    "meaning": "When you are in need, even small things feel valuable"
+  },
+  {
+    "id": 2,
+    "kannada": "ಮಾತು ಬೆಳ್ಳಿ, ಮೌನ ಚಿನ್ನ",
+    "transliteration": "maatu belli, mouna chinna",
+    "english": "Speech is silver, silence is golden",
+    "meaning": "Silence can be more powerful than words"
+  },
+  {
+    "id": 3,
+    "kannada": "ಆತುರದ ಕೆಲಸ ಶೈತಾನದ ಕೆಲಸ",
+    "transliteration": "aaturada kelasa shaitaanada kelasa",
+    "english": "Haste makes waste",
+    "meaning": "Rushing leads to mistakes"
+  },
+  {
+    "id": 4,
+    "kannada": "ಕಷ್ಟವಿಲ್ಲದೆ ಫಲವಿಲ್ಲ",
+    "transliteration": "kashtavillade phalavilla",
+    "english": "No pain, no gain",
+    "meaning": "Hard work is necessary for success"
+  },
+  {
+    "id": 5,
+    "kannada": "ಕೈಯಲ್ಲಿ ಇರುವ ಹಕ್ಕಿ ಕಾಡಿನಲ್ಲಿರುವ ಎರಡು ಹಕ್ಕಿಗಿಂತ ಮೇಲು",
+    "transliteration": "kaiyalli iruva hakki kaadinalliruva eradu hakkiginta melu",
+    "english": "A bird in hand is worth two in the bush",
+    "meaning": "Value what you already have"
+  },
+  {
+    "id": 6,
+    "kannada": "ಕಾಲಕ್ಕೆ ತಕ್ಕಂತೆ ನಡೆ",
+    "transliteration": "kaalakke takkante nade",
+    "english": "Act according to time",
+    "meaning": "Adapt to situations"
+  },
+  {
+    "id": 7,
+    "kannada": "ಹೆಜ್ಜೆ ಹೆಜ್ಜೆಗೆ ಎಚ್ಚರ",
+    "transliteration": "hejje hejjegE ecchara",
+    "english": "Be careful at every step",
+    "meaning": "Proceed with caution"
+  },
+  {
+    "id": 8,
+    "kannada": "ಕಲ್ಲು ಎಸೆದರೆ ಮರ ಫಲ ಕೊಡುತ್ತದೆ",
+    "transliteration": "kallu esedare mara phala koduttade",
+    "english": "A tree gives fruit even when stones are thrown at it",
+    "meaning": "Do good even if treated badly"
+  }
+]

@@ -32,7 +32,12 @@ export default function SuggestionBoxLite() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(form),
+        body:  JSON.stringify({
+          name: form.name,
+          email: form.email,
+          suggestion: form.message,
+          website: "",
+        }),
       });
 
       const result = await response.json();

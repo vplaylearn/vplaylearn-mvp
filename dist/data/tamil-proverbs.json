@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "tamil": "அறிவாளிக்கு அரை வார்த்தை போதும்",
+    "transliteration": "Arivaalikku arai vaarthai pothum",
+    "english": "A word is enough for the wise",
+    "meaning": "A wise person understands even a hint",
+    "category": "wisdom"
+  },
+  {
+    "id": 2,
+    "tamil": "அவசரம் ஆபத்து",
+    "transliteration": "Avasaram aapathu",
+    "english": "Haste makes waste",
+    "meaning": "Acting in a hurry leads to mistakes",
+    "category": "life"
+  },
+  {
+    "id": 3,
+    "tamil": "எண்ணி துணிக கருமம்",
+    "transliteration": "Enni thuniga karumam",
+    "english": "Think before you act",
+    "meaning": "Planning prevents mistakes",
+    "category": "wisdom"
+  },
+  {
+    "id": 4,
+    "tamil": "உழைப்புக்கு பலன் உண்டு",
+    "transliteration": "Uzhaippukku palan undu",
+    "english": "Hard work pays off",
+    "meaning": "Effort brings results",
+    "category": "success"
+  },
+  {
+    "id": 5,
+    "tamil": "ஒன்றுபட்டால் உண்டு வாழ்வு",
+    "transliteration": "Ondrupattaal undu vaazhvu",
+    "english": "Unity is strength",
+    "meaning": "Togetherness leads to success",
+    "category": "society"
+  },
+  {
+    "id": 6,
+    "tamil": "கற்றது கைமண் அளவு, கல்லாதது உலகளவு",
+    "transliteration": "Kattradhu kaiman alavu, kallaadhadhu ulagalavu",
+    "english": "What we know is a handful",
+    "meaning": "There is always more to learn",
+    "category": "education"
+  },
+  {
+    "id": 7,
+    "tamil": "காக்கைக்கும் தன் குஞ்சு பொன் குஞ்சு",
+    "transliteration": "Kaakkaikkum than kunju pon kunju",
+    "english": "Every crow thinks its chick is golden",
+    "meaning": "Everyone values their own",
+    "category": "human_nature"
+  },
+  {
+    "id": 8,
+    "tamil": "துளி துளியாக சேர்ந்தால் பெரு வெள்ளம்",
+    "transliteration": "Thuli thuliyaaga serndhaal peru vellam",
+    "english": "Little drops make a big ocean",
+    "meaning": "Small efforts create big results",
+    "category": "success"
+  },
+  {
+    "id": 9,
+    "tamil": "தீயினால் சுட்ட புண் ஆறும், நாவினால் சுட்ட வடு ஆறாது",
+    "transliteration": "Theeyinaal sutta pun aarum, naavinaal sutta vadu aaraadhu",
+    "english": "Wounds from fire heal, not from words",
+    "meaning": "Words can hurt deeply",
+    "category": "wisdom"
+  },
+  {
+    "id": 10,
+    "tamil": "நேரம் பார்த்து செய்",
+    "transliteration": "Neram paarthu sei",
+    "english": "Act at the right time",
+    "meaning": "Timing is important",
+    "category": "life"
+  },
+
+  {
+    "id": 11,
+    "tamil": "பழகினால் பாம்பும் நண்பன்",
+    "transliteration": "Pazhaginaal paambum nanban",
+    "english": "Even a snake becomes a friend",
+    "meaning": "Familiarity removes fear",
+    "category": "relationships"
+  },
+  {
+    "id": 12,
+    "tamil": "சின்ன தீ பெரிய தீயாகும்",
+    "transliteration": "Chinna thee periya theeyaagum",
+    "english": "Small spark becomes big fire",
+    "meaning": "Small problems grow if ignored",
+    "category": "life"
+  },
+  {
+    "id": 13,
+    "tamil": "ஆற்றில் போட்டாலும் அளந்து போடு",
+    "transliteration": "Aatril pottaalum alandhu podu",
+    "english": "Give with measure",
+    "meaning": "Be mindful in all actions",
+    "category": "wisdom"
+  },
+  {
+    "id": 14,
+    "tamil": "ஊர் சொல்லும் ஓசை கேள்",
+    "transliteration": "Oor sollum osai kel",
+    "english": "Listen to public opinion",
+    "meaning": "Take advice from others",
+    "category": "society"
+  },
+  {
+    "id": 15,
+    "tamil": "ஐயமிட்டால் அன்னம் கெடும்",
+    "transliteration": "Aiyamittaal annam kedum",
+    "english": "Doubt spoils things",
+    "meaning": "Suspicion ruins relationships",
+    "category": "relationships"
+  }
+]
