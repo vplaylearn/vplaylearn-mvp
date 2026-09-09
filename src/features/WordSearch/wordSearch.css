@@ -1,5 +1,7 @@
 .word-search {
-  max-width: 760px;
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
   margin: 16px 0 24px;
   padding: 22px 24px;
   border: 1px solid #d7e4e5;
@@ -113,12 +115,16 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  flex: 1;
+  min-width: 0;
   max-width: 100%;
-  overflow-x: auto;
+  overflow: visible;
+  flex-wrap: nowrap;
 }
 
 .word-search-language-tabs button {
-  flex: 0 0 auto;
+  flex: 1 1 0;
+  min-width: 0;
   border: 1px solid #b8d7d2;
   border-radius: 999px;
   padding: 5px 9px;
@@ -126,6 +132,7 @@
   color: #486363;
   font: inherit;
   font-size: 12px;
+  white-space: nowrap;
   cursor: pointer;
 }
 

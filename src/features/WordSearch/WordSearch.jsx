@@ -3,11 +3,11 @@ import "./wordSearch.css";
 
 const AI_ENDPOINT = "/api/chat";
 const LANGUAGES = [
-  { id: "english", label: "English" },
-  { id: "hindi", label: "Hindi" },
-  { id: "telugu", label: "Telugu" },
-  { id: "tamil", label: "Tamil" },
-  { id: "kannada", label: "Kannada" },
+  { id: "english", label: "English", character: "EN" },
+  { id: "hindi", label: "Hindi", character: "HI" },
+  { id: "telugu", label: "Telugu", character: "TE" },
+  { id: "tamil", label: "Tamil", character: "TA" },
+  { id: "kannada", label: "Kannada", character: "KN" },
 ];
 const WIKTIONARY_CODES = {
   english: "en",
@@ -223,8 +223,10 @@ export default function WordSearch({ isExpanded: expandedProp, onExpandedChange 
                 aria-selected={language === item.id}
                 className={language === item.id ? "active" : ""}
                 onClick={() => setLanguage(item.id)}
+                title={item.label}
+                aria-label={item.label}
               >
-                {item.label}
+                {item.character}
               </button>
             ))}
           </div>

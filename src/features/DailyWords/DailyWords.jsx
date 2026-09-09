@@ -64,11 +64,11 @@ export default function DailyWords({ isCollapsed = false, onExpand }) {
   const [language, setLanguage] = useState("english");
 
   const LANGUAGES = [
-    { id: "english", label: "English" },
-    { id: "hindi", label: "Hindi" },
-    { id: "telugu", label: "Telugu" },
-    { id: "tamil", label: "Tamil" },
-    { id: "kannada", label: "Kannada" },
+    { id: "english", label: "English", character: "EN" },
+    { id: "hindi", label: "Hindi", character: "HI" },
+    { id: "telugu", label: "Telugu", character: "TE" },
+    { id: "tamil", label: "Tamil", character: "TA" },
+    { id: "kannada", label: "Kannada", character: "KN" },
   ];
 
   const fetchWord = useCallback(async (lang = language) => {
@@ -240,6 +240,8 @@ export default function DailyWords({ isCollapsed = false, onExpand }) {
                 className={`dw-tab ${language === l.id ? "active" : ""}`}
                 onClick={() => setLanguage(l.id)}
                 disabled={status === "loading" && language === l.id}
+                title={l.label}
+                aria-label={l.label}
               >
                 {l.label}
               </button>
