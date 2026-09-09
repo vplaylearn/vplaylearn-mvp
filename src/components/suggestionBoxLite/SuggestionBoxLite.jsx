@@ -77,7 +77,6 @@ export default function SuggestionBoxLite() {
             onChange={handleChange}
             placeholder="Name (optional)"
             autoComplete="name"
-            required
           />
 
           <input
@@ -85,9 +84,8 @@ export default function SuggestionBoxLite() {
             name="email"
             value={form.email}
             onChange={handleChange}
-            placeholder="Email (optional)"
+            placeholder="For a reply, enter your email (optional)"
             autoComplete="email"
-            required
           />
         </div>
 
