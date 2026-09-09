@@ -9,7 +9,7 @@
   overflow-y: auto; /*  enables vertical scroll */
 }
 
-@media (max-width: 1099px) {
+@media (max-width: 1199px) {
   .sidebar {
     position: fixed;
     top: 60px;

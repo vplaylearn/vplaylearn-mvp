@@ -20,7 +20,7 @@ body {
   display: none;
 }
 
-@media (max-width: 1099px) {
+@media (max-width: 1199px) {
   .sidebar-menu-button {
     display: inline-flex;
     align-items: center;
