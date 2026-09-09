@@ -108,6 +108,23 @@
   border-radius: 6px;
 }
 
+.dw-bookmark-btn,
+.word-search-bookmark {
+  border: 1px solid #c7d2fe;
+  border-radius: 999px;
+  padding: 4px 8px;
+  background: #fff;
+  color: #6366f1;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.dw-bookmark-btn:hover,
+.word-search-bookmark:hover {
+  background: #eef2ff;
+}
+
 .dw-meaning-row,
 .dw-example-row {
   display: flex;

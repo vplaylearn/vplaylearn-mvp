@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./wordSearch.css";
+import { isBookmarked, toggleBookmark } from "../../utils/bookmarks";
 
 const AI_ENDPOINT = "/api/chat";
 const LANGUAGES = [
@@ -32,6 +33,7 @@ export default function WordSearch({ isExpanded: expandedProp, onExpandedChange 
   const [internalExpanded, setInternalExpanded] = useState(false);
   const [language, setLanguage] = useState("english");
   const [isListening, setIsListening] = useState(false);
+  const [, refreshBookmarks] = useState(0);
   const isExpanded = expandedProp ?? internalExpanded;
 
   function toggleExpanded() {
@@ -226,7 +228,7 @@ export default function WordSearch({ isExpanded: expandedProp, onExpandedChange 
                 title={item.label}
                 aria-label={item.label}
               >
-                {item.character}
+                {item.label}
               </button>
             ))}
           </div>
@@ -264,6 +266,26 @@ export default function WordSearch({ isExpanded: expandedProp, onExpandedChange 
             <div>
               <div className="word-search-word-line">
                 <h3>{result.word}</h3>
+                <button
+                  type="button"
+                  className="word-search-bookmark"
+                  onClick={() => {
+                    const bookmarkId = `searched-word:${result.wikiCode}:${result.word}`;
+                    toggleBookmark({
+                      id: bookmarkId,
+                      type: "Searched word",
+                      language: result.language,
+                      title: result.word,
+                      subtitle: result.partOfSpeech,
+                      description: result.definition,
+                    });
+                    refreshBookmarks((value) => value + 1);
+                  }}
+                  aria-label="Bookmark this searched word"
+                  title="Bookmark this word"
+                >
+                  {isBookmarked(`searched-word:${result.wikiCode}:${result.word}`) ? "★" : "☆"}
+                </button>
                 <button
                   type="button"
                   className="word-search-voice"

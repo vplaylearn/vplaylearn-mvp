@@ -1,9 +1,12 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import DailyWords from "../features/DailyWords/DailyWords.jsx";
 import WordSearch from "../features/WordSearch/WordSearch.jsx";
 import "./home.css";
 
 export default function Home() {
+  const [wordSearchExpanded, setWordSearchExpanded] = useState(false);
+
   return (
     <div className="home-page">
       <header className="home-intro">
@@ -13,8 +16,14 @@ export default function Home() {
       </header>
 
       <section className="home-learning-grid" aria-label="Daily learning activities">
-        <DailyWords />
-        <WordSearch isExpanded={true} />
+        <DailyWords
+          isCollapsed={wordSearchExpanded}
+          onExpand={() => setWordSearchExpanded(false)}
+        />
+        <WordSearch
+          isExpanded={wordSearchExpanded}
+          onExpandedChange={setWordSearchExpanded}
+        />
       </section>
 
       <section className="home-explore" aria-labelledby="explore-title">

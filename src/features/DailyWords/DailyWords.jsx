@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import "./dailyWords.css";
+import { isBookmarked, toggleBookmark } from "../../utils/bookmarks";
 
 const AI_ENDPOINT = "/api/chat";
 const STORAGE_KEY = "vpl_daily_words_history";
@@ -62,6 +63,7 @@ export default function DailyWords({ isCollapsed = false, onExpand }) {
   const [status, setStatus] = useState("idle"); // idle | loading | done | error
   const [errorMsg, setErrorMsg] = useState("");
   const [language, setLanguage] = useState("english");
+  const [, refreshBookmarks] = useState(0);
 
   const LANGUAGES = [
     { id: "english", label: "English", character: "EN" },
@@ -266,6 +268,25 @@ export default function DailyWords({ isCollapsed = false, onExpand }) {
           <div className="dw-word-row">
             <span className="dw-word">{word.word}</span>
             {word.partOfSpeech && <span className="dw-pos">{word.partOfSpeech}</span>}
+            <button
+              type="button"
+              className="dw-bookmark-btn"
+              onClick={() => {
+                toggleBookmark({
+                  id: `daily-word:${language}:${word.word}`,
+                  type: "Daily word",
+                  language: LANGUAGES.find((item) => item.id === language)?.label,
+                  title: word.word,
+                  subtitle: word.partOfSpeech,
+                  description: word.meaning,
+                });
+                refreshBookmarks((value) => value + 1);
+              }}
+              aria-label="Bookmark this word"
+              title="Bookmark this word"
+            >
+              {isBookmarked(`daily-word:${language}:${word.word}`) ? "★" : "☆"}
+            </button>
             <button
               type="button"
               className="dw-voice-btn"

@@ -26,6 +26,7 @@ import TeluguIdiomsPage from "./pages/TeluguIdiomsPage.jsx";
 import HindiIdiomsPage from "./pages/HindiIdiomsPage.jsx";
 import EnglishIdiomsPage from "./pages/EnglishIdiomsPage.jsx";
 import WritingCoachPage from "./pages/WritingCoachPage.jsx";
+import Bookmarks from "./pages/Bookmarks.jsx";
 
 const App = () => {
   const location = useLocation();
@@ -87,6 +88,7 @@ const App = () => {
 
           {/* Writing Coach */}
           <Route path="/writing-coach" element={<WritingCoachPage />} />
+            <Route path="/bookmarks" element={<Bookmarks />} />
 
           </Routes>
         </div>
