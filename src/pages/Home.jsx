@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <div className="home-page">
       <header className="home-intro">
-        <p className="home-eyebrow">Your learning space</p>
-        <h1>Make a little progress today.</h1>
-        <p>Build your vocabulary, explore a word, and try a quick language activity.</p>
+        <p className="home-eyebrow">vPlayLearn</p>
+        <h1>Play and learn, every day.</h1>
+        <p>Discover games, words, stories, and activities that make learning feel like play.</p>
       </header>
 
       <section className="home-learning-grid" aria-label="Daily learning activities">
