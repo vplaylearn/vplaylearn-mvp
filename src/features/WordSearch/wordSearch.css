@@ -28,6 +28,25 @@
   gap: 10px;
 }
 
+.word-search-bookmarks-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #b8d7d2;
+  border-radius: 8px;
+  padding: 7px 10px;
+  background: #fff;
+  color: #0f766e;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.word-search-bookmarks-link:hover {
+  background: #dff3ee;
+}
+
 .word-search-eyebrow {
   margin: 0 0 4px;
   color: #0f766e;

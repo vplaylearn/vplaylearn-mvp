@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
+import { NavLink } from "react-router-dom";
 import "./dailyWords.css";
 import { isBookmarked, toggleBookmark } from "../../utils/bookmarks";
 
@@ -228,11 +229,16 @@ export default function DailyWords({ isCollapsed = false, onExpand }) {
       <div className="dw-header">
         <div className="dw-title-row">
           <h3>📚 Word of the Day</h3>
-          {isCollapsed && (
-            <button type="button" className="dw-expand" onClick={onExpand}>
-              Expand
-            </button>
-          )}
+          <div className="dw-title-actions">
+            <NavLink className="dw-bookmarks-link" to="/bookmarks" title="View bookmarks">
+              <span aria-hidden="true">★</span> View bookmarks
+            </NavLink>
+            {isCollapsed && (
+              <button type="button" className="dw-expand" onClick={onExpand}>
+                Expand
+              </button>
+            )}
+          </div>
         </div>
         {!isCollapsed && (
           <div className="dw-tabs">
@@ -279,6 +285,10 @@ export default function DailyWords({ isCollapsed = false, onExpand }) {
                   title: word.word,
                   subtitle: word.partOfSpeech,
                   description: word.meaning,
+                  transliteration: word.transliteration,
+                  example: word.example,
+                  exampleTransliteration: word.exampleTransliteration,
+                  synonyms: word.synonyms,
                 });
                 refreshBookmarks((value) => value + 1);
               }}

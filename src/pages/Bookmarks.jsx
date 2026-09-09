@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { getBookmarks, removeBookmark } from "../utils/bookmarks";
 import "./bookmarks.css";
 
 export default function Bookmarks() {
   const [bookmarks, setBookmarks] = useState(() => getBookmarks());
-  const [activeType, setActiveType] = useState("Daily word");
+  const [searchParams] = useSearchParams();
+  const initialType = searchParams.get("type") === "searched" ? "Searched word" : "Daily word";
+  const [activeType, setActiveType] = useState(initialType);
   const [activeLanguage, setActiveLanguage] = useState("all");
   const groups = [
     { type: "Daily word", title: "Words of the Day" },
@@ -24,6 +27,110 @@ export default function Bookmarks() {
   function handleRemove(id) {
     removeBookmark(id);
     setBookmarks((current) => current.filter((bookmark) => bookmark.id !== id));
+  }
+
+  function speakText(text, language) {
+    if (!text || typeof window === "undefined" || !("speechSynthesis" in window)) return;
+
+    const languageCodes = {
+      English: "en-US",
+      Hindi: "hi-IN",
+      Telugu: "te-IN",
+      Tamil: "ta-IN",
+      Kannada: "kn-IN",
+    };
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = languageCodes[language] || "en-US";
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(utterance);
+  }
+
+  function renderBookmarkContent(bookmark) {
+    if (bookmark.type !== "Daily word" && bookmark.type !== "Searched word") {
+      return (
+        <>
+          <div className="bookmark-title-row">
+            <h3>{bookmark.title}</h3>
+            <button
+              type="button"
+              className="bookmark-voice"
+              onClick={() => speakText(bookmark.title, bookmark.language)}
+              aria-label={`Read ${bookmark.title} aloud`}
+              title="Read aloud"
+            >
+              🔊
+            </button>
+          </div>
+          {bookmark.subtitle && <p className="bookmark-subtitle">{bookmark.subtitle}</p>}
+          <p>{bookmark.description}</p>
+        </>
+      );
+    }
+
+    return (
+      <div className="bookmark-word-card">
+        <div className="bookmark-word-row">
+          <h3>{bookmark.title}</h3>
+          {bookmark.subtitle && <span className="bookmark-word-pos">{bookmark.subtitle}</span>}
+          {bookmark.phonetic && <span className="bookmark-phonetic">{bookmark.phonetic}</span>}
+          <button
+            type="button"
+            className="bookmark-voice"
+            onClick={() => speakText(bookmark.title, bookmark.language)}
+            aria-label={`Read ${bookmark.title} aloud`}
+            title="Read word aloud"
+          >
+            🔊
+          </button>
+        </div>
+        <div className="bookmark-meaning-row">
+          <p>{bookmark.description}</p>
+          <button
+            type="button"
+            className="bookmark-voice"
+            onClick={() => speakText(bookmark.description, "English")}
+            aria-label="Read meaning aloud"
+            title="Read meaning aloud"
+          >
+            🔊
+          </button>
+        </div>
+        {bookmark.transliteration && <p className="bookmark-translit">{bookmark.transliteration}</p>}
+        {bookmark.example && (
+          <div className="bookmark-example-row">
+            <p>“{bookmark.example}”</p>
+            <button
+              type="button"
+              className="bookmark-voice"
+              onClick={() => speakText(bookmark.example, bookmark.language)}
+              aria-label="Read example aloud"
+              title="Read example aloud"
+            >
+              🔊
+            </button>
+          </div>
+        )}
+        {bookmark.synonyms?.length > 0 && (
+          <div className="bookmark-synonyms">
+            <span>Similar words:</span>
+            {bookmark.synonyms.map((synonym) => (
+              <span key={synonym}>
+                {synonym}
+                <button
+                  type="button"
+                  className="bookmark-mini-voice"
+                  onClick={() => speakText(synonym, bookmark.language)}
+                  aria-label={`Read ${synonym} aloud`}
+                  title={`Read ${synonym} aloud`}
+                >
+                  🔊
+                </button>
+              </span>
+            ))}
+          </div>
+        )}
+      </div>
+    );
   }
 
   return (
@@ -96,11 +203,9 @@ export default function Bookmarks() {
                       <span>{bookmark.type}</span>
                       {bookmark.language && <span>{bookmark.language}</span>}
                     </div>
-                    <h3>{bookmark.title}</h3>
-                    {bookmark.subtitle && <p className="bookmark-subtitle">{bookmark.subtitle}</p>}
-                    <p>{bookmark.description}</p>
+                    {renderBookmarkContent(bookmark)}
                   </div>
-                  <button type="button" onClick={() => handleRemove(bookmark.id)} aria-label={`Remove ${bookmark.title}`}>
+                  <button className="bookmark-remove" type="button" onClick={() => handleRemove(bookmark.id)} aria-label={`Remove ${bookmark.title}`}>
                     Remove
                   </button>
                 </article>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./wordSearch.css";
 import { isBookmarked, toggleBookmark } from "../../utils/bookmarks";
 
@@ -186,6 +187,9 @@ export default function WordSearch({ isExpanded: expandedProp, onExpandedChange 
           <h2 id="word-search-title">Word Search</h2>
         </div>
         <div className="word-search-header-actions">
+          <NavLink className="word-search-bookmarks-link" to="/bookmarks?type=searched" title="View searched word bookmarks">
+            <span aria-hidden="true">★</span> View bookmarks
+          </NavLink>
           <span
             className="word-search-mark multilingual"
             title="Multiple language word search"
@@ -278,6 +282,9 @@ export default function WordSearch({ isExpanded: expandedProp, onExpandedChange 
                       title: result.word,
                       subtitle: result.partOfSpeech,
                       description: result.definition,
+                      example: result.example,
+                      phonetic: result.phonetic,
+                      synonyms: result.synonyms,
                     });
                     refreshBookmarks((value) => value + 1);
                   }}
