@@ -1,6 +1,8 @@
 .sidebar {
   width: 240px;
-  height: 100vh; /* full screen height */
+  height: auto;
+  min-height: calc(100vh - 60px);
+  align-self: stretch;
   background: #1e293b;
   color: white;
   font-family: Arial, sans-serif;

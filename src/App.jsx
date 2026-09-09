@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 
 import Topbar from "./components/Topbar";
 import Sidebar from "./components/Sidebar";
@@ -28,6 +28,9 @@ import EnglishIdiomsPage from "./pages/EnglishIdiomsPage.jsx";
 import WritingCoachPage from "./pages/WritingCoachPage.jsx";
 
 const App = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
   return (
     <div>
       <Topbar />
@@ -36,6 +39,16 @@ const App = () => {
         <Sidebar /> 
 
         <div style={styles.main}>
+          {location.pathname !== "/" && (
+            <button
+              type="button"
+              className="route-back-button"
+              onClick={() => navigate("/")}
+            >
+              <span aria-hidden="true">←</span> Back to Home
+            </button>
+          )}
+
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/puzzles" element={<Puzzles />} />
@@ -76,6 +89,8 @@ const styles = {
   layout: {
     display: "flex",
     marginTop: "60px",
+    alignItems: "stretch",
+    minHeight: "calc(100vh - 60px)",
   },
   main: {
     flex: 1,
