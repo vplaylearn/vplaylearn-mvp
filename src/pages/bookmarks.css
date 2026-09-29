@@ -125,8 +125,9 @@
   background: #fff;
 }
 
-.bookmark-meta { display: flex; gap: 8px; margin-bottom: 8px; }
+.bookmark-meta { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; }
 .bookmark-meta span { color: #0f766e; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+.bookmark-meta .bookmark-date { margin-left: auto; color: #94a3a3; font-weight: 600; text-transform: none; }
 .bookmark-item h3 { margin: 0; color: #183b3b; font-size: 21px; }
 .bookmark-item p { margin: 8px 0 0; color: #486363; line-height: 1.5; }
 .bookmark-item .bookmark-subtitle { color: #637878; font-style: italic; }
