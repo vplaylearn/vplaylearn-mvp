@@ -15,33 +15,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/development/chunk-OE4NN4TA.mjs");
-/* harmony import */ var _components_Topbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Topbar */ "./src/components/Topbar.jsx");
-/* harmony import */ var _components_Sidebar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Sidebar */ "./src/components/Sidebar.jsx");
-/* harmony import */ var _components_RightPane_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/RightPane.jsx */ "./src/components/RightPane.jsx");
-/* harmony import */ var _pages_Home__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/Home */ "./src/pages/Home.jsx");
-/* harmony import */ var _pages_Users__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/Users */ "./src/pages/Users.jsx");
-/* harmony import */ var _pages_Settings__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/Settings */ "./src/pages/Settings.jsx");
-/* harmony import */ var _pages_Profile__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/Profile */ "./src/pages/Profile.jsx");
-/* harmony import */ var _pages_Security__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/Security */ "./src/pages/Security.jsx");
-/* harmony import */ var _pages_Reports__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/Reports */ "./src/pages/Reports.jsx");
-/* harmony import */ var _pages_Sales__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/Sales */ "./src/pages/Sales.jsx");
-/* harmony import */ var _features_Puzzles_Puzzles_jsx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./features/Puzzles/Puzzles.jsx */ "./src/features/Puzzles/Puzzles.jsx");
-/* harmony import */ var _pages_Games_jsx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/Games.jsx */ "./src/pages/Games.jsx");
-/* harmony import */ var _pages_Story_jsx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/Story.jsx */ "./src/pages/Story.jsx");
-/* harmony import */ var _pages_PublishedStoriesPage_jsx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/PublishedStoriesPage.jsx */ "./src/pages/PublishedStoriesPage.jsx");
-/* harmony import */ var _pages_RiddlesPage_jsx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/RiddlesPage.jsx */ "./src/pages/RiddlesPage.jsx");
-/* harmony import */ var _pages_JokesPage_jsx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pages/JokesPage.jsx */ "./src/pages/JokesPage.jsx");
-/* harmony import */ var _pages_IdiomsPage_jsx__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./pages/IdiomsPage.jsx */ "./src/pages/IdiomsPage.jsx");
-/* harmony import */ var _pages_WritingCoachPage_jsx__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pages/WritingCoachPage.jsx */ "./src/pages/WritingCoachPage.jsx");
-/* harmony import */ var _pages_Bookmarks_jsx__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/Bookmarks.jsx */ "./src/pages/Bookmarks.jsx");
-/* harmony import */ var _pages_About_jsx__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./pages/About.jsx */ "./src/pages/About.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _utils_bookmarks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/bookmarks */ "./src/utils/bookmarks.js");
+/* harmony import */ var _components_Topbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Topbar */ "./src/components/Topbar.jsx");
+/* harmony import */ var _components_Sidebar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Sidebar */ "./src/components/Sidebar.jsx");
+/* harmony import */ var _components_RightPane_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/RightPane.jsx */ "./src/components/RightPane.jsx");
+/* harmony import */ var _pages_Home__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/Home */ "./src/pages/Home.jsx");
+/* harmony import */ var _pages_Users__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/Users */ "./src/pages/Users.jsx");
+/* harmony import */ var _pages_Settings__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/Settings */ "./src/pages/Settings.jsx");
+/* harmony import */ var _pages_Profile__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/Profile */ "./src/pages/Profile.jsx");
+/* harmony import */ var _pages_Security__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/Security */ "./src/pages/Security.jsx");
+/* harmony import */ var _pages_Reports__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/Reports */ "./src/pages/Reports.jsx");
+/* harmony import */ var _pages_Sales__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/Sales */ "./src/pages/Sales.jsx");
+/* harmony import */ var _features_Puzzles_Puzzles_jsx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./features/Puzzles/Puzzles.jsx */ "./src/features/Puzzles/Puzzles.jsx");
+/* harmony import */ var _pages_Games_jsx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/Games.jsx */ "./src/pages/Games.jsx");
+/* harmony import */ var _pages_Story_jsx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/Story.jsx */ "./src/pages/Story.jsx");
+/* harmony import */ var _pages_PublishedStoriesPage_jsx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/PublishedStoriesPage.jsx */ "./src/pages/PublishedStoriesPage.jsx");
+/* harmony import */ var _pages_RiddlesPage_jsx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pages/RiddlesPage.jsx */ "./src/pages/RiddlesPage.jsx");
+/* harmony import */ var _pages_JokesPage_jsx__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./pages/JokesPage.jsx */ "./src/pages/JokesPage.jsx");
+/* harmony import */ var _pages_IdiomsPage_jsx__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pages/IdiomsPage.jsx */ "./src/pages/IdiomsPage.jsx");
+/* harmony import */ var _pages_WritingCoachPage_jsx__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/WritingCoachPage.jsx */ "./src/pages/WritingCoachPage.jsx");
+/* harmony import */ var _pages_Bookmarks_jsx__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./pages/Bookmarks.jsx */ "./src/pages/Bookmarks.jsx");
+/* harmony import */ var _pages_About_jsx__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./pages/About.jsx */ "./src/pages/About.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
 
 
 
@@ -74,104 +76,110 @@ var App = function App() {
     _useState2 = _slicedToArray(_useState, 2),
     isSidebarOpen = _useState2[0],
     setIsSidebarOpen = _useState2[1];
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsxs)("div", {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_components_Topbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+
+  // Hydrate the local bookmark cache from MongoDB on load so saved items
+  // follow the user's account (or device) across sessions.
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    (0,_utils_bookmarks__WEBPACK_IMPORTED_MODULE_2__.syncFromServer)();
+  }, []);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_components_Topbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
       onMenuClick: function onMenuClick() {
         return setIsSidebarOpen(true);
       }
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsxs)("div", {
       style: styles.layout,
-      children: [isSidebarOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)("button", {
+      children: [isSidebarOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)("button", {
         type: "button",
         className: "sidebar-overlay",
         "aria-label": "Close navigation",
         onClick: function onClick() {
           return setIsSidebarOpen(false);
         }
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_components_Sidebar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_components_Sidebar__WEBPACK_IMPORTED_MODULE_4__["default"], {
         isOpen: isSidebarOpen,
         onClose: function onClose() {
           return setIsSidebarOpen(false);
         }
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsxs)("div", {
         style: styles.main,
-        children: [location.pathname !== "/" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsxs)("button", {
+        children: [location.pathname !== "/" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsxs)("button", {
           type: "button",
           className: "route-back-button",
           onClick: function onClick() {
             return navigate("/");
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)("span", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)("span", {
             "aria-hidden": "true",
             children: "\u2190"
           }), " Back to Home"]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Routes, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Routes, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_Home__WEBPACK_IMPORTED_MODULE_5__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_Home__WEBPACK_IMPORTED_MODULE_6__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/puzzles",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_features_Puzzles_Puzzles_jsx__WEBPACK_IMPORTED_MODULE_12__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_features_Puzzles_Puzzles_jsx__WEBPACK_IMPORTED_MODULE_13__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/games",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_Games_jsx__WEBPACK_IMPORTED_MODULE_13__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_Games_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/users",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_Users__WEBPACK_IMPORTED_MODULE_6__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_Users__WEBPACK_IMPORTED_MODULE_7__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/settings",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_Settings__WEBPACK_IMPORTED_MODULE_7__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_Settings__WEBPACK_IMPORTED_MODULE_8__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/profile",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_Profile__WEBPACK_IMPORTED_MODULE_8__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_Profile__WEBPACK_IMPORTED_MODULE_9__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/security",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_Security__WEBPACK_IMPORTED_MODULE_9__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_Security__WEBPACK_IMPORTED_MODULE_10__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/reports",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_Reports__WEBPACK_IMPORTED_MODULE_10__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_Reports__WEBPACK_IMPORTED_MODULE_11__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/sales",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_Sales__WEBPACK_IMPORTED_MODULE_11__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_Sales__WEBPACK_IMPORTED_MODULE_12__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/story",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_Story_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_Story_jsx__WEBPACK_IMPORTED_MODULE_15__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/stories",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_PublishedStoriesPage_jsx__WEBPACK_IMPORTED_MODULE_15__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_PublishedStoriesPage_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/riddles",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_RiddlesPage_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_RiddlesPage_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/jokes",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_JokesPage_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_JokesPage_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/kannada-idioms",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_IdiomsPage_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_IdiomsPage_jsx__WEBPACK_IMPORTED_MODULE_19__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/tamil-idioms",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_IdiomsPage_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_IdiomsPage_jsx__WEBPACK_IMPORTED_MODULE_19__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/telugu-idioms",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_IdiomsPage_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_IdiomsPage_jsx__WEBPACK_IMPORTED_MODULE_19__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/hindi-idioms",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_IdiomsPage_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_IdiomsPage_jsx__WEBPACK_IMPORTED_MODULE_19__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/english-idioms",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_IdiomsPage_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_IdiomsPage_jsx__WEBPACK_IMPORTED_MODULE_19__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/writing-coach",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_WritingCoachPage_jsx__WEBPACK_IMPORTED_MODULE_19__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_WritingCoachPage_jsx__WEBPACK_IMPORTED_MODULE_20__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/bookmarks",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_Bookmarks_jsx__WEBPACK_IMPORTED_MODULE_20__["default"], {})
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_Bookmarks_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
             path: "/about",
-            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_pages_About_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], {})
+            element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_pages_About_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {})
           })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_22__.jsx)(_components_RightPane_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {})]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_23__.jsx)(_components_RightPane_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {})]
     })]
   });
 };
@@ -212,7 +220,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _rightpane_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./rightpane.css */ "./src/components/rightpane.css");
 /* harmony import */ var _published_stories_PublishedStories__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./published-stories/PublishedStories */ "./src/components/published-stories/PublishedStories.jsx");
 /* harmony import */ var _riddle_riddle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./riddle/riddle */ "./src/components/riddle/riddle.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _suggestionBox_Suggestion__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./suggestionBox/Suggestion */ "./src/components/suggestionBox/Suggestion.jsx");
+/* harmony import */ var _suggestionBoxLite_SuggestionBoxLite__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./suggestionBoxLite/SuggestionBoxLite */ "./src/components/suggestionBoxLite/SuggestionBoxLite.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
 
 
 
@@ -221,15 +233,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var RightPane = function RightPane() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
     className: "right-pane",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_jokes_jokes__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_jokes_jokes__WEBPACK_IMPORTED_MODULE_2__["default"], {
       title: "Joke",
       content: "jokes"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_riddle_riddle__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_published_stories_PublishedStories__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_riddle_riddle__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_published_stories_PublishedStories__WEBPACK_IMPORTED_MODULE_4__["default"], {
       title: "Published Stories",
       content: "stories"
-    })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_suggestionBoxLite_SuggestionBoxLite__WEBPACK_IMPORTED_MODULE_7__["default"], {})]
   });
 };
 var styles = {
@@ -1279,6 +1291,409 @@ var styles = {
     cursor: "pointer"
   }
 };
+
+/***/ },
+
+/***/ "./src/components/suggestionBox/Suggestion.jsx"
+/*!*****************************************************!*\
+  !*** ./src/components/suggestionBox/Suggestion.jsx ***!
+  \*****************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Suggestion)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _suggestion_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./suggestion.css */ "./src/components/suggestionBox/suggestion.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
+function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+// components/Suggestion.jsx
+
+
+
+function Suggestion() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+      name: "",
+      email: "",
+      type: "Suggestion",
+      message: ""
+    }),
+    _useState2 = _slicedToArray(_useState, 2),
+    form = _useState2[0],
+    setForm = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("idle"),
+    _useState4 = _slicedToArray(_useState3, 2),
+    status = _useState4[0],
+    setStatus = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    _useState6 = _slicedToArray(_useState5, 2),
+    feedback = _useState6[0],
+    setFeedback = _useState6[1];
+  function handleChange(event) {
+    var _event$target = event.target,
+      name = _event$target.name,
+      value = _event$target.value;
+    setForm(function (current) {
+      return _objectSpread(_objectSpread({}, current), {}, _defineProperty({}, name, value));
+    });
+  }
+  function handleSubmit(_x) {
+    return _handleSubmit.apply(this, arguments);
+  }
+  function _handleSubmit() {
+    _handleSubmit = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee(event) {
+      var response, result, _t;
+      return _regenerator().w(function (_context) {
+        while (1) switch (_context.p = _context.n) {
+          case 0:
+            event.preventDefault();
+            setStatus("sending");
+            setFeedback("");
+            _context.p = 1;
+            _context.n = 2;
+            return fetch("/api/suggestions", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify(form)
+            });
+          case 2:
+            response = _context.v;
+            _context.n = 3;
+            return response.json();
+          case 3:
+            result = _context.v;
+            if (response.ok) {
+              _context.n = 4;
+              break;
+            }
+            throw new Error(result.error || "Unable to send your message.");
+          case 4:
+            setForm({
+              name: "",
+              email: "",
+              type: "Suggestion",
+              message: ""
+            });
+            setStatus("sent");
+            setFeedback("Thanks! Your message has been sent.");
+            _context.n = 6;
+            break;
+          case 5:
+            _context.p = 5;
+            _t = _context.v;
+            setStatus("error");
+            setFeedback(_t.message);
+          case 6:
+            return _context.a(2);
+        }
+      }, _callee, null, [[1, 5]]);
+    }));
+    return _handleSubmit.apply(this, arguments);
+  }
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
+    className: "suggestion-section",
+    "aria-labelledby": "suggestion-title",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "suggestion-header",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+        className: "about-eyebrow",
+        children: "Get in touch"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
+        id: "suggestion-title",
+        children: "Have an idea? We'd love to hear it."
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+        children: "Send us a suggestion, report a problem, or tell us how we can make vPlayLearn better."
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
+      className: "suggestion-form",
+      onSubmit: handleSubmit,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "suggestion-row",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "suggestion-field",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("label", {
+            htmlFor: "suggestion-name",
+            children: ["Name ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+              children: "(optional)"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+            id: "suggestion-name",
+            name: "name",
+            type: "text",
+            value: form.name,
+            onChange: handleChange,
+            placeholder: "Your name",
+            autoComplete: "name"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "suggestion-field",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("label", {
+            htmlFor: "suggestion-email",
+            children: ["Email ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+              children: "(optional)"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+            id: "suggestion-email",
+            name: "email",
+            type: "email",
+            value: form.email,
+            onChange: handleChange,
+            placeholder: "you@example.com",
+            autoComplete: "email"
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "suggestion-field",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+          htmlFor: "suggestion-type",
+          children: "What would you like to share?"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("select", {
+          id: "suggestion-type",
+          name: "type",
+          value: form.type,
+          onChange: handleChange,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
+            value: "Suggestion",
+            children: "Suggestion"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
+            value: "Feedback",
+            children: "Feedback"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
+            value: "Bug Report",
+            children: "Bug report"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
+            value: "Content Request",
+            children: "Content request"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("option", {
+            value: "General",
+            children: "General enquiry"
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "suggestion-field",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+          htmlFor: "suggestion-message",
+          children: "Message"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("textarea", {
+          id: "suggestion-message",
+          name: "message",
+          value: form.message,
+          onChange: handleChange,
+          placeholder: "Tell us what you have in mind...",
+          maxLength: 2000,
+          rows: 6,
+          required: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "suggestion-counter",
+          children: [form.message.length, "/2000"]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "suggestion-submit",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          type: "submit",
+          disabled: status === "sending",
+          children: status === "sending" ? "Sending..." : "Send message"
+        })
+      })]
+    }), feedback && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+      className: "suggestion-feedback ".concat(status),
+      role: status === "error" ? "alert" : "status",
+      children: feedback
+    })]
+  });
+}
+
+/***/ },
+
+/***/ "./src/components/suggestionBoxLite/SuggestionBoxLite.jsx"
+/*!****************************************************************!*\
+  !*** ./src/components/suggestionBoxLite/SuggestionBoxLite.jsx ***!
+  \****************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SuggestionBoxLite)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _suggestionBoxLite_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./suggestionBoxLite.css */ "./src/components/suggestionBoxLite/suggestionBoxLite.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
+function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+
+
+function SuggestionBoxLite() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+      name: "",
+      email: "",
+      message: ""
+    }),
+    _useState2 = _slicedToArray(_useState, 2),
+    form = _useState2[0],
+    setForm = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("idle"),
+    _useState4 = _slicedToArray(_useState3, 2),
+    status = _useState4[0],
+    setStatus = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    _useState6 = _slicedToArray(_useState5, 2),
+    feedback = _useState6[0],
+    setFeedback = _useState6[1];
+  function handleChange(event) {
+    var _event$target = event.target,
+      name = _event$target.name,
+      value = _event$target.value;
+    setForm(function (current) {
+      return _objectSpread(_objectSpread({}, current), {}, _defineProperty({}, name, value));
+    });
+  }
+  function handleSubmit(_x) {
+    return _handleSubmit.apply(this, arguments);
+  }
+  function _handleSubmit() {
+    _handleSubmit = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee(event) {
+      var response, result, _t;
+      return _regenerator().w(function (_context) {
+        while (1) switch (_context.p = _context.n) {
+          case 0:
+            event.preventDefault();
+            setStatus("sending");
+            setFeedback("");
+            _context.p = 1;
+            _context.n = 2;
+            return fetch("/api/suggestions", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify({
+                name: form.name,
+                email: form.email,
+                suggestion: form.message,
+                website: ""
+              })
+            });
+          case 2:
+            response = _context.v;
+            _context.n = 3;
+            return response.json();
+          case 3:
+            result = _context.v;
+            if (response.ok) {
+              _context.n = 4;
+              break;
+            }
+            throw new Error(result.error || "Unable to send message.");
+          case 4:
+            setForm({
+              name: "",
+              email: "",
+              message: ""
+            });
+            setStatus("sent");
+            setFeedback("Thanks! Your message was sent.");
+            _context.n = 6;
+            break;
+          case 5:
+            _context.p = 5;
+            _t = _context.v;
+            setStatus("error");
+            setFeedback(_t.message);
+          case 6:
+            return _context.a(2);
+        }
+      }, _callee, null, [[1, 5]]);
+    }));
+    return _handleSubmit.apply(this, arguments);
+  }
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
+    className: "suggestion-box-lite",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "suggestion-box-lite-heading",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+        className: "about-eyebrow",
+        children: "Get in touch"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+        children: "We'd love to hear your ideas and feedback."
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
+      onSubmit: handleSubmit,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "suggestion-box-lite-fields",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+          type: "text",
+          name: "name",
+          value: form.name,
+          onChange: handleChange,
+          placeholder: "Name (optional)",
+          autoComplete: "name"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+          type: "email",
+          name: "email",
+          value: form.email,
+          onChange: handleChange,
+          placeholder: "For a reply, enter your email",
+          autoComplete: "email"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("textarea", {
+        name: "message",
+        value: form.message,
+        onChange: handleChange,
+        placeholder: "Your suggestion or message...",
+        maxLength: 2000,
+        rows: 4,
+        required: true
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "suggestion-box-lite-action",
+        children: [feedback && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+          className: "suggestion-box-lite-feedback ".concat(status),
+          children: feedback
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          type: "submit",
+          disabled: status === "sending",
+          children: status === "sending" ? "Sending..." : "Send"
+        })]
+      })]
+    })]
+  });
+}
 
 /***/ },
 
@@ -3643,14 +4058,80 @@ function About() {
     _useState2 = _slicedToArray(_useState, 2),
     suggestion = _useState2[0],
     setSuggestion = _useState2[1];
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("idle"),
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
     _useState4 = _slicedToArray(_useState3, 2),
-    status = _useState4[0],
-    setStatus = _useState4[1];
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    email = _useState4[0],
+    setEmail = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("idle"),
     _useState6 = _slicedToArray(_useState5, 2),
-    message = _useState6[0],
-    setMessage = _useState6[1];
+    status = _useState6[0],
+    setStatus = _useState6[1];
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    _useState8 = _slicedToArray(_useState7, 2),
+    message = _useState8[0],
+    setMessage = _useState8[1];
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState0 = _slicedToArray(_useState9, 2),
+    isListening = _useState0[0],
+    setIsListening = _useState0[1];
+  var recognitionRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var shouldKeepListeningRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(false);
+  function startSpeechToText() {
+    if (isListening) {
+      var _recognitionRef$curre;
+      shouldKeepListeningRef.current = false;
+      (_recognitionRef$curre = recognitionRef.current) === null || _recognitionRef$curre === void 0 || _recognitionRef$curre.stop();
+      setIsListening(false);
+      return;
+    }
+    var Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!Recognition) {
+      setStatus("error");
+      setMessage("Speech input is not supported in this browser.");
+      return;
+    }
+    var recognition = new Recognition();
+    recognitionRef.current = recognition;
+    shouldKeepListeningRef.current = true;
+    recognition.lang = "en-US";
+    recognition.continuous = true;
+    recognition.interimResults = false;
+    recognition.onstart = function () {
+      setIsListening(true);
+      setMessage("");
+    };
+    recognition.onresult = function (event) {
+      var _event$results;
+      var transcript = (_event$results = event.results) === null || _event$results === void 0 || (_event$results = _event$results[0]) === null || _event$results === void 0 || (_event$results = _event$results[0]) === null || _event$results === void 0 || (_event$results = _event$results.transcript) === null || _event$results === void 0 ? void 0 : _event$results.trim();
+      if (transcript) {
+        setSuggestion(function (current) {
+          return "".concat(current).concat(current ? " " : "").concat(transcript);
+        });
+      }
+    };
+    recognition.onerror = function () {
+      shouldKeepListeningRef.current = false;
+      setIsListening(false);
+      recognitionRef.current = null;
+      setStatus("error");
+      setMessage("Could not recognize speech. Please try again.");
+    };
+    recognition.onend = function () {
+      if (shouldKeepListeningRef.current) {
+        try {
+          recognition.start();
+        } catch (_unused) {
+          shouldKeepListeningRef.current = false;
+          setIsListening(false);
+          recognitionRef.current = null;
+        }
+      } else {
+        setIsListening(false);
+        recognitionRef.current = null;
+      }
+    };
+    recognition.start();
+  }
   function submitSuggestion(_x) {
     return _submitSuggestion.apply(this, arguments);
   }
@@ -3672,6 +4153,7 @@ function About() {
               },
               body: JSON.stringify({
                 suggestion: suggestion,
+                email: email,
                 website: ""
               })
             });
@@ -3688,6 +4170,7 @@ function About() {
             throw new Error(result.error || "Unable to send suggestion.");
           case 4:
             setSuggestion("");
+            setEmail("");
             setStatus("sent");
             setMessage("Thanks. Your suggestion was sent.");
             _context.n = 6;
@@ -3763,20 +4246,38 @@ function About() {
         children: "Help shape vPlayLearn"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h2", {
         id: "suggestion-title",
-        children: "Have a suggestion?"
+        children: "Have a suggestion or idea, or want to get in touch?"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
         children: "Tell us what would make play and learning more useful for you."
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("form", {
         onSubmit: submitSuggestion,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("textarea", {
-          value: suggestion,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("label", {
+          className: "suggestion-email-label",
+          htmlFor: "suggestion-email",
+          children: ["Email address ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+            children: "(optional)"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+          id: "suggestion-email",
+          type: "email",
+          value: email,
           onChange: function onChange(event) {
-            return setSuggestion(event.target.value);
+            return setEmail(event.target.value);
           },
-          placeholder: "Share an idea, activity, or improvement...",
-          maxLength: 2000,
-          required: true,
-          "aria-label": "Your suggestion"
+          placeholder: "For a reply, enter your email",
+          autoComplete: "email"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "suggestion-input-wrap",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("textarea", {
+            value: suggestion,
+            onChange: function onChange(event) {
+              return setSuggestion(event.target.value);
+            },
+            placeholder: "Share an idea, activity, or improvement...",
+            maxLength: 2000,
+            required: true,
+            "aria-label": "Your suggestion"
+          })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
           type: "submit",
           disabled: status === "sending",
@@ -3879,6 +4380,16 @@ function Bookmarks() {
       return current.filter(function (bookmark) {
         return bookmark.id !== id;
       });
+    });
+  }
+  function formatSavedAt(value) {
+    if (!value) return null;
+    var date = new Date(value);
+    if (Number.isNaN(date.getTime())) return null;
+    return date.toLocaleDateString(undefined, {
+      year: "numeric",
+      month: "short",
+      day: "numeric"
     });
   }
   function speakText(text, language) {
@@ -4085,6 +4596,9 @@ function Bookmarks() {
                   children: bookmark.type
                 }), bookmark.language && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
                   children: bookmark.language
+                }), formatSavedAt(bookmark.savedAt) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("span", {
+                  className: "bookmark-date",
+                  children: ["Saved ", formatSavedAt(bookmark.savedAt)]
                 })]
               }), renderBookmarkContent(bookmark)]
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
@@ -4744,37 +5258,149 @@ function shuffleWord(word) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getBookmarks: () => (/* binding */ getBookmarks),
+/* harmony export */   getUserId: () => (/* binding */ getUserId),
 /* harmony export */   isBookmarked: () => (/* binding */ isBookmarked),
 /* harmony export */   removeBookmark: () => (/* binding */ removeBookmark),
+/* harmony export */   setUserId: () => (/* binding */ setUserId),
+/* harmony export */   syncFromServer: () => (/* binding */ syncFromServer),
 /* harmony export */   toggleBookmark: () => (/* binding */ toggleBookmark)
 /* harmony export */ });
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
+function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
 function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
 function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
 function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 var BOOKMARKS_KEY = "vplaylearn_bookmarks";
+var USER_ID_KEY = "vplaylearn_user_id";
+var API_URL = "/api/bookmarks";
+
+// Ownership key. Until a login flow exists we mint an anonymous per-device id;
+// once users can log in, call setUserId(realUserId) and reads/writes move to
+// that account with no other change.
+function readUserId() {
+  try {
+    var id = localStorage.getItem(USER_ID_KEY);
+    if (!id) {
+      id = typeof crypto !== "undefined" && crypto.randomUUID && crypto.randomUUID() || "anon-".concat(Date.now(), "-").concat(Math.random().toString(16).slice(2));
+      localStorage.setItem(USER_ID_KEY, id);
+    }
+    return id;
+  } catch (_unused) {
+    return "anon-fallback";
+  }
+}
+function getUserId() {
+  return readUserId();
+}
+function setUserId(userId) {
+  if (!userId) return;
+  try {
+    localStorage.setItem(USER_ID_KEY, userId);
+  } catch (_unused2) {
+    // Ignore storage errors; sync just falls back to the previous id.
+  }
+  // Bring the new owner's bookmarks into the local cache.
+  syncFromServer();
+}
+
+// localStorage is the synchronous read source of truth so render paths stay
+// synchronous; Mongo is the durable backing store kept in sync on writes.
 function getBookmarks() {
   try {
     var saved = localStorage.getItem(BOOKMARKS_KEY);
     return saved ? JSON.parse(saved) : [];
-  } catch (_unused) {
+  } catch (_unused3) {
     return [];
   }
 }
 function persist(bookmarks) {
   try {
     localStorage.setItem(BOOKMARKS_KEY, JSON.stringify(bookmarks));
-  } catch (_unused2) {
+  } catch (_unused4) {
     // Ignore storage quota and privacy-mode errors.
   }
+}
+function apiHeaders() {
+  return {
+    "Content-Type": "application/json",
+    "x-user-id": readUserId()
+  };
+}
+
+// Fire-and-forget: local write already succeeded, so a failed sync must not
+// break the UI. Server reconciles on the next successful call.
+function pushBookmark(bookmark) {
+  fetch(API_URL, {
+    method: "POST",
+    headers: apiHeaders(),
+    body: JSON.stringify({
+      bookmark: bookmark
+    })
+  })["catch"](function () {});
+}
+function deleteBookmark(id) {
+  fetch("".concat(API_URL, "?id=").concat(encodeURIComponent(id)), {
+    method: "DELETE",
+    headers: apiHeaders()
+  })["catch"](function () {});
+}
+
+// Pull the server copy into the local cache. Call on app load and after login.
+function syncFromServer() {
+  return _syncFromServer.apply(this, arguments);
+}
+function _syncFromServer() {
+  _syncFromServer = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
+    var res, data, _t;
+    return _regenerator().w(function (_context) {
+      while (1) switch (_context.p = _context.n) {
+        case 0:
+          _context.p = 0;
+          _context.n = 1;
+          return fetch(API_URL, {
+            headers: apiHeaders()
+          });
+        case 1:
+          res = _context.v;
+          if (res.ok) {
+            _context.n = 2;
+            break;
+          }
+          return _context.a(2, getBookmarks());
+        case 2:
+          _context.n = 3;
+          return res.json();
+        case 3:
+          data = _context.v;
+          if (!Array.isArray(data.bookmarks)) {
+            _context.n = 4;
+            break;
+          }
+          persist(data.bookmarks);
+          return _context.a(2, data.bookmarks);
+        case 4:
+          _context.n = 6;
+          break;
+        case 5:
+          _context.p = 5;
+          _t = _context.v;
+        case 6:
+          return _context.a(2, getBookmarks());
+      }
+    }, _callee, null, [[0, 5]]);
+  }));
+  return _syncFromServer.apply(this, arguments);
 }
 function isBookmarked(id) {
   return getBookmarks().some(function (bookmark) {
@@ -4786,18 +5412,27 @@ function toggleBookmark(bookmark) {
   var exists = bookmarks.some(function (item) {
     return item.id === bookmark.id;
   });
-  var next = exists ? bookmarks.filter(function (item) {
-    return item.id !== bookmark.id;
-  }) : [_objectSpread(_objectSpread({}, bookmark), {}, {
-    savedAt: new Date().toISOString()
-  })].concat(_toConsumableArray(bookmarks));
-  persist(next);
-  return !exists;
+  if (exists) {
+    persist(bookmarks.filter(function (item) {
+      return item.id !== bookmark.id;
+    }));
+    deleteBookmark(bookmark.id);
+    return false;
+  }
+  var now = new Date().toISOString();
+  var saved = _objectSpread(_objectSpread({}, bookmark), {}, {
+    savedAt: now,
+    updatedAt: now
+  });
+  persist([saved].concat(_toConsumableArray(bookmarks)));
+  pushBookmark(saved);
+  return true;
 }
 function removeBookmark(id) {
   persist(getBookmarks().filter(function (bookmark) {
     return bookmark.id !== id;
   }));
+  deleteBookmark(id);
 }
 
 /***/ },
@@ -5057,7 +5692,7 @@ button {
   padding: 10px 20px;
   font-size: 18px;
   cursor: pointer;
-}`, "",{"version":3,"sources":["webpack://./src/components/dice/dice3d.css"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,gBAAgB;EAChB,8BAA8B;AAChC;;AAEA;EACE,YAAY;EACZ,aAAa;EACb,iBAAiB;EACjB,kBAAkB;AACpB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,4BAA4B;EAC5B,sCAAsC;EACtC,wBAAwB;AAC1B;;AAEA,UAAU;AACV;;;;;;;;;;;;GAYG;;AAEH;;EAEE,kBAAkB;EAClB,YAAY;EACZ,aAAa;;EAEb,iCAAiC;EACjC;;;;;;;;GAQC;;EAED,yBAAyB;EACzB,cAAc;;EAEd,eAAe;EACf,iBAAiB;;EAEjB,aAAa;EACb,mBAAmB;EACnB,uBAAuB;;EAEvB,oBAAoB;EACpB;;8BAE4B;;EAE5B,kBAAkB;AACpB;;AAEA,uBAAuB;AACvB,UAAU,yCAAyC,EAAE;AACrD,UAAU,2CAA2C,EAAE;AACvD,UAAU,0CAA0C,EAAE;AACtD,UAAU,2CAA2C,EAAE;AACvD,UAAU,0CAA0C,EAAE;AACtD,UAAU,2CAA2C,EAAE;;AAEvD,eAAe;AACf,UAAU,sCAAsC,EAAE;AAClD,UAAU,uCAAuC,EAAE;AACnD,UAAU,0BAA0B,EAAE;AACtC,UAAU,yBAAyB,EAAE;AACrC,UAAU,0BAA0B,EAAE;AACtC,UAAU,0BAA0B,EAAE;;AAEtC,sBAAsB;AACtB;EACE,uBAAuB;AACzB;;AAEA;EACE,YAAY;AACd;AACA;EACE,OAAO,gCAAgC,EAAE;EACzC,OAAO,0CAA0C,EAAE;EACnD,OAAO,0CAA0C,EAAE;AACrD;;AAEA;EACE,kBAAkB;EAClB,eAAe;EACf,eAAe;AACjB","sourcesContent":[".container {\r\n  text-align: center;\r\n  margin-top: 50px;\r\n  font-family: Arial, sans-serif;\r\n}\r\n\r\n.scene {\r\n  width: 120px;\r\n  height: 120px;\r\n  margin: 40px auto;\r\n  perspective: 600px;\r\n}\r\n\r\n.cube {\r\n  width: 100%;\r\n  height: 100%;\r\n  position: relative;\r\n  transform-style: preserve-3d;\r\n  transform: rotateX(0deg) rotateY(0deg);\r\n  transition: transform 5s;\r\n}\r\n\r\n/* Faces */\r\n/* .face {\r\n  position: absolute;\r\n  width: 120px;\r\n  height: 120px;\r\n  background: #1e90ff;\r\n  border: 2px solid #fff;\r\n  color: white;\r\n  font-size: 40px;\r\n  font-weight: bold;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n} */\r\n\r\n.face {\r\n  \r\n  position: absolute;\r\n  width: 120px;\r\n  height: 120px;\r\n\r\n  /* Wood texture using gradients */\r\n  background: linear-gradient(\r\n      90deg,\r\n      #8b5a2b 0%,\r\n      #a0522d 20%,\r\n      #8b5a2b 40%,\r\n      #a0522d 60%,\r\n      #8b5a2b 80%,\r\n      #a0522d 100%\r\n  );\r\n\r\n  border: 2px solid #5c3a1a;\r\n  color: #fff8dc;\r\n\r\n  font-size: 40px;\r\n  font-weight: bold;\r\n\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n\r\n  /* Depth + realism */\r\n  box-shadow:\r\n    inset 0 0 10px rgba(0,0,0,0.4),\r\n    0 5px 10px rgba(0,0,0,0.3);\r\n\r\n  border-radius: 8px;\r\n}\r\n\r\n/* Position each face */\r\n.front  { transform: rotateY(0deg) translateZ(60px); }\r\n.back   { transform: rotateY(180deg) translateZ(60px); }\r\n.right  { transform: rotateY(90deg) translateZ(60px); }\r\n.left   { transform: rotateY(-90deg) translateZ(60px); }\r\n.top    { transform: rotateX(90deg) translateZ(60px); }\r\n.bottom { transform: rotateX(-90deg) translateZ(60px); }\r\n\r\n/* Show faces */\r\n.show-1 { transform: rotateX(0deg) rotateY(0deg); }\r\n.show-2 { transform: rotateX(90deg) rotateY(0deg); }\r\n.show-3 { transform: rotateY(-90deg); }\r\n.show-4 { transform: rotateY(90deg); }\r\n.show-5 { transform: rotateX(-90deg); }\r\n.show-6 { transform: rotateY(180deg); }\r\n\r\n/* Rolling animation */\r\n.rolling .cube {\r\n  animation: roll 1s ease;\r\n}\r\n\r\n.face .front span {\r\n  width :200px;\r\n}\r\n@keyframes roll {\r\n  0%   { transform: rotateX(0) rotateY(0); }\r\n  50%  { transform: rotateX(180deg) rotateY(180deg); }\r\n  100% { transform: rotateX(360deg) rotateY(360deg); }\r\n}\r\n\r\nbutton {\r\n  padding: 10px 20px;\r\n  font-size: 18px;\r\n  cursor: pointer;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/dice/dice3d.css"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,gBAAgB;EAChB,8BAA8B;AAChC;;AAEA;EACE,YAAY;EACZ,aAAa;EACb,iBAAiB;EACjB,kBAAkB;AACpB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,4BAA4B;EAC5B,sCAAsC;EACtC,wBAAwB;AAC1B;;AAEA,UAAU;AACV;;;;;;;;;;;;GAYG;;AAEH;;EAEE,kBAAkB;EAClB,YAAY;EACZ,aAAa;;EAEb,iCAAiC;EACjC;;;;;;;;GAQC;;EAED,yBAAyB;EACzB,cAAc;;EAEd,eAAe;EACf,iBAAiB;;EAEjB,aAAa;EACb,mBAAmB;EACnB,uBAAuB;;EAEvB,oBAAoB;EACpB;;8BAE4B;;EAE5B,kBAAkB;AACpB;;AAEA,uBAAuB;AACvB,UAAU,yCAAyC,EAAE;AACrD,UAAU,2CAA2C,EAAE;AACvD,UAAU,0CAA0C,EAAE;AACtD,UAAU,2CAA2C,EAAE;AACvD,UAAU,0CAA0C,EAAE;AACtD,UAAU,2CAA2C,EAAE;;AAEvD,eAAe;AACf,UAAU,sCAAsC,EAAE;AAClD,UAAU,uCAAuC,EAAE;AACnD,UAAU,0BAA0B,EAAE;AACtC,UAAU,yBAAyB,EAAE;AACrC,UAAU,0BAA0B,EAAE;AACtC,UAAU,0BAA0B,EAAE;;AAEtC,sBAAsB;AACtB;EACE,uBAAuB;AACzB;;AAEA;EACE,YAAY;AACd;AACA;EACE,OAAO,gCAAgC,EAAE;EACzC,OAAO,0CAA0C,EAAE;EACnD,OAAO,0CAA0C,EAAE;AACrD;;AAEA;EACE,kBAAkB;EAClB,eAAe;EACf,eAAe;AACjB","sourcesContent":[".container {\n  text-align: center;\n  margin-top: 50px;\n  font-family: Arial, sans-serif;\n}\n\n.scene {\n  width: 120px;\n  height: 120px;\n  margin: 40px auto;\n  perspective: 600px;\n}\n\n.cube {\n  width: 100%;\n  height: 100%;\n  position: relative;\n  transform-style: preserve-3d;\n  transform: rotateX(0deg) rotateY(0deg);\n  transition: transform 5s;\n}\n\n/* Faces */\n/* .face {\n  position: absolute;\n  width: 120px;\n  height: 120px;\n  background: #1e90ff;\n  border: 2px solid #fff;\n  color: white;\n  font-size: 40px;\n  font-weight: bold;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n} */\n\n.face {\n  \n  position: absolute;\n  width: 120px;\n  height: 120px;\n\n  /* Wood texture using gradients */\n  background: linear-gradient(\n      90deg,\n      #8b5a2b 0%,\n      #a0522d 20%,\n      #8b5a2b 40%,\n      #a0522d 60%,\n      #8b5a2b 80%,\n      #a0522d 100%\n  );\n\n  border: 2px solid #5c3a1a;\n  color: #fff8dc;\n\n  font-size: 40px;\n  font-weight: bold;\n\n  display: flex;\n  align-items: center;\n  justify-content: center;\n\n  /* Depth + realism */\n  box-shadow:\n    inset 0 0 10px rgba(0,0,0,0.4),\n    0 5px 10px rgba(0,0,0,0.3);\n\n  border-radius: 8px;\n}\n\n/* Position each face */\n.front  { transform: rotateY(0deg) translateZ(60px); }\n.back   { transform: rotateY(180deg) translateZ(60px); }\n.right  { transform: rotateY(90deg) translateZ(60px); }\n.left   { transform: rotateY(-90deg) translateZ(60px); }\n.top    { transform: rotateX(90deg) translateZ(60px); }\n.bottom { transform: rotateX(-90deg) translateZ(60px); }\n\n/* Show faces */\n.show-1 { transform: rotateX(0deg) rotateY(0deg); }\n.show-2 { transform: rotateX(90deg) rotateY(0deg); }\n.show-3 { transform: rotateY(-90deg); }\n.show-4 { transform: rotateY(90deg); }\n.show-5 { transform: rotateX(-90deg); }\n.show-6 { transform: rotateY(180deg); }\n\n/* Rolling animation */\n.rolling .cube {\n  animation: roll 1s ease;\n}\n\n.face .front span {\n  width :200px;\n}\n@keyframes roll {\n  0%   { transform: rotateX(0) rotateY(0); }\n  50%  { transform: rotateX(180deg) rotateY(180deg); }\n  100% { transform: rotateX(360deg) rotateY(360deg); }\n}\n\nbutton {\n  padding: 10px 20px;\n  font-size: 18px;\n  cursor: pointer;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -5145,7 +5780,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.quote-wrapper {
 /* TEXT */
 .chat-text {
   color: black;
-}`, "",{"version":3,"sources":["webpack://./src/components/jokes/jokes.css"],"names":[],"mappings":"AAAA;EACE,aAAa;AACf;;AAEA;EACE,YAAY;EACZ,mBAAmB;AACrB;;AAEA;GACG,WAAW;EACZ,eAAe;EACf,uBAAuB;EACvB,YAAY;EACZ,mBAAmB;EACnB,YAAY;EACZ,kBAAkB;EAClB,eAAe;EACf,eAAe;AACjB;;AAEA,SAAS;AACT;IACI,iBAAiB;IACjB,iBAAiB;IACjB,mBAAmB;IACnB,mBAAmB;IACnB,0CAA0C;IAC1C,kBAAkB;AACtB;;AAEA,UAAU;AACV;EACE,cAAc;EACd,mBAAmB;AACrB;;AAEA,aAAa;AACb;EACE,aAAa;EACb,sBAAsB;EACtB,SAAS;AACX;;AAEA,WAAW;AACX;EACE,iBAAiB;EACjB,wBAAwB;EACxB,mBAAmB;AACrB;;AAEA,SAAS;AACT;EACE,iBAAiB;EACjB,cAAc;EACd,iBAAiB;AACnB;;AAEA,SAAS;AACT;EACE,YAAY;AACd","sourcesContent":[".quote-wrapper {\r\n  padding: 20px;\r\n}\r\n\r\n.quote-title {\r\n  color: white;\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.jokes-btn{\r\n   float:right;\r\n  margin-top: 5px;\r\n  /* padding: 8px 14px; */\r\n  border: none;\r\n  background: #2563eb;\r\n  color: white;\r\n  border-radius: 8px;\r\n  cursor: pointer;\r\n  font-size: 15px;\r\n}\r\n\r\n/* CARD */\r\n.chat-card {\r\n    background: white;\r\n    padding: 5px 10px;\r\n    border-radius: 14px;\r\n    margin-bottom: 10px;\r\n    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);\r\n    overflow-y: hidden;\r\n}\r\n\r\n/* TITLE */\r\n.chat-title {\r\n  color: #38bdf8;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n/* MESSAGES */\r\n.chat-messages {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 10px;\r\n}\r\n\r\n/* BUBBLE */\r\n.chat-bubble {\r\n  background: white;\r\n  /* padding: 10px 14px; */\r\n  border-radius: 10px;\r\n}\r\n\r\n/* ROLE */\r\n.chat-role {\r\n  font-weight: bold;\r\n  color: #22c55e;\r\n  margin-right: 5px;\r\n}\r\n\r\n/* TEXT */\r\n.chat-text {\r\n  color: black;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/jokes/jokes.css"],"names":[],"mappings":"AAAA;EACE,aAAa;AACf;;AAEA;EACE,YAAY;EACZ,mBAAmB;AACrB;;AAEA;GACG,WAAW;EACZ,eAAe;EACf,uBAAuB;EACvB,YAAY;EACZ,mBAAmB;EACnB,YAAY;EACZ,kBAAkB;EAClB,eAAe;EACf,eAAe;AACjB;;AAEA,SAAS;AACT;IACI,iBAAiB;IACjB,iBAAiB;IACjB,mBAAmB;IACnB,mBAAmB;IACnB,0CAA0C;IAC1C,kBAAkB;AACtB;;AAEA,UAAU;AACV;EACE,cAAc;EACd,mBAAmB;AACrB;;AAEA,aAAa;AACb;EACE,aAAa;EACb,sBAAsB;EACtB,SAAS;AACX;;AAEA,WAAW;AACX;EACE,iBAAiB;EACjB,wBAAwB;EACxB,mBAAmB;AACrB;;AAEA,SAAS;AACT;EACE,iBAAiB;EACjB,cAAc;EACd,iBAAiB;AACnB;;AAEA,SAAS;AACT;EACE,YAAY;AACd","sourcesContent":[".quote-wrapper {\n  padding: 20px;\n}\n\n.quote-title {\n  color: white;\n  margin-bottom: 20px;\n}\n\n.jokes-btn{\n   float:right;\n  margin-top: 5px;\n  /* padding: 8px 14px; */\n  border: none;\n  background: #2563eb;\n  color: white;\n  border-radius: 8px;\n  cursor: pointer;\n  font-size: 15px;\n}\n\n/* CARD */\n.chat-card {\n    background: white;\n    padding: 5px 10px;\n    border-radius: 14px;\n    margin-bottom: 10px;\n    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);\n    overflow-y: hidden;\n}\n\n/* TITLE */\n.chat-title {\n  color: #38bdf8;\n  margin-bottom: 10px;\n}\n\n/* MESSAGES */\n.chat-messages {\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n}\n\n/* BUBBLE */\n.chat-bubble {\n  background: white;\n  /* padding: 10px 14px; */\n  border-radius: 10px;\n}\n\n/* ROLE */\n.chat-role {\n  font-weight: bold;\n  color: #22c55e;\n  margin-right: 5px;\n}\n\n/* TEXT */\n.chat-text {\n  color: black;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -5203,7 +5838,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.mini-grid {
 .mini-title {
   font-size: 12px;
   font-weight: 500;
-}`, "",{"version":3,"sources":["webpack://./src/components/minicard/minicard.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,2DAA2D;EAC3D,SAAS;EACT,aAAa;AACf;;AAEA;EACE,mBAAmB;EACnB,YAAY;EACZ,mBAAmB;EACnB,aAAa;EACb,kBAAkB;EAClB,eAAe;EACf,sDAAsD;EACtD,sCAAsC;AACxC;;AAEA;EACE,uCAAuC;EACvC,mBAAmB;AACrB;;AAEA;EACE,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,eAAe;EACf,gBAAgB;AAClB","sourcesContent":[".mini-grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));\r\n  gap: 12px;\r\n  padding: 16px;\r\n}\r\n\r\n.mini-card {\r\n  background: #1f1f2e;\r\n  color: white;\r\n  border-radius: 12px;\r\n  padding: 12px;\r\n  text-align: center;\r\n  cursor: pointer;\r\n  transition: transform 0.15s ease, background 0.2s ease;\r\n  box-shadow: 0 4px 10px rgba(0,0,0,0.2);\r\n}\r\n\r\n.mini-card:hover {\r\n  transform: translateY(-4px) scale(1.03);\r\n  background: #2a2a40;\r\n}\r\n\r\n.mini-icon {\r\n  font-size: 22px;\r\n  margin-bottom: 6px;\r\n}\r\n\r\n.mini-title {\r\n  font-size: 12px;\r\n  font-weight: 500;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/minicard/minicard.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,2DAA2D;EAC3D,SAAS;EACT,aAAa;AACf;;AAEA;EACE,mBAAmB;EACnB,YAAY;EACZ,mBAAmB;EACnB,aAAa;EACb,kBAAkB;EAClB,eAAe;EACf,sDAAsD;EACtD,sCAAsC;AACxC;;AAEA;EACE,uCAAuC;EACvC,mBAAmB;AACrB;;AAEA;EACE,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,eAAe;EACf,gBAAgB;AAClB","sourcesContent":[".mini-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));\n  gap: 12px;\n  padding: 16px;\n}\n\n.mini-card {\n  background: #1f1f2e;\n  color: white;\n  border-radius: 12px;\n  padding: 12px;\n  text-align: center;\n  cursor: pointer;\n  transition: transform 0.15s ease, background 0.2s ease;\n  box-shadow: 0 4px 10px rgba(0,0,0,0.2);\n}\n\n.mini-card:hover {\n  transform: translateY(-4px) scale(1.03);\n  background: #2a2a40;\n}\n\n.mini-icon {\n  font-size: 22px;\n  margin-bottom: 6px;\n}\n\n.mini-title {\n  font-size: 12px;\n  font-weight: 500;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -5270,7 +5905,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.list-container {
 .quote-title {
   color: black;
   margin-bottom: 15px;
-}`, "",{"version":3,"sources":["webpack://./src/components/published-stories/publishedStories.css"],"names":[],"mappings":"AAAA;EACE,aAAa;AACf;AACA,WAAW;AACX;IACI,WAAW;GACZ,wBAAwB;EACzB,uBAAuB;EACvB,YAAY;EACZ,mBAAmB;EACnB,YAAY;EACZ,kBAAkB;EAClB,eAAe;EACf,eAAe;AACjB;;AAEA;EACE,mBAAmB;EACnB,oBAAoB;EACpB,6BAA6B;AAC/B;;AAEA;EACE,SAAS;AACX;;AAEA;EACE,aAAa;EACb,WAAW;AACb;;AAEA;EACE,eAAe;EACf,WAAW;EACX,0BAA0B;AAC5B;;AAEA;EACE,YAAY;EACZ,mBAAmB;AACrB","sourcesContent":[".list-container {\r\n  padding: 20px;\r\n}\r\n/* Button */\r\n.stories-btn {\r\n    float:right;\r\n   /* margin-top: -20px;  */\r\n  /* padding: 8px 14px; */\r\n  border: none;\r\n  background: #2563eb;\r\n  color: white;\r\n  border-radius: 8px;\r\n  cursor: pointer;\r\n  font-size: 15px;\r\n}\r\n\r\n.list-item {\r\n  margin-bottom: 20px;\r\n  padding-bottom: 10px;\r\n  border-bottom: 1px solid #ddd;\r\n}\r\n\r\n.list-item h3 {\r\n  margin: 0;\r\n}\r\n\r\n.list-item p {\r\n  margin: 4px 0;\r\n  color: #555;\r\n}\r\n\r\n.list-item a {\r\n  font-size: 14px;\r\n  color: blue;\r\n  text-decoration: underline;\r\n}\r\n\r\n.quote-title {\r\n  color: black;\r\n  margin-bottom: 15px;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/published-stories/publishedStories.css"],"names":[],"mappings":"AAAA;EACE,aAAa;AACf;AACA,WAAW;AACX;IACI,WAAW;GACZ,wBAAwB;EACzB,uBAAuB;EACvB,YAAY;EACZ,mBAAmB;EACnB,YAAY;EACZ,kBAAkB;EAClB,eAAe;EACf,eAAe;AACjB;;AAEA;EACE,mBAAmB;EACnB,oBAAoB;EACpB,6BAA6B;AAC/B;;AAEA;EACE,SAAS;AACX;;AAEA;EACE,aAAa;EACb,WAAW;AACb;;AAEA;EACE,eAAe;EACf,WAAW;EACX,0BAA0B;AAC5B;;AAEA;EACE,YAAY;EACZ,mBAAmB;AACrB","sourcesContent":[".list-container {\n  padding: 20px;\n}\n/* Button */\n.stories-btn {\n    float:right;\n   /* margin-top: -20px;  */\n  /* padding: 8px 14px; */\n  border: none;\n  background: #2563eb;\n  color: white;\n  border-radius: 8px;\n  cursor: pointer;\n  font-size: 15px;\n}\n\n.list-item {\n  margin-bottom: 20px;\n  padding-bottom: 10px;\n  border-bottom: 1px solid #ddd;\n}\n\n.list-item h3 {\n  margin: 0;\n}\n\n.list-item p {\n  margin: 4px 0;\n  color: #555;\n}\n\n.list-item a {\n  font-size: 14px;\n  color: blue;\n  text-decoration: underline;\n}\n\n.quote-title {\n  color: black;\n  margin-bottom: 15px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -5350,7 +5985,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Right pane layout */
 
 .quote-btn:hover {
   background: #1d4ed8;
-}`, "",{"version":3,"sources":["webpack://./src/components/quotation/Quotations.css"],"names":[],"mappings":"AAAA,sBAAsB;AACtB;EACE,YAAY;EACZ,mBAAmB;EACnB,aAAa;AACf;;AAEA,YAAY;AACZ;EACE,gBAAgB;EAChB,YAAY;AACd;;AAEA,UAAU;AACV;EACE,YAAY;EACZ,mBAAmB;AACrB;;AAEA,SAAS;AACT;EACE,iBAAiB;EACjB,YAAY;EACZ,mBAAmB;EACnB,sCAAsC;EACtC,gBAAgB;AAClB;;AAEA;EACE,2BAA2B;AAC7B;;AAEA,SAAS;AACT;EACE,eAAe;EACf,YAAY;EACZ,gBAAgB;AAClB;;AAEA,WAAW;AACX;IACI,WAAW;EACb,iBAAiB;EACjB,uBAAuB;EACvB,YAAY;EACZ,mBAAmB;EACnB,YAAY;EACZ,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,mBAAmB;AACrB","sourcesContent":["/* Right pane layout */\r\n.right-pane {\r\n  padding: 5px;\r\n  background: #0f172a;\r\n  height: 100vh;\r\n}\r\n\r\n/* Wrapper */\r\n.quote-wrapper {\r\n  max-width: 500px;\r\n  margin: auto;\r\n}\r\n\r\n/* Title */\r\n.quote-title {\r\n  color: white;\r\n  margin-bottom: 15px;\r\n}\r\n\r\n/* Card */\r\n.quote-card {\r\n  background: white;\r\n  padding: 5px;\r\n  border-radius: 16px;\r\n  box-shadow: 0 8px 30px rgba(0,0,0,0.3);\r\n  transition: 0.3s;\r\n}\r\n\r\n.quote-card:hover {\r\n  transform: translateY(-5px);\r\n}\r\n\r\n/* Text */\r\n.quote-text {\r\n  font-size: 18px;\r\n  color: black;\r\n  line-height: 1.5;\r\n}\r\n\r\n/* Button */\r\n.quote-btn {\r\n    float:right;\r\n  margin-top: -20px; \r\n  /* padding: 8px 14px; */\r\n  border: none;\r\n  background: #2563eb;\r\n  color: white;\r\n  border-radius: 8px;\r\n  cursor: pointer;\r\n}\r\n\r\n.quote-btn:hover {\r\n  background: #1d4ed8;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/quotation/Quotations.css"],"names":[],"mappings":"AAAA,sBAAsB;AACtB;EACE,YAAY;EACZ,mBAAmB;EACnB,aAAa;AACf;;AAEA,YAAY;AACZ;EACE,gBAAgB;EAChB,YAAY;AACd;;AAEA,UAAU;AACV;EACE,YAAY;EACZ,mBAAmB;AACrB;;AAEA,SAAS;AACT;EACE,iBAAiB;EACjB,YAAY;EACZ,mBAAmB;EACnB,sCAAsC;EACtC,gBAAgB;AAClB;;AAEA;EACE,2BAA2B;AAC7B;;AAEA,SAAS;AACT;EACE,eAAe;EACf,YAAY;EACZ,gBAAgB;AAClB;;AAEA,WAAW;AACX;IACI,WAAW;EACb,iBAAiB;EACjB,uBAAuB;EACvB,YAAY;EACZ,mBAAmB;EACnB,YAAY;EACZ,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,mBAAmB;AACrB","sourcesContent":["/* Right pane layout */\n.right-pane {\n  padding: 5px;\n  background: #0f172a;\n  height: 100vh;\n}\n\n/* Wrapper */\n.quote-wrapper {\n  max-width: 500px;\n  margin: auto;\n}\n\n/* Title */\n.quote-title {\n  color: white;\n  margin-bottom: 15px;\n}\n\n/* Card */\n.quote-card {\n  background: white;\n  padding: 5px;\n  border-radius: 16px;\n  box-shadow: 0 8px 30px rgba(0,0,0,0.3);\n  transition: 0.3s;\n}\n\n.quote-card:hover {\n  transform: translateY(-5px);\n}\n\n/* Text */\n.quote-text {\n  font-size: 18px;\n  color: black;\n  line-height: 1.5;\n}\n\n/* Button */\n.quote-btn {\n    float:right;\n  margin-top: -20px; \n  /* padding: 8px 14px; */\n  border: none;\n  background: #2563eb;\n  color: white;\n  border-radius: 8px;\n  cursor: pointer;\n}\n\n.quote-btn:hover {\n  background: #1d4ed8;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -5422,7 +6057,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.riddle-card {
   border-radius: 8px;
   cursor: pointer;
   font-size: 15px;
-}`, "",{"version":3,"sources":["webpack://./src/components/riddle/riddle.css"],"names":[],"mappings":"AAAA;IACI,iBAAiB;IACjB,mBAAmB;IACnB,gBAAgB;IAChB,yCAAyC;IACzC,gBAAgB;IAChB,mBAAmB;IACnB,kBAAkB;AACtB;;AAEA;IACI,iBAAiB;IACjB,mBAAmB;IACnB,gBAAgB;IAChB,yCAAyC;IACzC,mBAAmB;IACnB,gBAAgB;IAChB,YAAY;AAChB;;AAEA;EACE,gBAAgB;EAChB,aAAa;EACb,sBAAsB;EACtB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,2BAA2B;EAC3B,mBAAmB;EACnB,kBAAkB;AACpB;;AAEA,WAAW;AACX;IACI,WAAW;GACZ,eAAe;EAChB,uBAAuB;EACvB,YAAY;EACZ,mBAAmB;EACnB,YAAY;EACZ,kBAAkB;EAClB,eAAe;EACf,eAAe;AACjB","sourcesContent":[".riddle-card {\r\n    padding: 5px 10px;\r\n    border-radius: 12px;\r\n    background: #fff;\r\n    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\r\n    max-width: 400px;\r\n    margin-bottom: 10px;\r\n    overflow-y: hidden;\r\n}\r\n\r\n.riddle-page {\r\n    padding: 5px 10px;\r\n    border-radius: 12px;\r\n    background: #fff;\r\n    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\r\n    margin-bottom: 10px;\r\n    overflow-y: auto;\r\n    height:100vh;\r\n}\r\n\r\n.riddle-items {\r\n  margin-top: 12px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 10px;\r\n}\r\n\r\n.item {\r\n  padding: 10px;\r\n  border-left: 3px solid #333;\r\n  background: #f9f9f9;\r\n  border-radius: 6px;\r\n}\r\n\r\n/* Button */\r\n.riddles-btn {\r\n    float:right;\r\n   margin-top: 5px; \r\n  /* padding: 8px 14px; */\r\n  border: none;\r\n  background: #2563eb;\r\n  color: white;\r\n  border-radius: 8px;\r\n  cursor: pointer;\r\n  font-size: 15px;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/riddle/riddle.css"],"names":[],"mappings":"AAAA;IACI,iBAAiB;IACjB,mBAAmB;IACnB,gBAAgB;IAChB,yCAAyC;IACzC,gBAAgB;IAChB,mBAAmB;IACnB,kBAAkB;AACtB;;AAEA;IACI,iBAAiB;IACjB,mBAAmB;IACnB,gBAAgB;IAChB,yCAAyC;IACzC,mBAAmB;IACnB,gBAAgB;IAChB,YAAY;AAChB;;AAEA;EACE,gBAAgB;EAChB,aAAa;EACb,sBAAsB;EACtB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,2BAA2B;EAC3B,mBAAmB;EACnB,kBAAkB;AACpB;;AAEA,WAAW;AACX;IACI,WAAW;GACZ,eAAe;EAChB,uBAAuB;EACvB,YAAY;EACZ,mBAAmB;EACnB,YAAY;EACZ,kBAAkB;EAClB,eAAe;EACf,eAAe;AACjB","sourcesContent":[".riddle-card {\n    padding: 5px 10px;\n    border-radius: 12px;\n    background: #fff;\n    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\n    max-width: 400px;\n    margin-bottom: 10px;\n    overflow-y: hidden;\n}\n\n.riddle-page {\n    padding: 5px 10px;\n    border-radius: 12px;\n    background: #fff;\n    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\n    margin-bottom: 10px;\n    overflow-y: auto;\n    height:100vh;\n}\n\n.riddle-items {\n  margin-top: 12px;\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n}\n\n.item {\n  padding: 10px;\n  border-left: 3px solid #333;\n  background: #f9f9f9;\n  border-radius: 6px;\n}\n\n/* Button */\n.riddles-btn {\n    float:right;\n   margin-top: 5px; \n  /* padding: 8px 14px; */\n  border: none;\n  background: #2563eb;\n  color: white;\n  border-radius: 8px;\n  cursor: pointer;\n  font-size: 15px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -5456,7 +6091,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.right-pane {
   padding-left: 5px;
   overflow-y: auto;
   margin-top: -6px;
-}`, "",{"version":3,"sources":["webpack://./src/components/rightpane.css"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,UAAU;EACV,mBAAmB;EACnB,iBAAiB;EACjB,gBAAgB;EAChB,gBAAgB;AAClB","sourcesContent":[".right-pane {\r\n  height: fit-content;\r\n  width: 25%;\r\n  background: #0f172a;\r\n  padding-left: 5px;\r\n  overflow-y: auto;\r\n  margin-top: -6px;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/rightpane.css"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,UAAU;EACV,mBAAmB;EACnB,iBAAiB;EACjB,gBAAgB;EAChB,gBAAgB;AAClB","sourcesContent":[".right-pane {\n  height: fit-content;\n  width: 25%;\n  background: #0f172a;\n  padding-left: 5px;\n  overflow-y: auto;\n  margin-top: -6px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -5600,7 +6235,350 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.sidebar {
 .submenu.show {
   max-height: 300px;
 }
-`, "",{"version":3,"sources":["webpack://./src/components/sidebar.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,YAAY;EACZ,8BAA8B;EAC9B,mBAAmB;EACnB,mBAAmB;EACnB,YAAY;EACZ,8BAA8B;EAC9B,gBAAgB,EAAE,6BAA6B;AACjD;;AAEA;EACE;IACE,eAAe;IACf,SAAS;IACT,SAAS;IACT,OAAO;IACP,aAAa;IACb,aAAa;IACb,4BAA4B;IAC5B,+BAA+B;IAC/B,4CAA4C;EAC9C;;EAEA;IACE,wBAAwB;EAC1B;AACF;;AAEA;EACE,gBAAgB;EAChB,UAAU;EACV,SAAS;AACX;;AAEA;EACE,kBAAkB;EAClB,aAAa;IACX,mBAAmB;EACrB,8BAA8B;EAC9B,eAAe;AACjB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,qBAAqB;EACrB,gBAAgB;EAChB,oBAAoB;EACpB,gBAAgB;EAChB,mBAAmB;EACnB,WAAW;EACX,cAAc;EACd,gBAAgB;EAChB,cAAc;AAChB;;AAEA,sBAAsB;AACtB;EACE,aAAa;EACb,gBAAgB;EAChB,mBAAmB;EACnB,gCAAgC;AAClC;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,+BAA+B;EAC/B,eAAe;AACjB;;AAEA;EACE,mBAAmB;AACrB;;AAEA,mBAAmB;AACnB;EACE,+BAA+B;AACjC;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;GACG,aAAa;EACd,mBAAmB;EACnB,kBAAkB;EAClB,qBAAqB;EACrB,YAAY;AACd;;;AAGA,UAAU;AACV;;EAEE,mBAAmB;AACrB;;AAEA,WAAW;AACX;EACE,mBAAmB;AACrB;AACA,2BAA2B;AAC3B;EACE,mBAAmB;AACrB;;AAEA,yBAAyB;AACzB;EACE,iBAAiB;AACnB","sourcesContent":[".sidebar {\r\n  width: 240px;\r\n  height: auto;\r\n  min-height: calc(100vh - 60px);\r\n  align-self: stretch;\r\n  background: #1e293b;\r\n  color: white;\r\n  font-family: Arial, sans-serif;\r\n  overflow-y: auto; /*  enables vertical scroll */\r\n}\r\n\r\n@media (max-width: 1199px) {\r\n  .sidebar {\r\n    position: fixed;\r\n    top: 60px;\r\n    bottom: 0;\r\n    left: 0;\r\n    z-index: 1100;\r\n    min-height: 0;\r\n    transform: translateX(-100%);\r\n    transition: transform 0.2s ease;\r\n    box-shadow: 8px 0 24px rgba(15, 23, 42, 0.2);\r\n  }\r\n\r\n  .sidebar.sidebar-open {\r\n    transform: translateX(0);\r\n  }\r\n}\r\n\r\n.sidebar ul {\r\n  list-style: none;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.menu-item {\r\n  padding: 14px 18px;\r\n  display: flex;\r\n    align-items: center;\r\n  justify-content: space-between;\r\n  cursor: pointer;\r\n}\r\n\r\n.menu-item:hover {\r\n  background: #334155;\r\n}\r\n\r\n.menu-badge {\r\n  display: inline-block;\r\n  margin-left: 7px;\r\n  border-radius: 999px;\r\n  padding: 2px 5px;\r\n  background: #e36f4b;\r\n  color: #fff;\r\n  font-size: 9px;\r\n  font-weight: 700;\r\n  line-height: 1;\r\n}\r\n\r\n/* Submenu animation */\r\n.submenu {\r\n  max-height: 0;\r\n  overflow: hidden;\r\n  background: #0f172a;\r\n  transition: max-height 0.3s ease;\r\n}\r\n\r\n.submenu.show {\r\n  max-height: 300px;\r\n}\r\n\r\n.submenu-item {\r\n  padding : 10px 40px !important ;\r\n  font-size: 14px;\r\n}\r\n\r\n.submenu-item:hover {\r\n  background: #1e293b;\r\n}\r\n\r\n/* Arrow rotation */\r\n.arrow {\r\n  transition: transform 0.3s ease;\r\n}\r\n\r\n.arrow.open {\r\n  transform: rotate(180deg);\r\n}\r\n\r\n.link {\r\n   display: flex;\r\n  align-items: center;\r\n  padding: 12px 16px;\r\n  text-decoration: none;\r\n  color: white;\r\n}\r\n\r\n\r\n/* Hover */\r\n.menu-item:hover,\r\n.link:hover {\r\n  background: #334155;\r\n}\r\n\r\n/* Active */\r\n.link.active {\r\n  background: #2563eb;\r\n}\r\n/* Active route highlight */\r\n.link.active li {\r\n  background: #2563eb;\r\n}\r\n\r\n/* keep previous styles */\r\n.submenu.show {\r\n  max-height: 300px;\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/components/sidebar.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,YAAY;EACZ,8BAA8B;EAC9B,mBAAmB;EACnB,mBAAmB;EACnB,YAAY;EACZ,8BAA8B;EAC9B,gBAAgB,EAAE,6BAA6B;AACjD;;AAEA;EACE;IACE,eAAe;IACf,SAAS;IACT,SAAS;IACT,OAAO;IACP,aAAa;IACb,aAAa;IACb,4BAA4B;IAC5B,+BAA+B;IAC/B,4CAA4C;EAC9C;;EAEA;IACE,wBAAwB;EAC1B;AACF;;AAEA;EACE,gBAAgB;EAChB,UAAU;EACV,SAAS;AACX;;AAEA;EACE,kBAAkB;EAClB,aAAa;IACX,mBAAmB;EACrB,8BAA8B;EAC9B,eAAe;AACjB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,qBAAqB;EACrB,gBAAgB;EAChB,oBAAoB;EACpB,gBAAgB;EAChB,mBAAmB;EACnB,WAAW;EACX,cAAc;EACd,gBAAgB;EAChB,cAAc;AAChB;;AAEA,sBAAsB;AACtB;EACE,aAAa;EACb,gBAAgB;EAChB,mBAAmB;EACnB,gCAAgC;AAClC;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,+BAA+B;EAC/B,eAAe;AACjB;;AAEA;EACE,mBAAmB;AACrB;;AAEA,mBAAmB;AACnB;EACE,+BAA+B;AACjC;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;GACG,aAAa;EACd,mBAAmB;EACnB,kBAAkB;EAClB,qBAAqB;EACrB,YAAY;AACd;;;AAGA,UAAU;AACV;;EAEE,mBAAmB;AACrB;;AAEA,WAAW;AACX;EACE,mBAAmB;AACrB;AACA,2BAA2B;AAC3B;EACE,mBAAmB;AACrB;;AAEA,yBAAyB;AACzB;EACE,iBAAiB;AACnB","sourcesContent":[".sidebar {\n  width: 240px;\n  height: auto;\n  min-height: calc(100vh - 60px);\n  align-self: stretch;\n  background: #1e293b;\n  color: white;\n  font-family: Arial, sans-serif;\n  overflow-y: auto; /*  enables vertical scroll */\n}\n\n@media (max-width: 1199px) {\n  .sidebar {\n    position: fixed;\n    top: 60px;\n    bottom: 0;\n    left: 0;\n    z-index: 1100;\n    min-height: 0;\n    transform: translateX(-100%);\n    transition: transform 0.2s ease;\n    box-shadow: 8px 0 24px rgba(15, 23, 42, 0.2);\n  }\n\n  .sidebar.sidebar-open {\n    transform: translateX(0);\n  }\n}\n\n.sidebar ul {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n.menu-item {\n  padding: 14px 18px;\n  display: flex;\n    align-items: center;\n  justify-content: space-between;\n  cursor: pointer;\n}\n\n.menu-item:hover {\n  background: #334155;\n}\n\n.menu-badge {\n  display: inline-block;\n  margin-left: 7px;\n  border-radius: 999px;\n  padding: 2px 5px;\n  background: #e36f4b;\n  color: #fff;\n  font-size: 9px;\n  font-weight: 700;\n  line-height: 1;\n}\n\n/* Submenu animation */\n.submenu {\n  max-height: 0;\n  overflow: hidden;\n  background: #0f172a;\n  transition: max-height 0.3s ease;\n}\n\n.submenu.show {\n  max-height: 300px;\n}\n\n.submenu-item {\n  padding : 10px 40px !important ;\n  font-size: 14px;\n}\n\n.submenu-item:hover {\n  background: #1e293b;\n}\n\n/* Arrow rotation */\n.arrow {\n  transition: transform 0.3s ease;\n}\n\n.arrow.open {\n  transform: rotate(180deg);\n}\n\n.link {\n   display: flex;\n  align-items: center;\n  padding: 12px 16px;\n  text-decoration: none;\n  color: white;\n}\n\n\n/* Hover */\n.menu-item:hover,\n.link:hover {\n  background: #334155;\n}\n\n/* Active */\n.link.active {\n  background: #2563eb;\n}\n/* Active route highlight */\n.link.active li {\n  background: #2563eb;\n}\n\n/* keep previous styles */\n.submenu.show {\n  max-height: 300px;\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ },
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/suggestionBox/suggestion.css"
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/suggestionBox/suggestion.css ***!
+  \*******************************************************************************************/
+(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.suggestion-section {
+  margin-top: 4rem;
+  padding: 2.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+}
+
+.suggestion-header {
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+.suggestion-header h2 {
+  margin: 0.35rem 0 0.75rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #111827;
+}
+
+.suggestion-header > p:last-child {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.suggestion-form {
+  max-width: 800px;
+}
+
+.suggestion-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.suggestion-field {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.suggestion-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.suggestion-field label span {
+  font-weight: 400;
+  color: #9ca3af;
+}
+
+.suggestion-field input,
+.suggestion-field select,
+.suggestion-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #fff;
+  color: #111827;
+  font: inherit;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.suggestion-field input,
+.suggestion-field select {
+  height: 46px;
+  padding: 0 0.9rem;
+}
+
+.suggestion-field textarea {
+  min-height: 140px;
+  padding: 0.9rem;
+  resize: vertical;
+}
+
+.suggestion-field input::placeholder,
+.suggestion-field textarea::placeholder {
+  color: #9ca3af;
+}
+
+.suggestion-field input:focus,
+.suggestion-field select:focus,
+.suggestion-field textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.suggestion-counter {
+  margin-top: 0.35rem;
+  text-align: right;
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.suggestion-submit {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.suggestion-submit button {
+  min-width: 150px;
+  padding: 0.75rem 1.25rem;
+  border: 0;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.suggestion-submit button:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.suggestion-submit button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.suggestion-feedback {
+  margin: 1rem 0 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.suggestion-feedback.sent {
+  color: #15803d;
+}
+
+.suggestion-feedback.error {
+  color: #dc2626;
+}
+
+@media (max-width: 650px) {
+  .suggestion-section {
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+
+  .suggestion-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .suggestion-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .suggestion-submit button {
+    width: 100%;
+  }
+}
+`, "",{"version":3,"sources":["webpack://./src/components/suggestionBox/suggestion.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,eAAe;EACf,yBAAyB;EACzB,mBAAmB;EACnB,mBAAmB;EACnB,6CAA6C;AAC/C;;AAEA;EACE,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA;EACE,yBAAyB;EACzB,eAAe;EACf,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,SAAS;EACT,cAAc;EACd,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,SAAS;AACX;;AAEA;EACE,kBAAkB;EAClB,sBAAsB;AACxB;;AAEA;EACE,cAAc;EACd,qBAAqB;EACrB,iBAAiB;EACjB,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,cAAc;AAChB;;AAEA;;;EAGE,WAAW;EACX,sBAAsB;EACtB,yBAAyB;EACzB,mBAAmB;EACnB,gBAAgB;EAChB,cAAc;EACd,aAAa;EACb,aAAa;EACb;;wBAEsB;AACxB;;AAEA;;EAEE,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;EACjB,eAAe;EACf,gBAAgB;AAClB;;AAEA;;EAEE,cAAc;AAChB;;AAEA;;;EAGE,qBAAqB;EACrB,6CAA6C;AAC/C;;AAEA;EACE,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;EAClB,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,2BAA2B;AAC7B;;AAEA;EACE,gBAAgB;EAChB,wBAAwB;EACxB,SAAS;EACT,mBAAmB;EACnB,mBAAmB;EACnB,YAAY;EACZ,aAAa;EACb,gBAAgB;EAChB,eAAe;EACf;;uBAEqB;AACvB;;AAEA;EACE,mBAAmB;EACnB,2BAA2B;AAC7B;;AAEA;EACE,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE;IACE,kBAAkB;IAClB,eAAe;IACf,mBAAmB;EACrB;;EAEA;IACE,iBAAiB;EACnB;;EAEA;IACE,0BAA0B;IAC1B,MAAM;EACR;;EAEA;IACE,WAAW;EACb;AACF","sourcesContent":[".suggestion-section {\n  margin-top: 4rem;\n  padding: 2.5rem;\n  border: 1px solid #e5e7eb;\n  border-radius: 20px;\n  background: #ffffff;\n  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);\n}\n\n.suggestion-header {\n  max-width: 700px;\n  margin-bottom: 2rem;\n}\n\n.suggestion-header h2 {\n  margin: 0.35rem 0 0.75rem;\n  font-size: 2rem;\n  line-height: 1.2;\n  color: #111827;\n}\n\n.suggestion-header > p:last-child {\n  margin: 0;\n  color: #6b7280;\n  line-height: 1.7;\n}\n\n.suggestion-form {\n  max-width: 800px;\n}\n\n.suggestion-row {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 1rem;\n}\n\n.suggestion-field {\n  position: relative;\n  margin-bottom: 1.25rem;\n}\n\n.suggestion-field label {\n  display: block;\n  margin-bottom: 0.5rem;\n  font-size: 0.9rem;\n  font-weight: 600;\n  color: #374151;\n}\n\n.suggestion-field label span {\n  font-weight: 400;\n  color: #9ca3af;\n}\n\n.suggestion-field input,\n.suggestion-field select,\n.suggestion-field textarea {\n  width: 100%;\n  box-sizing: border-box;\n  border: 1px solid #d1d5db;\n  border-radius: 10px;\n  background: #fff;\n  color: #111827;\n  font: inherit;\n  outline: none;\n  transition:\n    border-color 0.2s ease,\n    box-shadow 0.2s ease;\n}\n\n.suggestion-field input,\n.suggestion-field select {\n  height: 46px;\n  padding: 0 0.9rem;\n}\n\n.suggestion-field textarea {\n  min-height: 140px;\n  padding: 0.9rem;\n  resize: vertical;\n}\n\n.suggestion-field input::placeholder,\n.suggestion-field textarea::placeholder {\n  color: #9ca3af;\n}\n\n.suggestion-field input:focus,\n.suggestion-field select:focus,\n.suggestion-field textarea:focus {\n  border-color: #2563eb;\n  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);\n}\n\n.suggestion-counter {\n  margin-top: 0.35rem;\n  text-align: right;\n  font-size: 0.75rem;\n  color: #9ca3af;\n}\n\n.suggestion-submit {\n  display: flex;\n  justify-content: flex-start;\n}\n\n.suggestion-submit button {\n  min-width: 150px;\n  padding: 0.75rem 1.25rem;\n  border: 0;\n  border-radius: 10px;\n  background: #2563eb;\n  color: white;\n  font: inherit;\n  font-weight: 600;\n  cursor: pointer;\n  transition:\n    background 0.2s ease,\n    transform 0.2s ease;\n}\n\n.suggestion-submit button:hover:not(:disabled) {\n  background: #1d4ed8;\n  transform: translateY(-1px);\n}\n\n.suggestion-submit button:disabled {\n  opacity: 0.65;\n  cursor: not-allowed;\n}\n\n.suggestion-feedback {\n  margin: 1rem 0 0;\n  font-size: 0.9rem;\n  font-weight: 500;\n}\n\n.suggestion-feedback.sent {\n  color: #15803d;\n}\n\n.suggestion-feedback.error {\n  color: #dc2626;\n}\n\n@media (max-width: 650px) {\n  .suggestion-section {\n    margin-top: 2.5rem;\n    padding: 1.5rem;\n    border-radius: 16px;\n  }\n\n  .suggestion-header h2 {\n    font-size: 1.5rem;\n  }\n\n  .suggestion-row {\n    grid-template-columns: 1fr;\n    gap: 0;\n  }\n\n  .suggestion-submit button {\n    width: 100%;\n  }\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ },
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/suggestionBoxLite/suggestionBoxLite.css"
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/suggestionBoxLite/suggestionBoxLite.css ***!
+  \******************************************************************************************************/
+(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.suggestion-box-lite {
+  margin-top: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid #edf0f4;
+  border-radius: 14px;
+  background: #fafbfc;
+}
+
+.suggestion-box-lite-heading {
+  margin-bottom: 1rem;
+}
+
+.suggestion-box-lite-heading h2 {
+  margin: 0.2rem 0 0.3rem;
+  font-size: 1.25rem;
+  color: #202124;
+}
+
+.suggestion-box-lite-heading p:last-child {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #747b84;
+}
+
+/* .suggestion-box-lite-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+  margin-bottom: 0.7rem;
+} */
+
+.suggestion-box-lite-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.suggestion-box-lite input,
+.suggestion-box-lite textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e1e5ea;
+  border-radius: 8px;
+  background: #fff;
+  color: #333;
+  font: inherit;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.suggestion-box-lite input {
+  height: 40px;
+  padding: 0 0.75rem;
+}
+
+.suggestion-box-lite textarea {
+  display: block;
+  min-height: 90px;
+  padding: 0.7rem 0.75rem;
+  resize: vertical;
+}
+
+.suggestion-box-lite input::placeholder,
+.suggestion-box-lite textarea::placeholder {
+  color: #a5abb3;
+}
+
+.suggestion-box-lite input:focus,
+.suggestion-box-lite textarea:focus {
+  border-color: #b8c9e8;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.06);
+}
+
+.suggestion-box-lite-action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.7rem;
+}
+
+.suggestion-box-lite-action button {
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 7px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.suggestion-box-lite-action button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.suggestion-box-lite-action button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.suggestion-box-lite-feedback {
+  margin-right: auto;
+  font-size: 0.8rem;
+}
+
+.suggestion-box-lite-feedback.sent {
+  color: #16803c;
+}
+
+.suggestion-box-lite-feedback.error {
+  color: #c62828;
+}
+
+@media (max-width: 600px) {
+  .suggestion-box-lite {
+    padding: 1.2rem;
+  }
+
+  .suggestion-box-lite-fields {
+    grid-template-columns: 1fr;
+  }
+}
+`, "",{"version":3,"sources":["webpack://./src/components/suggestionBoxLite/suggestionBoxLite.css"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,eAAe;EACf,yBAAyB;EACzB,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,uBAAuB;EACvB,kBAAkB;EAClB,cAAc;AAChB;;AAEA;EACE,SAAS;EACT,iBAAiB;EACjB,cAAc;AAChB;;AAEA;;;;;GAKG;;AAEH;EACE,aAAa;EACb,sBAAsB;EACtB,WAAW;EACX,qBAAqB;AACvB;;AAEA;;EAEE,WAAW;EACX,sBAAsB;EACtB,yBAAyB;EACzB,kBAAkB;EAClB,gBAAgB;EAChB,WAAW;EACX,aAAa;EACb,iBAAiB;EACjB,aAAa;AACf;;AAEA;EACE,YAAY;EACZ,kBAAkB;AACpB;;AAEA;EACE,cAAc;EACd,gBAAgB;EAChB,uBAAuB;EACvB,gBAAgB;AAClB;;AAEA;;EAEE,cAAc;AAChB;;AAEA;;EAEE,qBAAqB;EACrB,6CAA6C;AAC/C;;AAEA;EACE,aAAa;EACb,yBAAyB;EACzB,mBAAmB;EACnB,YAAY;EACZ,kBAAkB;AACpB;;AAEA;EACE,oBAAoB;EACpB,SAAS;EACT,kBAAkB;EAClB,mBAAmB;EACnB,WAAW;EACX,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,YAAY;EACZ,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;AACnB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE;IACE,eAAe;EACjB;;EAEA;IACE,0BAA0B;EAC5B;AACF","sourcesContent":[".suggestion-box-lite {\n  margin-top: 0.5rem;\n  padding: 1.5rem;\n  border: 1px solid #edf0f4;\n  border-radius: 14px;\n  background: #fafbfc;\n}\n\n.suggestion-box-lite-heading {\n  margin-bottom: 1rem;\n}\n\n.suggestion-box-lite-heading h2 {\n  margin: 0.2rem 0 0.3rem;\n  font-size: 1.25rem;\n  color: #202124;\n}\n\n.suggestion-box-lite-heading p:last-child {\n  margin: 0;\n  font-size: 0.9rem;\n  color: #747b84;\n}\n\n/* .suggestion-box-lite-fields {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 0.7rem;\n  margin-bottom: 0.7rem;\n} */\n\n.suggestion-box-lite-fields {\n  display: flex;\n  flex-direction: column;\n  gap: 0.7rem;\n  margin-bottom: 0.7rem;\n}\n\n.suggestion-box-lite input,\n.suggestion-box-lite textarea {\n  width: 100%;\n  box-sizing: border-box;\n  border: 1px solid #e1e5ea;\n  border-radius: 8px;\n  background: #fff;\n  color: #333;\n  font: inherit;\n  font-size: 0.9rem;\n  outline: none;\n}\n\n.suggestion-box-lite input {\n  height: 40px;\n  padding: 0 0.75rem;\n}\n\n.suggestion-box-lite textarea {\n  display: block;\n  min-height: 90px;\n  padding: 0.7rem 0.75rem;\n  resize: vertical;\n}\n\n.suggestion-box-lite input::placeholder,\n.suggestion-box-lite textarea::placeholder {\n  color: #a5abb3;\n}\n\n.suggestion-box-lite input:focus,\n.suggestion-box-lite textarea:focus {\n  border-color: #b8c9e8;\n  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.06);\n}\n\n.suggestion-box-lite-action {\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  gap: 0.75rem;\n  margin-top: 0.7rem;\n}\n\n.suggestion-box-lite-action button {\n  padding: 0.5rem 1rem;\n  border: 0;\n  border-radius: 7px;\n  background: #2563eb;\n  color: #fff;\n  font-size: 0.85rem;\n  cursor: pointer;\n}\n\n.suggestion-box-lite-action button:hover:not(:disabled) {\n  background: #1d4ed8;\n}\n\n.suggestion-box-lite-action button:disabled {\n  opacity: 0.6;\n  cursor: not-allowed;\n}\n\n.suggestion-box-lite-feedback {\n  margin-right: auto;\n  font-size: 0.8rem;\n}\n\n.suggestion-box-lite-feedback.sent {\n  color: #16803c;\n}\n\n.suggestion-box-lite-feedback.error {\n  color: #c62828;\n}\n\n@media (max-width: 600px) {\n  .suggestion-box-lite {\n    padding: 1.2rem;\n  }\n\n  .suggestion-box-lite-fields {\n    grid-template-columns: 1fr;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -5951,7 +6929,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.daily-words {
   font-size: 12px;
   margin: 2px 0 8px;
 }
-`, "",{"version":3,"sources":["webpack://./src/features/DailyWords/dailyWords.css"],"names":[],"mappings":"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","sourcesContent":[".daily-words {\r\n  width: 100%;\r\n  max-width: 900px;\r\n  box-sizing: border-box;\r\n  margin: 16px 0 24px;\r\n  padding: 22px 24px;\r\n  border: 1px solid #e2e8f0;\r\n  border-radius: 14px;\r\n  background: linear-gradient(135deg, #eef2ff 0%, #faf5ff 100%);\r\n  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.08);\r\n}\r\n\r\n.daily-words.is-collapsed {\r\n  padding-bottom: 16px;\r\n}\r\n\r\n.dw-header {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  gap: 10px;\r\n  margin-bottom: 12px;\r\n}\r\n\r\n.dw-header h3 {\r\n  margin: 0;\r\n  font-size: 18px;\r\n  color: #4338ca;\r\n  white-space: nowrap;\r\n}\r\n\r\n.dw-title-row {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  gap: 12px;\r\n  width: 100%;\r\n}\r\n\r\n.dw-title-actions {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 12px;\r\n  margin-left: auto;\r\n}\r\n\r\n.dw-bookmarks-link {\r\n  display: inline-flex;\r\n  align-items: center;\r\n  gap: 4px;\r\n  border: 1px solid #c7d2fe;\r\n  border-radius: 7px;\r\n  padding: 5px 8px;\r\n  background: #fff;\r\n  color: #4338ca;\r\n  font-size: 12px;\r\n  font-weight: 600;\r\n  text-decoration: none;\r\n  white-space: nowrap;\r\n}\r\n\r\n.dw-bookmarks-link:hover {\r\n  background: #eef2ff;\r\n}\r\n\r\n.dw-expand {\r\n  margin-left: auto;\r\n  border: 1px solid #c7d2fe;\r\n  border-radius: 8px;\r\n  padding: 6px 10px;\r\n  background: #fff;\r\n  color: #4338ca;\r\n  font-size: 13px;\r\n  cursor: pointer;\r\n}\r\n\r\n.dw-expand:hover {\r\n  background: #eef2ff;\r\n}\r\n\r\n.dw-refresh {\r\n  border: none;\r\n  background: #6366f1;\r\n  color: #fff;\r\n  padding: 6px 12px;\r\n  border-radius: 8px;\r\n  font-size: 13px;\r\n  cursor: pointer;\r\n  margin-left: auto;\r\n  white-space: nowrap;\r\n  transition: background 0.2s, transform 0.1s;\r\n}\r\n\r\n.dw-refresh:hover:not(:disabled) {\r\n  background: #4f46e5;\r\n}\r\n\r\n.dw-refresh:active:not(:disabled) {\r\n  transform: scale(0.97);\r\n}\r\n\r\n.dw-refresh:disabled {\r\n  opacity: 0.6;\r\n  cursor: not-allowed;\r\n}\r\n\r\n.dw-card {\r\n  background: #fff;\r\n  border-radius: 10px;\r\n  padding: 16px;\r\n}\r\n\r\n.dw-word-row {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n  margin-bottom: 6px;\r\n  flex-wrap: wrap;\r\n}\r\n\r\n.dw-word {\r\n  font-size: 26px;\r\n  font-weight: 700;\r\n  color: #1e1b4b;\r\n  text-transform: capitalize;\r\n}\r\n\r\n.dw-pos {\r\n  font-size: 13px;\r\n  font-style: italic;\r\n  color: #8b5cf6;\r\n  background: #f3e8ff;\r\n  padding: 2px 8px;\r\n  border-radius: 6px;\r\n}\r\n\r\n.dw-bookmark-btn,\r\n.word-search-bookmark {\r\n  border: 1px solid #c7d2fe;\r\n  border-radius: 999px;\r\n  padding: 4px 8px;\r\n  background: #fff;\r\n  color: #6366f1;\r\n  font-size: 16px;\r\n  line-height: 1;\r\n  cursor: pointer;\r\n}\r\n\r\n.dw-bookmark-btn:hover,\r\n.word-search-bookmark:hover {\r\n  background: #eef2ff;\r\n}\r\n\r\n.dw-meaning-row,\r\n.dw-example-row {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 8px;\r\n}\r\n\r\n.dw-meaning {\r\n  color: #334155;\r\n  margin: 6px 0;\r\n  line-height: 1.5;\r\n  flex: 1;\r\n}\r\n\r\n.dw-example {\r\n  color: #64748b;\r\n  font-style: italic;\r\n  border-left: 3px solid #c7d2fe;\r\n  padding-left: 10px;\r\n  margin: 10px 0;\r\n  flex: 1;\r\n}\r\n\r\n.dw-voice-btn {\r\n  border: 1px solid #dbeafe;\r\n  background: #f8fafc;\r\n  color: #4338ca;\r\n  width: 26px;\r\n  height: 26px;\r\n  min-width: 26px;\r\n  border-radius: 999px;\r\n  cursor: pointer;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: 12px;\r\n  padding: 0;\r\n  transition: background 0.15s, transform 0.08s;\r\n}\r\n\r\n.dw-voice-btn:hover {\r\n  background: #eef2ff;\r\n}\r\n\r\n.dw-voice-btn:active {\r\n  transform: scale(0.96);\r\n}\r\n\r\n.dw-voice-btn.small {\r\n  width: 22px;\r\n  height: 22px;\r\n  min-width: 22px;\r\n  font-size: 11px;\r\n}\r\n\r\n.dw-synonyms {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  align-items: center;\r\n  gap: 6px;\r\n  margin-top: 10px;\r\n}\r\n\r\n.dw-syn-label {\r\n  font-size: 13px;\r\n  color: #64748b;\r\n  margin-right: 2px;\r\n}\r\n\r\n.dw-syn-chip {\r\n  display: inline-flex;\r\n  align-items: center;\r\n  gap: 6px;\r\n  font-size: 12px;\r\n  background: #e0e7ff;\r\n  color: #4338ca;\r\n  padding: 3px 9px;\r\n  border-radius: 12px;\r\n}\r\n\r\n.dw-mini-voice {\r\n  border: none;\r\n  background: transparent;\r\n  cursor: pointer;\r\n  padding: 0;\r\n  font-size: 10px;\r\n  line-height: 1;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\n.dw-loading {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n  color: #6366f1;\r\n  padding: 8px 0;\r\n}\r\n\r\n.dw-spinner {\r\n  width: 18px;\r\n  height: 18px;\r\n  border: 3px solid #c7d2fe;\r\n  border-top-color: #6366f1;\r\n  border-radius: 50%;\r\n  animation: dw-spin 0.8s linear infinite;\r\n}\r\n\r\n@keyframes dw-spin {\r\n  to { transform: rotate(360deg); }\r\n}\r\n\r\n.dw-error {\r\n  color: #ef4444;\r\n  font-size: 14px;\r\n  padding: 6px 0;\r\n}\r\n\r\n/* Tabs for language selection */\r\n.dw-tabs {\r\n  display: flex;\r\n  gap: 8px;\r\n  align-items: center;\r\n  width: 100%;\r\n  margin-left: 0;\r\n  overflow: visible;\r\n  flex-wrap: nowrap;\r\n}\r\n\r\n.dw-tab {\r\n  flex: 1 1 0;\r\n  min-width: 0;\r\n  border: 1px solid transparent;\r\n  background: transparent;\r\n  color: #374151;\r\n  padding: 6px 10px;\r\n  border-radius: 8px;\r\n  font-size: 13px;\r\n  white-space: nowrap;\r\n  cursor: pointer;\r\n  transition: background 0.15s, color 0.15s, transform 0.06s;\r\n}\r\n\r\n.dw-tab:hover:not(:disabled) {\r\n  background: #f3f4f6;\r\n}\r\n\r\n.dw-tab:active:not(:disabled) {\r\n  transform: translateY(1px);\r\n}\r\n\r\n.dw-tab.active {\r\n  background: #eef2ff;\r\n  color: #4338ca;\r\n  border-color: #e0e7ff;\r\n}\r\n\r\n/* Transliteration / small note */\r\n.dw-translit {\r\n  color: #6b7280;\r\n  font-size: 13px;\r\n  margin: 4px 0;\r\n  font-style: italic;\r\n}\r\n\r\n.dw-example-translit {\r\n  color: #9ca3af;\r\n  font-size: 12px;\r\n  margin: 2px 0 8px;\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/features/DailyWords/dailyWords.css"],"names":[],"mappings":"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","sourcesContent":[".daily-words {\n  width: 100%;\n  max-width: 900px;\n  box-sizing: border-box;\n  margin: 16px 0 24px;\n  padding: 22px 24px;\n  border: 1px solid #e2e8f0;\n  border-radius: 14px;\n  background: linear-gradient(135deg, #eef2ff 0%, #faf5ff 100%);\n  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.08);\n}\n\n.daily-words.is-collapsed {\n  padding-bottom: 16px;\n}\n\n.dw-header {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 10px;\n  margin-bottom: 12px;\n}\n\n.dw-header h3 {\n  margin: 0;\n  font-size: 18px;\n  color: #4338ca;\n  white-space: nowrap;\n}\n\n.dw-title-row {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 12px;\n  width: 100%;\n}\n\n.dw-title-actions {\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  margin-left: auto;\n}\n\n.dw-bookmarks-link {\n  display: inline-flex;\n  align-items: center;\n  gap: 4px;\n  border: 1px solid #c7d2fe;\n  border-radius: 7px;\n  padding: 5px 8px;\n  background: #fff;\n  color: #4338ca;\n  font-size: 12px;\n  font-weight: 600;\n  text-decoration: none;\n  white-space: nowrap;\n}\n\n.dw-bookmarks-link:hover {\n  background: #eef2ff;\n}\n\n.dw-expand {\n  margin-left: auto;\n  border: 1px solid #c7d2fe;\n  border-radius: 8px;\n  padding: 6px 10px;\n  background: #fff;\n  color: #4338ca;\n  font-size: 13px;\n  cursor: pointer;\n}\n\n.dw-expand:hover {\n  background: #eef2ff;\n}\n\n.dw-refresh {\n  border: none;\n  background: #6366f1;\n  color: #fff;\n  padding: 6px 12px;\n  border-radius: 8px;\n  font-size: 13px;\n  cursor: pointer;\n  margin-left: auto;\n  white-space: nowrap;\n  transition: background 0.2s, transform 0.1s;\n}\n\n.dw-refresh:hover:not(:disabled) {\n  background: #4f46e5;\n}\n\n.dw-refresh:active:not(:disabled) {\n  transform: scale(0.97);\n}\n\n.dw-refresh:disabled {\n  opacity: 0.6;\n  cursor: not-allowed;\n}\n\n.dw-card {\n  background: #fff;\n  border-radius: 10px;\n  padding: 16px;\n}\n\n.dw-word-row {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  margin-bottom: 6px;\n  flex-wrap: wrap;\n}\n\n.dw-word {\n  font-size: 26px;\n  font-weight: 700;\n  color: #1e1b4b;\n  text-transform: capitalize;\n}\n\n.dw-pos {\n  font-size: 13px;\n  font-style: italic;\n  color: #8b5cf6;\n  background: #f3e8ff;\n  padding: 2px 8px;\n  border-radius: 6px;\n}\n\n.dw-bookmark-btn,\n.word-search-bookmark {\n  border: 1px solid #c7d2fe;\n  border-radius: 999px;\n  padding: 4px 8px;\n  background: #fff;\n  color: #6366f1;\n  font-size: 16px;\n  line-height: 1;\n  cursor: pointer;\n}\n\n.dw-bookmark-btn:hover,\n.word-search-bookmark:hover {\n  background: #eef2ff;\n}\n\n.dw-meaning-row,\n.dw-example-row {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n}\n\n.dw-meaning {\n  color: #334155;\n  margin: 6px 0;\n  line-height: 1.5;\n  flex: 1;\n}\n\n.dw-example {\n  color: #64748b;\n  font-style: italic;\n  border-left: 3px solid #c7d2fe;\n  padding-left: 10px;\n  margin: 10px 0;\n  flex: 1;\n}\n\n.dw-voice-btn {\n  border: 1px solid #dbeafe;\n  background: #f8fafc;\n  color: #4338ca;\n  width: 26px;\n  height: 26px;\n  min-width: 26px;\n  border-radius: 999px;\n  cursor: pointer;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 12px;\n  padding: 0;\n  transition: background 0.15s, transform 0.08s;\n}\n\n.dw-voice-btn:hover {\n  background: #eef2ff;\n}\n\n.dw-voice-btn:active {\n  transform: scale(0.96);\n}\n\n.dw-voice-btn.small {\n  width: 22px;\n  height: 22px;\n  min-width: 22px;\n  font-size: 11px;\n}\n\n.dw-synonyms {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n  gap: 6px;\n  margin-top: 10px;\n}\n\n.dw-syn-label {\n  font-size: 13px;\n  color: #64748b;\n  margin-right: 2px;\n}\n\n.dw-syn-chip {\n  display: inline-flex;\n  align-items: center;\n  gap: 6px;\n  font-size: 12px;\n  background: #e0e7ff;\n  color: #4338ca;\n  padding: 3px 9px;\n  border-radius: 12px;\n}\n\n.dw-mini-voice {\n  border: none;\n  background: transparent;\n  cursor: pointer;\n  padding: 0;\n  font-size: 10px;\n  line-height: 1;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.dw-loading {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  color: #6366f1;\n  padding: 8px 0;\n}\n\n.dw-spinner {\n  width: 18px;\n  height: 18px;\n  border: 3px solid #c7d2fe;\n  border-top-color: #6366f1;\n  border-radius: 50%;\n  animation: dw-spin 0.8s linear infinite;\n}\n\n@keyframes dw-spin {\n  to { transform: rotate(360deg); }\n}\n\n.dw-error {\n  color: #ef4444;\n  font-size: 14px;\n  padding: 6px 0;\n}\n\n/* Tabs for language selection */\n.dw-tabs {\n  display: flex;\n  gap: 8px;\n  align-items: center;\n  width: 100%;\n  margin-left: 0;\n  overflow: visible;\n  flex-wrap: nowrap;\n}\n\n.dw-tab {\n  flex: 1 1 0;\n  min-width: 0;\n  border: 1px solid transparent;\n  background: transparent;\n  color: #374151;\n  padding: 6px 10px;\n  border-radius: 8px;\n  font-size: 13px;\n  white-space: nowrap;\n  cursor: pointer;\n  transition: background 0.15s, color 0.15s, transform 0.06s;\n}\n\n.dw-tab:hover:not(:disabled) {\n  background: #f3f4f6;\n}\n\n.dw-tab:active:not(:disabled) {\n  transform: translateY(1px);\n}\n\n.dw-tab.active {\n  background: #eef2ff;\n  color: #4338ca;\n  border-color: #e0e7ff;\n}\n\n/* Transliteration / small note */\n.dw-translit {\n  color: #6b7280;\n  font-size: 13px;\n  margin: 4px 0;\n  font-style: italic;\n}\n\n.dw-example-translit {\n  color: #9ca3af;\n  font-size: 12px;\n  margin: 2px 0 8px;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6073,7 +7051,7 @@ button {
 .score {
   margin-top: 15px;
   font-weight: bold;
-}`, "",{"version":3,"sources":["webpack://./src/features/Games/Anagram/anagram.css"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,aAAa;EACb,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,SAAS;EACT,mBAAmB;AACrB;;AAEA;EACE,eAAe;EACf,mBAAmB;EACnB,cAAc;EACd,iBAAiB;AACnB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,YAAY;EACZ,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,WAAW;EACX,eAAe;AACjB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,qBAAqB;EACrB,WAAW;EACX,iBAAiB;EACjB,kBAAkB;EAClB,eAAe;EACf,yBAAyB;AAC3B;;AAEA;EACE,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,YAAY;AACd;;AAEA;EACE,mBAAmB;EACnB,YAAY;EACZ,kBAAkB;EAClB,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;EACnB,YAAY;EACZ,YAAY;EACZ,kBAAkB;EAClB,iBAAiB;AACnB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;AACnB","sourcesContent":[".anagram-wrapper {\r\n  text-align: center;\r\n  padding: 20px;\r\n  font-family: Arial;\r\n}\r\n\r\n.top-bar {\r\n  display: flex;\r\n  justify-content: center;\r\n  gap: 10px;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n.scrambled {\r\n  font-size: 32px;\r\n  letter-spacing: 6px;\r\n  margin: 20px 0;\r\n  font-weight: bold;\r\n}\r\n\r\n.input-row {\r\n  margin: 10px 0;\r\n}\r\n\r\ninput {\r\n  padding: 8px;\r\n  font-size: 16px;\r\n  margin-right: 10px;\r\n}\r\n\r\nbutton {\r\n  padding: 8px 12px;\r\n  margin: 5px;\r\n  cursor: pointer;\r\n}\r\n\r\n.btn-row {\r\n  margin-top: 10px;\r\n}\r\n\r\n.result {\r\n  margin: 10px;\r\n  font-weight: bold;\r\n}\r\n\r\n.answers {\r\n  margin-top: 15px;\r\n}\r\n\r\n.answers span {\r\n  display: inline-block;\r\n  margin: 5px;\r\n  padding: 6px 10px;\r\n  border-radius: 6px;\r\n  font-size: 14px;\r\n  transition: all 0.3s ease;\r\n}\r\n\r\n.hidden {\r\n  background: #444;\r\n  color: transparent;\r\n}\r\n\r\n.found {\r\n  background: #4ade80;\r\n  color: black;\r\n}\r\n\r\n.next-btn {\r\n  background: #60a5fa;\r\n  border: none;\r\n  border-radius: 6px;\r\n  font-weight: bold;\r\n}\r\n\r\n.next-btn:disabled {\r\n  background: #555;\r\n  cursor: not-allowed;\r\n}\r\n\r\n.reset-btn {\r\n  background: #f87171;\r\n  color: white;\r\n  border: none;\r\n  border-radius: 6px;\r\n  font-weight: bold;\r\n}\r\n\r\n.reset-btn:hover {\r\n  background: #ef4444;\r\n}\r\n\r\n.score {\r\n  margin-top: 15px;\r\n  font-weight: bold;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/features/Games/Anagram/anagram.css"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,aAAa;EACb,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,SAAS;EACT,mBAAmB;AACrB;;AAEA;EACE,eAAe;EACf,mBAAmB;EACnB,cAAc;EACd,iBAAiB;AACnB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,YAAY;EACZ,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,WAAW;EACX,eAAe;AACjB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,qBAAqB;EACrB,WAAW;EACX,iBAAiB;EACjB,kBAAkB;EAClB,eAAe;EACf,yBAAyB;AAC3B;;AAEA;EACE,gBAAgB;EAChB,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,YAAY;AACd;;AAEA;EACE,mBAAmB;EACnB,YAAY;EACZ,kBAAkB;EAClB,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;EACnB,YAAY;EACZ,YAAY;EACZ,kBAAkB;EAClB,iBAAiB;AACnB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;AACnB","sourcesContent":[".anagram-wrapper {\n  text-align: center;\n  padding: 20px;\n  font-family: Arial;\n}\n\n.top-bar {\n  display: flex;\n  justify-content: center;\n  gap: 10px;\n  margin-bottom: 10px;\n}\n\n.scrambled {\n  font-size: 32px;\n  letter-spacing: 6px;\n  margin: 20px 0;\n  font-weight: bold;\n}\n\n.input-row {\n  margin: 10px 0;\n}\n\ninput {\n  padding: 8px;\n  font-size: 16px;\n  margin-right: 10px;\n}\n\nbutton {\n  padding: 8px 12px;\n  margin: 5px;\n  cursor: pointer;\n}\n\n.btn-row {\n  margin-top: 10px;\n}\n\n.result {\n  margin: 10px;\n  font-weight: bold;\n}\n\n.answers {\n  margin-top: 15px;\n}\n\n.answers span {\n  display: inline-block;\n  margin: 5px;\n  padding: 6px 10px;\n  border-radius: 6px;\n  font-size: 14px;\n  transition: all 0.3s ease;\n}\n\n.hidden {\n  background: #444;\n  color: transparent;\n}\n\n.found {\n  background: #4ade80;\n  color: black;\n}\n\n.next-btn {\n  background: #60a5fa;\n  border: none;\n  border-radius: 6px;\n  font-weight: bold;\n}\n\n.next-btn:disabled {\n  background: #555;\n  cursor: not-allowed;\n}\n\n.reset-btn {\n  background: #f87171;\n  color: white;\n  border: none;\n  border-radius: 6px;\n  font-weight: bold;\n}\n\n.reset-btn:hover {\n  background: #ef4444;\n}\n\n.score {\n  margin-top: 15px;\n  font-weight: bold;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6165,7 +7143,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Page container */
 
 .hub-btn:hover {
   background: #6366f1;
-}`, "",{"version":3,"sources":["webpack://./src/features/Games/GamesHub/gameshub.css"],"names":[],"mappings":"AAAA,mBAAmB;AACnB;EACE,gBAAgB;EAChB,aAAa;EACb,uDAAuD;EACvD,YAAY;EACZ,8BAA8B;AAChC;;AAEA,UAAU;AACV;EACE,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,mBAAmB;AACrB;;AAEA,gBAAgB;AAChB;EACE,aAAa;EACb,2DAA2D;EAC3D,SAAS;AACX;;AAEA,cAAc;AACd;EACE,qCAAqC;EACrC,2CAA2C;EAC3C,mBAAmB;EACnB,aAAa;EACb,eAAe;EACf,yBAAyB;EACzB,2BAA2B;EAC3B,uCAAuC;AACzC;;AAEA,iBAAiB;AACjB;EACE,uCAAuC;EACvC,qCAAqC;AACvC;;AAEA,SAAS;AACT;EACE,eAAe;EACf,mBAAmB;AACrB;;AAEA,WAAW;AACX;EACE,gBAAgB;EAChB,iBAAiB;EACjB,YAAY;EACZ,kBAAkB;EAClB,mBAAmB;EACnB,YAAY;EACZ,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,mBAAmB;AACrB","sourcesContent":["/* Page container */\r\n.hub-container {\r\n  min-height: 95vh;\r\n  padding: 10px;\r\n  background: linear-gradient(135deg, #ddddd862, #1e303b);\r\n  color: white;\r\n  font-family: Arial, sans-serif;\r\n}\r\n\r\n/* Title */\r\n.hub-title {\r\n  font-size: 40px;\r\n  margin-bottom: 8px;\r\n}\r\n\r\n.hub-subtitle {\r\n  opacity: 0.7;\r\n  margin-bottom: 30px;\r\n}\r\n\r\n/* Grid layout */\r\n.hub-grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));\r\n  gap: 20px;\r\n}\r\n\r\n/* Game card */\r\n.hub-card {\r\n  background: rgba(255, 255, 255, 0.08);\r\n  border: 1px solid rgba(255, 255, 255, 0.15);\r\n  border-radius: 16px;\r\n  padding: 20px;\r\n  cursor: pointer;\r\n  transition: all 0.3s ease;\r\n  backdrop-filter: blur(10px);\r\n  box-shadow: 0 10px 30px rgba(0,0,0,0.3);\r\n}\r\n\r\n/* Hover effect */\r\n.hub-card:hover {\r\n  transform: translateY(-8px) scale(1.03);\r\n  background: rgba(255, 255, 255, 0.12);\r\n}\r\n\r\n/* Icon */\r\n.hub-icon {\r\n  font-size: 40px;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n/* Button */\r\n.hub-btn {\r\n  margin-top: 12px;\r\n  padding: 8px 14px;\r\n  border: none;\r\n  border-radius: 8px;\r\n  background: #4f46e5;\r\n  color: white;\r\n  cursor: pointer;\r\n  transition: 0.2s;\r\n}\r\n\r\n.hub-btn:hover {\r\n  background: #6366f1;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/features/Games/GamesHub/gameshub.css"],"names":[],"mappings":"AAAA,mBAAmB;AACnB;EACE,gBAAgB;EAChB,aAAa;EACb,uDAAuD;EACvD,YAAY;EACZ,8BAA8B;AAChC;;AAEA,UAAU;AACV;EACE,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,mBAAmB;AACrB;;AAEA,gBAAgB;AAChB;EACE,aAAa;EACb,2DAA2D;EAC3D,SAAS;AACX;;AAEA,cAAc;AACd;EACE,qCAAqC;EACrC,2CAA2C;EAC3C,mBAAmB;EACnB,aAAa;EACb,eAAe;EACf,yBAAyB;EACzB,2BAA2B;EAC3B,uCAAuC;AACzC;;AAEA,iBAAiB;AACjB;EACE,uCAAuC;EACvC,qCAAqC;AACvC;;AAEA,SAAS;AACT;EACE,eAAe;EACf,mBAAmB;AACrB;;AAEA,WAAW;AACX;EACE,gBAAgB;EAChB,iBAAiB;EACjB,YAAY;EACZ,kBAAkB;EAClB,mBAAmB;EACnB,YAAY;EACZ,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,mBAAmB;AACrB","sourcesContent":["/* Page container */\n.hub-container {\n  min-height: 95vh;\n  padding: 10px;\n  background: linear-gradient(135deg, #ddddd862, #1e303b);\n  color: white;\n  font-family: Arial, sans-serif;\n}\n\n/* Title */\n.hub-title {\n  font-size: 40px;\n  margin-bottom: 8px;\n}\n\n.hub-subtitle {\n  opacity: 0.7;\n  margin-bottom: 30px;\n}\n\n/* Grid layout */\n.hub-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));\n  gap: 20px;\n}\n\n/* Game card */\n.hub-card {\n  background: rgba(255, 255, 255, 0.08);\n  border: 1px solid rgba(255, 255, 255, 0.15);\n  border-radius: 16px;\n  padding: 20px;\n  cursor: pointer;\n  transition: all 0.3s ease;\n  backdrop-filter: blur(10px);\n  box-shadow: 0 10px 30px rgba(0,0,0,0.3);\n}\n\n/* Hover effect */\n.hub-card:hover {\n  transform: translateY(-8px) scale(1.03);\n  background: rgba(255, 255, 255, 0.12);\n}\n\n/* Icon */\n.hub-icon {\n  font-size: 40px;\n  margin-bottom: 10px;\n}\n\n/* Button */\n.hub-btn {\n  margin-top: 12px;\n  padding: 8px 14px;\n  border: none;\n  border-radius: 8px;\n  background: #4f46e5;\n  color: white;\n  cursor: pointer;\n  transition: 0.2s;\n}\n\n.hub-btn:hover {\n  background: #6366f1;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6246,7 +7224,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.game-wrapper {
 .back {
   background: #4ade80;
   transform: rotateY(180deg);
-}`, "",{"version":3,"sources":["webpack://./src/features/Games/memory/memory.css"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,aAAa;EACb,sCAAsC;EACtC,SAAS;EACT,uBAAuB;EACvB,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,0BAA0B;EAC1B,4BAA4B;AAC9B;;AAEA;EACE,0BAA0B;AAC5B;;AAEA;;EAEE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,mBAAmB;EACnB,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,eAAe;EACf,2BAA2B;AAC7B;;AAEA;EACE,mBAAmB;EACnB,YAAY;AACd;;AAEA;EACE,mBAAmB;EACnB,0BAA0B;AAC5B","sourcesContent":[".game-wrapper {\r\n  text-align: center;\r\n  font-family: Arial;\r\n  padding: 20px;\r\n}\r\n\r\n.grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(4, 80px);\r\n  gap: 12px;\r\n  justify-content: center;\r\n  margin-top: 20px;\r\n}\r\n\r\n.card {\r\n  width: 80px;\r\n  height: 80px;\r\n  perspective: 800px;\r\n  cursor: pointer;\r\n}\r\n\r\n.inner {\r\n  width: 100%;\r\n  height: 100%;\r\n  position: relative;\r\n  transition: transform 0.5s;\r\n  transform-style: preserve-3d;\r\n}\r\n\r\n.card.flipped .inner {\r\n  transform: rotateY(180deg);\r\n}\r\n\r\n.front,\r\n.back {\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 100%;\r\n  border-radius: 10px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: 24px;\r\n  backface-visibility: hidden;\r\n}\r\n\r\n.front {\r\n  background: #2c2c3a;\r\n  color: white;\r\n}\r\n\r\n.back {\r\n  background: #4ade80;\r\n  transform: rotateY(180deg);\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/features/Games/memory/memory.css"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,aAAa;EACb,sCAAsC;EACtC,SAAS;EACT,uBAAuB;EACvB,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,0BAA0B;EAC1B,4BAA4B;AAC9B;;AAEA;EACE,0BAA0B;AAC5B;;AAEA;;EAEE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,mBAAmB;EACnB,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,eAAe;EACf,2BAA2B;AAC7B;;AAEA;EACE,mBAAmB;EACnB,YAAY;AACd;;AAEA;EACE,mBAAmB;EACnB,0BAA0B;AAC5B","sourcesContent":[".game-wrapper {\n  text-align: center;\n  font-family: Arial;\n  padding: 20px;\n}\n\n.grid {\n  display: grid;\n  grid-template-columns: repeat(4, 80px);\n  gap: 12px;\n  justify-content: center;\n  margin-top: 20px;\n}\n\n.card {\n  width: 80px;\n  height: 80px;\n  perspective: 800px;\n  cursor: pointer;\n}\n\n.inner {\n  width: 100%;\n  height: 100%;\n  position: relative;\n  transition: transform 0.5s;\n  transform-style: preserve-3d;\n}\n\n.card.flipped .inner {\n  transform: rotateY(180deg);\n}\n\n.front,\n.back {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  border-radius: 10px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 24px;\n  backface-visibility: hidden;\n}\n\n.front {\n  background: #2c2c3a;\n  color: white;\n}\n\n.back {\n  background: #4ade80;\n  transform: rotateY(180deg);\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6323,7 +7301,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.puzzle-card {
   padding: 8px;
   background: #f5f5f5;
   border-radius: 6px;
-}`, "",{"version":3,"sources":["webpack://./src/features/Puzzles/puzzles.css"],"names":[],"mappings":"AAAA;IACI,YAAY;EACd,aAAa;EACb,mBAAmB;EACnB,gBAAgB;EAChB,sCAAsC;GACrC,eAAe;EAChB,gBAAgB;CACjB;;AAED;EACE,gBAAgB;EAChB,aAAa;EACb,sBAAsB;EACtB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,2BAA2B;EAC3B,mBAAmB;EACnB,kBAAkB;AACpB;AACA,kBAAkB;AAClB;EACE,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,eAAe;EACf,iBAAiB;EACjB,YAAY;EACZ,gBAAgB;EAChB,YAAY;EACZ,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,YAAY;EACZ,mBAAmB;EACnB,kBAAkB;AACpB","sourcesContent":[".puzzle-card {\r\n    height:90vh ;\r\n  padding: 16px;\r\n  border-radius: 12px;\r\n  background: #fff;\r\n  box-shadow: 0 2px 10px rgba(0,0,0,0.1);\r\n   max-width: 100%;\r\n  overflow-y: auto;\r\n }\r\n\r\n.puzzle-items {\r\n  margin-top: 12px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 10px;\r\n}\r\n\r\n.puzzle-item {\r\n  padding: 10px;\r\n  border-left: 3px solid #333;\r\n  background: #f9f9f9;\r\n  border-radius: 6px;\r\n}\r\n/* header layout */\r\n.puzzle-header {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  gap: 10px;\r\n}\r\n\r\n.toggle-btn {\r\n  margin-top: 8px;\r\n  padding: 6px 10px;\r\n  border: none;\r\n  background: #333;\r\n  color: white;\r\n  border-radius: 5px;\r\n  cursor: pointer;\r\n}\r\n\r\n.toggle-btn:hover {\r\n  background: #555;\r\n}\r\n\r\n.desc {\r\n  margin-top: 10px;\r\n  padding: 8px;\r\n  background: #f5f5f5;\r\n  border-radius: 6px;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/features/Puzzles/puzzles.css"],"names":[],"mappings":"AAAA;IACI,YAAY;EACd,aAAa;EACb,mBAAmB;EACnB,gBAAgB;EAChB,sCAAsC;GACrC,eAAe;EAChB,gBAAgB;CACjB;;AAED;EACE,gBAAgB;EAChB,aAAa;EACb,sBAAsB;EACtB,SAAS;AACX;;AAEA;EACE,aAAa;EACb,2BAA2B;EAC3B,mBAAmB;EACnB,kBAAkB;AACpB;AACA,kBAAkB;AAClB;EACE,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,eAAe;EACf,iBAAiB;EACjB,YAAY;EACZ,gBAAgB;EAChB,YAAY;EACZ,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,YAAY;EACZ,mBAAmB;EACnB,kBAAkB;AACpB","sourcesContent":[".puzzle-card {\n    height:90vh ;\n  padding: 16px;\n  border-radius: 12px;\n  background: #fff;\n  box-shadow: 0 2px 10px rgba(0,0,0,0.1);\n   max-width: 100%;\n  overflow-y: auto;\n }\n\n.puzzle-items {\n  margin-top: 12px;\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n}\n\n.puzzle-item {\n  padding: 10px;\n  border-left: 3px solid #333;\n  background: #f9f9f9;\n  border-radius: 6px;\n}\n/* header layout */\n.puzzle-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  gap: 10px;\n}\n\n.toggle-btn {\n  margin-top: 8px;\n  padding: 6px 10px;\n  border: none;\n  background: #333;\n  color: white;\n  border-radius: 5px;\n  cursor: pointer;\n}\n\n.toggle-btn:hover {\n  background: #555;\n}\n\n.desc {\n  margin-top: 10px;\n  padding: 8px;\n  background: #f5f5f5;\n  border-radius: 6px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6733,7 +7711,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.word-search {
     flex-direction: column;
   }
 }
-`, "",{"version":3,"sources":["webpack://./src/features/WordSearch/wordSearch.css"],"names":[],"mappings":"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","sourcesContent":[".word-search {\r\n  width: 100%;\r\n  max-width: 900px;\r\n  box-sizing: border-box;\r\n  margin: 16px 0 24px;\r\n  padding: 22px 24px;\r\n  border: 1px solid #d7e4e5;\r\n  border-radius: 14px;\r\n  background: linear-gradient(135deg, #f1fbf8 0%, #fffaf0 100%);\r\n  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.08);\r\n}\r\n\r\n.word-search-header {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  gap: 16px;\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.word-search.is-collapsed .word-search-header {\r\n  margin-bottom: 0;\r\n}\r\n\r\n.word-search-header-actions {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n}\r\n\r\n.word-search-bookmarks-link {\r\n  display: inline-flex;\r\n  align-items: center;\r\n  gap: 5px;\r\n  border: 1px solid #b8d7d2;\r\n  border-radius: 8px;\r\n  padding: 7px 10px;\r\n  background: #fff;\r\n  color: #0f766e;\r\n  font-size: 12px;\r\n  font-weight: 700;\r\n  text-decoration: none;\r\n  white-space: nowrap;\r\n}\r\n\r\n.word-search-bookmarks-link:hover {\r\n  background: #dff3ee;\r\n}\r\n\r\n.word-search-eyebrow {\r\n  margin: 0 0 4px;\r\n  color: #0f766e;\r\n  font-size: 12px;\r\n  font-weight: 700;\r\n  letter-spacing: 0.08em;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.word-search h2,\r\n.word-search h3 {\r\n  margin: 0;\r\n  color: #183b3b;\r\n}\r\n\r\n.word-search h2 {\r\n  font-size: 24px;\r\n}\r\n\r\n.word-search-mark {\r\n  display: inline-flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  width: 42px;\r\n  height: 42px;\r\n  border: 1px solid #99d5ca;\r\n  border-radius: 10px;\r\n  color: #0f766e;\r\n  font-size: 19px;\r\n  font-weight: 700;\r\n  transform: rotate(-5deg);\r\n}\r\n\r\n.word-search-mark.multilingual {\r\n  width: auto;\r\n  min-width: 96px;\r\n  gap: 4px;\r\n  padding: 0 7px;\r\n  font-size: 16px;\r\n  transform: rotate(-5deg);\r\n}\r\n\r\n.word-search-mark.multilingual span {\r\n  display: inline-flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  line-height: 1;\r\n}\r\n\r\n.word-search-toggle {\r\n  border: 1px solid #99d5ca;\r\n  border-radius: 8px;\r\n  padding: 7px 10px;\r\n  background: #fff;\r\n  color: #0f766e;\r\n  font: inherit;\r\n  font-size: 12px;\r\n  font-weight: 700;\r\n  cursor: pointer;\r\n}\r\n\r\n.word-search-toggle:hover {\r\n  background: #dff3ee;\r\n}\r\n\r\n.word-search-form {\r\n  display: grid;\r\n  gap: 7px;\r\n}\r\n\r\n.word-search-form-topline {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  gap: 12px;\r\n}\r\n\r\n.word-search-label {\r\n  color: #486363;\r\n  font-size: 13px;\r\n  font-weight: 600;\r\n}\r\n\r\n.word-search-language-tabs {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 4px;\r\n  flex: 1;\r\n  min-width: 0;\r\n  max-width: 100%;\r\n  overflow: visible;\r\n  flex-wrap: nowrap;\r\n}\r\n\r\n.word-search-language-tabs button {\r\n  flex: 1 1 0;\r\n  min-width: 0;\r\n  border: 1px solid #b8d7d2;\r\n  border-radius: 999px;\r\n  padding: 5px 9px;\r\n  background: #fff;\r\n  color: #486363;\r\n  font: inherit;\r\n  font-size: 12px;\r\n  white-space: nowrap;\r\n  cursor: pointer;\r\n}\r\n\r\n.word-search-language-tabs button:hover {\r\n  background: #dff3ee;\r\n}\r\n\r\n.word-search-language-tabs button.active {\r\n  border-color: #0f766e;\r\n  background: #0f766e;\r\n  color: #fff;\r\n}\r\n\r\n.word-search-controls {\r\n  display: flex;\r\n  gap: 8px;\r\n}\r\n\r\n.word-search-controls input {\r\n  min-width: 0;\r\n  flex: 1;\r\n  border: 1px solid #b8d7d2;\r\n  border-radius: 8px;\r\n  padding: 10px 12px;\r\n  color: #183b3b;\r\n  font: inherit;\r\n  background: #fff;\r\n}\r\n\r\n.word-search-controls input:focus {\r\n  outline: 2px solid #99d5ca;\r\n  outline-offset: 1px;\r\n}\r\n\r\n.word-search-mic {\r\n  width: 42px;\r\n  min-width: 42px;\r\n  border: 1px solid #b8d7d2;\r\n  border-radius: 8px;\r\n  background: #fff;\r\n  color: #0f766e;\r\n  font-size: 16px;\r\n  cursor: pointer;\r\n}\r\n\r\n.word-search-mic:hover:not(:disabled),\r\n.word-search-mic.active {\r\n  background: #dff3ee;\r\n}\r\n\r\n.word-search-mic.active {\r\n  color: #b42318;\r\n}\r\n\r\n.word-search-mic:disabled {\r\n  cursor: wait;\r\n  opacity: 0.7;\r\n}\r\n\r\n.word-search-controls button {\r\n  border: none;\r\n  border-radius: 8px;\r\n  padding: 0 16px;\r\n  background: #0f766e;\r\n  color: #fff;\r\n  font: inherit;\r\n  font-weight: 700;\r\n  cursor: pointer;\r\n}\r\n\r\n.word-search-controls button:hover:not(:disabled) {\r\n  background: #115e59;\r\n}\r\n\r\n.word-search-controls button:disabled {\r\n  cursor: wait;\r\n  opacity: 0.65;\r\n}\r\n\r\n.word-search-message {\r\n  margin: 12px 0 0;\r\n  font-size: 14px;\r\n}\r\n\r\n.word-search-message.error {\r\n  color: #b42318;\r\n}\r\n\r\n.word-search-result {\r\n  margin-top: 16px;\r\n  padding-top: 16px;\r\n  border-top: 1px solid #d7e4e5;\r\n}\r\n\r\n.word-search-result-heading {\r\n  display: flex;\r\n  align-items: start;\r\n  justify-content: space-between;\r\n  gap: 12px;\r\n}\r\n\r\n.word-search-result h3 {\r\n  font-size: 28px;\r\n  text-transform: capitalize;\r\n}\r\n\r\n.word-search-word-line,\r\n.word-search-text-row {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 8px;\r\n}\r\n\r\n.word-search-bookmark {\r\n  border-color: #b8d7d2;\r\n  color: #0f766e;\r\n}\r\n\r\n.word-search-bookmark:hover {\r\n  background: #dff3ee;\r\n}\r\n\r\n.word-search-text-row {\r\n  align-items: flex-start;\r\n}\r\n\r\n.word-search-voice,\r\n.word-search-mini-voice {\r\n  border: 1px solid #b8d7d2;\r\n  border-radius: 999px;\r\n  background: #fff;\r\n  color: #0f766e;\r\n  cursor: pointer;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding: 0;\r\n}\r\n\r\n.word-search-voice {\r\n  width: 28px;\r\n  height: 28px;\r\n  font-size: 12px;\r\n}\r\n\r\n.word-search-voice.small,\r\n.word-search-mini-voice {\r\n  width: 22px;\r\n  height: 22px;\r\n  min-width: 22px;\r\n  font-size: 10px;\r\n}\r\n\r\n.word-search-voice:hover,\r\n.word-search-mini-voice:hover {\r\n  background: #dff3ee;\r\n}\r\n\r\n.word-search-result-heading p {\r\n  margin: 4px 0 0;\r\n  color: #6b7e7e;\r\n  font-size: 13px;\r\n}\r\n\r\n.word-search-reference {\r\n  color: #0f766e;\r\n  font-size: 13px;\r\n  white-space: nowrap;\r\n}\r\n\r\n.word-search-definition {\r\n  margin: 14px 0 8px;\r\n  color: #294646;\r\n  line-height: 1.55;\r\n  flex: 1;\r\n}\r\n\r\n.word-search-example {\r\n  margin: 0;\r\n  border-left: 3px solid #99d5ca;\r\n  padding-left: 10px;\r\n  color: #637878;\r\n  font-style: italic;\r\n  flex: 1;\r\n}\r\n\r\n.word-search-synonyms {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  align-items: center;\r\n  gap: 6px;\r\n  margin-top: 14px;\r\n  color: #637878;\r\n  font-size: 13px;\r\n}\r\n\r\n.word-search-chip {\r\n  display: inline-flex;\r\n  align-items: center;\r\n  gap: 5px;\r\n  border-radius: 999px;\r\n  padding: 4px 9px;\r\n  background: #dff3ee;\r\n  color: #0f766e;\r\n}\r\n\r\n@media (max-width: 520px) {\r\n  .word-search {\r\n    padding: 18px 16px;\r\n  }\r\n\r\n  .word-search-controls {\r\n    flex-direction: column;\r\n  }\r\n\r\n  .word-search-form-topline {\r\n    align-items: flex-start;\r\n    flex-direction: column;\r\n    gap: 8px;\r\n  }\r\n\r\n  .word-search-controls button {\r\n    min-height: 40px;\r\n  }\r\n\r\n  .word-search-result-heading {\r\n    flex-direction: column;\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/features/WordSearch/wordSearch.css"],"names":[],"mappings":"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","sourcesContent":[".word-search {\n  width: 100%;\n  max-width: 900px;\n  box-sizing: border-box;\n  margin: 16px 0 24px;\n  padding: 22px 24px;\n  border: 1px solid #d7e4e5;\n  border-radius: 14px;\n  background: linear-gradient(135deg, #f1fbf8 0%, #fffaf0 100%);\n  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.08);\n}\n\n.word-search-header {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 16px;\n  margin-bottom: 16px;\n}\n\n.word-search.is-collapsed .word-search-header {\n  margin-bottom: 0;\n}\n\n.word-search-header-actions {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n}\n\n.word-search-bookmarks-link {\n  display: inline-flex;\n  align-items: center;\n  gap: 5px;\n  border: 1px solid #b8d7d2;\n  border-radius: 8px;\n  padding: 7px 10px;\n  background: #fff;\n  color: #0f766e;\n  font-size: 12px;\n  font-weight: 700;\n  text-decoration: none;\n  white-space: nowrap;\n}\n\n.word-search-bookmarks-link:hover {\n  background: #dff3ee;\n}\n\n.word-search-eyebrow {\n  margin: 0 0 4px;\n  color: #0f766e;\n  font-size: 12px;\n  font-weight: 700;\n  letter-spacing: 0.08em;\n  text-transform: uppercase;\n}\n\n.word-search h2,\n.word-search h3 {\n  margin: 0;\n  color: #183b3b;\n}\n\n.word-search h2 {\n  font-size: 24px;\n}\n\n.word-search-mark {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  width: 42px;\n  height: 42px;\n  border: 1px solid #99d5ca;\n  border-radius: 10px;\n  color: #0f766e;\n  font-size: 19px;\n  font-weight: 700;\n  transform: rotate(-5deg);\n}\n\n.word-search-mark.multilingual {\n  width: auto;\n  min-width: 96px;\n  gap: 4px;\n  padding: 0 7px;\n  font-size: 16px;\n  transform: rotate(-5deg);\n}\n\n.word-search-mark.multilingual span {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  line-height: 1;\n}\n\n.word-search-toggle {\n  border: 1px solid #99d5ca;\n  border-radius: 8px;\n  padding: 7px 10px;\n  background: #fff;\n  color: #0f766e;\n  font: inherit;\n  font-size: 12px;\n  font-weight: 700;\n  cursor: pointer;\n}\n\n.word-search-toggle:hover {\n  background: #dff3ee;\n}\n\n.word-search-form {\n  display: grid;\n  gap: 7px;\n}\n\n.word-search-form-topline {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 12px;\n}\n\n.word-search-label {\n  color: #486363;\n  font-size: 13px;\n  font-weight: 600;\n}\n\n.word-search-language-tabs {\n  display: flex;\n  align-items: center;\n  gap: 4px;\n  flex: 1;\n  min-width: 0;\n  max-width: 100%;\n  overflow: visible;\n  flex-wrap: nowrap;\n}\n\n.word-search-language-tabs button {\n  flex: 1 1 0;\n  min-width: 0;\n  border: 1px solid #b8d7d2;\n  border-radius: 999px;\n  padding: 5px 9px;\n  background: #fff;\n  color: #486363;\n  font: inherit;\n  font-size: 12px;\n  white-space: nowrap;\n  cursor: pointer;\n}\n\n.word-search-language-tabs button:hover {\n  background: #dff3ee;\n}\n\n.word-search-language-tabs button.active {\n  border-color: #0f766e;\n  background: #0f766e;\n  color: #fff;\n}\n\n.word-search-controls {\n  display: flex;\n  gap: 8px;\n}\n\n.word-search-controls input {\n  min-width: 0;\n  flex: 1;\n  border: 1px solid #b8d7d2;\n  border-radius: 8px;\n  padding: 10px 12px;\n  color: #183b3b;\n  font: inherit;\n  background: #fff;\n}\n\n.word-search-controls input:focus {\n  outline: 2px solid #99d5ca;\n  outline-offset: 1px;\n}\n\n.word-search-mic {\n  width: 42px;\n  min-width: 42px;\n  border: 1px solid #b8d7d2;\n  border-radius: 8px;\n  background: #fff;\n  color: #0f766e;\n  font-size: 16px;\n  cursor: pointer;\n}\n\n.word-search-mic:hover:not(:disabled),\n.word-search-mic.active {\n  background: #dff3ee;\n}\n\n.word-search-mic.active {\n  color: #b42318;\n}\n\n.word-search-mic:disabled {\n  cursor: wait;\n  opacity: 0.7;\n}\n\n.word-search-controls button {\n  border: none;\n  border-radius: 8px;\n  padding: 0 16px;\n  background: #0f766e;\n  color: #fff;\n  font: inherit;\n  font-weight: 700;\n  cursor: pointer;\n}\n\n.word-search-controls button:hover:not(:disabled) {\n  background: #115e59;\n}\n\n.word-search-controls button:disabled {\n  cursor: wait;\n  opacity: 0.65;\n}\n\n.word-search-message {\n  margin: 12px 0 0;\n  font-size: 14px;\n}\n\n.word-search-message.error {\n  color: #b42318;\n}\n\n.word-search-result {\n  margin-top: 16px;\n  padding-top: 16px;\n  border-top: 1px solid #d7e4e5;\n}\n\n.word-search-result-heading {\n  display: flex;\n  align-items: start;\n  justify-content: space-between;\n  gap: 12px;\n}\n\n.word-search-result h3 {\n  font-size: 28px;\n  text-transform: capitalize;\n}\n\n.word-search-word-line,\n.word-search-text-row {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n}\n\n.word-search-bookmark {\n  border-color: #b8d7d2;\n  color: #0f766e;\n}\n\n.word-search-bookmark:hover {\n  background: #dff3ee;\n}\n\n.word-search-text-row {\n  align-items: flex-start;\n}\n\n.word-search-voice,\n.word-search-mini-voice {\n  border: 1px solid #b8d7d2;\n  border-radius: 999px;\n  background: #fff;\n  color: #0f766e;\n  cursor: pointer;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  padding: 0;\n}\n\n.word-search-voice {\n  width: 28px;\n  height: 28px;\n  font-size: 12px;\n}\n\n.word-search-voice.small,\n.word-search-mini-voice {\n  width: 22px;\n  height: 22px;\n  min-width: 22px;\n  font-size: 10px;\n}\n\n.word-search-voice:hover,\n.word-search-mini-voice:hover {\n  background: #dff3ee;\n}\n\n.word-search-result-heading p {\n  margin: 4px 0 0;\n  color: #6b7e7e;\n  font-size: 13px;\n}\n\n.word-search-reference {\n  color: #0f766e;\n  font-size: 13px;\n  white-space: nowrap;\n}\n\n.word-search-definition {\n  margin: 14px 0 8px;\n  color: #294646;\n  line-height: 1.55;\n  flex: 1;\n}\n\n.word-search-example {\n  margin: 0;\n  border-left: 3px solid #99d5ca;\n  padding-left: 10px;\n  color: #637878;\n  font-style: italic;\n  flex: 1;\n}\n\n.word-search-synonyms {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n  gap: 6px;\n  margin-top: 14px;\n  color: #637878;\n  font-size: 13px;\n}\n\n.word-search-chip {\n  display: inline-flex;\n  align-items: center;\n  gap: 5px;\n  border-radius: 999px;\n  padding: 4px 9px;\n  background: #dff3ee;\n  color: #0f766e;\n}\n\n@media (max-width: 520px) {\n  .word-search {\n    padding: 18px 16px;\n  }\n\n  .word-search-controls {\n    flex-direction: column;\n  }\n\n  .word-search-form-topline {\n    align-items: flex-start;\n    flex-direction: column;\n    gap: 8px;\n  }\n\n  .word-search-controls button {\n    min-height: 40px;\n  }\n\n  .word-search-result-heading {\n    flex-direction: column;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7053,7 +8031,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.writing-coach {
   background: #bfdbfe;
   color: #1e40af;
 }
-`, "",{"version":3,"sources":["webpack://./src/features/WritingCoach/writingCoach.css"],"names":[],"mappings":"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","sourcesContent":[".writing-coach {\r\n  padding: 20px;\r\n  max-width: 1100px;\r\n  margin: 0 auto;\r\n}\r\n\r\n.writing-coach h1 {\r\n  font-size: 24px;\r\n  margin-bottom: 6px;\r\n}\r\n\r\n.writing-coach-title-row {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n}\r\n\r\n.writing-coach-ai-tag {\r\n  border-radius: 999px;\r\n  padding: 4px 9px;\r\n  background: #e0f2fe;\r\n  color: #0369a1;\r\n  font-size: 12px;\r\n  font-weight: 700;\r\n}\r\n\r\n.writing-coach .subtitle {\r\n  color: #666;\r\n  margin-bottom: 20px;\r\n}\r\n\r\n/* Upload Area */\r\n.upload-area {\r\n  border: 2px dashed #cbd5e1;\r\n  border-radius: 12px;\r\n  padding: 40px;\r\n  text-align: center;\r\n  cursor: pointer;\r\n  transition: border-color 0.2s, background 0.2s;\r\n  background: #f8fafc;\r\n}\r\n\r\n.upload-area:hover {\r\n  border-color: #2563eb;\r\n  background: #eff6ff;\r\n}\r\n\r\n.upload-area.dragover {\r\n  border-color: #2563eb;\r\n  background: #dbeafe;\r\n}\r\n\r\n.upload-icon {\r\n  font-size: 48px;\r\n  margin-bottom: 12px;\r\n}\r\n\r\n.upload-area p {\r\n  margin: 4px 0;\r\n  color: #64748b;\r\n}\r\n\r\n.upload-area .formats {\r\n  font-size: 12px;\r\n  color: #94a3b8;\r\n}\r\n\r\n/* Preview + Results Layout */\r\n.coach-layout {\r\n  display: flex;\r\n  gap: 20px;\r\n  margin-top: 20px;\r\n}\r\n\r\n.preview-section {\r\n  flex: 1;\r\n  min-width: 0;\r\n}\r\n\r\n.results-section {\r\n  flex: 1;\r\n  min-width: 0;\r\n}\r\n\r\n/* Preview */\r\n.preview-box {\r\n  border: 1px solid #e2e8f0;\r\n  border-radius: 10px;\r\n  padding: 16px;\r\n  background: #fff;\r\n  max-height: 500px;\r\n  overflow: auto;\r\n}\r\n\r\n.preview-box img {\r\n  max-width: 100%;\r\n  border-radius: 8px;\r\n}\r\n\r\n.preview-box .extracted-text {\r\n  margin-top: 12px;\r\n  padding: 12px;\r\n  background: #f1f5f9;\r\n  border-radius: 8px;\r\n  font-family: monospace;\r\n  font-size: 14px;\r\n  white-space: pre-wrap;\r\n  line-height: 1.6;\r\n}\r\n\r\n/* Results */\r\n.results-box {\r\n  border: 1px solid #e2e8f0;\r\n  border-radius: 10px;\r\n  padding: 16px;\r\n  background: #fff;\r\n  max-height: 500px;\r\n  overflow: auto;\r\n}\r\n\r\n.correction-item {\r\n  padding: 12px;\r\n  margin-bottom: 12px;\r\n  border-radius: 8px;\r\n  border-left: 4px solid #ef4444;\r\n  background: #fef2f2;\r\n}\r\n\r\n.correction-item .original {\r\n  text-decoration: line-through;\r\n  color: #ef4444;\r\n  font-weight: 500;\r\n}\r\n\r\n.correction-item .suggested {\r\n  color: #16a34a;\r\n  font-weight: 600;\r\n  margin-left: 8px;\r\n}\r\n\r\n.correction-item .explanation {\r\n  display: block;\r\n  margin-top: 6px;\r\n  font-size: 13px;\r\n  color: #475569;\r\n}\r\n\r\n.alternative-item {\r\n  padding: 12px;\r\n  margin-bottom: 12px;\r\n  border-radius: 8px;\r\n  border-left: 4px solid #2563eb;\r\n  background: #eff6ff;\r\n}\r\n\r\n.alternative-item .alt-label {\r\n  font-size: 12px;\r\n  color: #2563eb;\r\n  font-weight: 600;\r\n  text-transform: uppercase;\r\n  margin-bottom: 4px;\r\n}\r\n\r\n.alternative-item .alt-text {\r\n  color: #1e40af;\r\n}\r\n\r\n/* Status Messages */\r\n.status-message {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n  padding: 16px;\r\n  border-radius: 8px;\r\n  background: #f1f5f9;\r\n  color: #475569;\r\n}\r\n\r\n.spinner {\r\n  width: 20px;\r\n  height: 20px;\r\n  border: 3px solid #e2e8f0;\r\n  border-top-color: #2563eb;\r\n  border-radius: 50%;\r\n  animation: spin 0.8s linear infinite;\r\n}\r\n\r\n@keyframes spin {\r\n  to { transform: rotate(360deg); }\r\n}\r\n\r\n/* Buttons */\r\n.coach-btn {\r\n  padding: 10px 20px;\r\n  border: none;\r\n  border-radius: 8px;\r\n  cursor: pointer;\r\n  font-size: 14px;\r\n  font-weight: 500;\r\n  transition: background 0.2s;\r\n}\r\n\r\n.coach-btn.primary {\r\n  background: #2563eb;\r\n  color: white;\r\n}\r\n\r\n.coach-btn.primary:hover {\r\n  background: #1d4ed8;\r\n}\r\n\r\n.coach-btn.primary:disabled {\r\n  background: #93c5fd;\r\n  cursor: not-allowed;\r\n}\r\n\r\n.coach-btn.secondary {\r\n  background: #e2e8f0;\r\n  color: #334155;\r\n}\r\n\r\n.coach-btn.secondary:hover {\r\n  background: #cbd5e1;\r\n}\r\n\r\n.actions-bar {\r\n  display: flex;\r\n  gap: 10px;\r\n  margin-top: 12px;\r\n}\r\n\r\n/* Overall summary */\r\n.summary-box {\r\n  padding: 14px;\r\n  background: #f0fdf4;\r\n  border: 1px solid #bbf7d0;\r\n  border-radius: 8px;\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.summary-box h3 {\r\n  margin: 0 0 4px 0;\r\n  color: #166534;\r\n  font-size: 15px;\r\n}\r\n\r\n.summary-box p {\r\n  margin: 0;\r\n  color: #15803d;\r\n  font-size: 13px;\r\n}\r\n\r\n/* Responsive */\r\n@media (max-width: 768px) {\r\n  .coach-layout {\r\n    flex-direction: column;\r\n  }\r\n}\r\n\r\n\r\n/* Line numbers in extracted text */\r\n.text-line {\r\n  display: flex;\r\n  gap: 10px;\r\n  padding: 2px 0;\r\n  line-height: 1.6;\r\n}\r\n\r\n.text-line .line-number {\r\n  color: #94a3b8;\r\n  font-size: 12px;\r\n  min-width: 24px;\r\n  text-align: right;\r\n  user-select: none;\r\n  flex-shrink: 0;\r\n}\r\n\r\n/* Line badge in corrections */\r\n.line-badge {\r\n  display: inline-block;\r\n  background: #fecaca;\r\n  color: #991b1b;\r\n  font-size: 11px;\r\n  font-weight: 600;\r\n  padding: 2px 8px;\r\n  border-radius: 10px;\r\n  margin-bottom: 4px;\r\n}\r\n\r\n.line-badge.alt {\r\n  background: #bfdbfe;\r\n  color: #1e40af;\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/features/WritingCoach/writingCoach.css"],"names":[],"mappings":"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","sourcesContent":[".writing-coach {\n  padding: 20px;\n  max-width: 1100px;\n  margin: 0 auto;\n}\n\n.writing-coach h1 {\n  font-size: 24px;\n  margin-bottom: 6px;\n}\n\n.writing-coach-title-row {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n}\n\n.writing-coach-ai-tag {\n  border-radius: 999px;\n  padding: 4px 9px;\n  background: #e0f2fe;\n  color: #0369a1;\n  font-size: 12px;\n  font-weight: 700;\n}\n\n.writing-coach .subtitle {\n  color: #666;\n  margin-bottom: 20px;\n}\n\n/* Upload Area */\n.upload-area {\n  border: 2px dashed #cbd5e1;\n  border-radius: 12px;\n  padding: 40px;\n  text-align: center;\n  cursor: pointer;\n  transition: border-color 0.2s, background 0.2s;\n  background: #f8fafc;\n}\n\n.upload-area:hover {\n  border-color: #2563eb;\n  background: #eff6ff;\n}\n\n.upload-area.dragover {\n  border-color: #2563eb;\n  background: #dbeafe;\n}\n\n.upload-icon {\n  font-size: 48px;\n  margin-bottom: 12px;\n}\n\n.upload-area p {\n  margin: 4px 0;\n  color: #64748b;\n}\n\n.upload-area .formats {\n  font-size: 12px;\n  color: #94a3b8;\n}\n\n/* Preview + Results Layout */\n.coach-layout {\n  display: flex;\n  gap: 20px;\n  margin-top: 20px;\n}\n\n.preview-section {\n  flex: 1;\n  min-width: 0;\n}\n\n.results-section {\n  flex: 1;\n  min-width: 0;\n}\n\n/* Preview */\n.preview-box {\n  border: 1px solid #e2e8f0;\n  border-radius: 10px;\n  padding: 16px;\n  background: #fff;\n  max-height: 500px;\n  overflow: auto;\n}\n\n.preview-box img {\n  max-width: 100%;\n  border-radius: 8px;\n}\n\n.preview-box .extracted-text {\n  margin-top: 12px;\n  padding: 12px;\n  background: #f1f5f9;\n  border-radius: 8px;\n  font-family: monospace;\n  font-size: 14px;\n  white-space: pre-wrap;\n  line-height: 1.6;\n}\n\n/* Results */\n.results-box {\n  border: 1px solid #e2e8f0;\n  border-radius: 10px;\n  padding: 16px;\n  background: #fff;\n  max-height: 500px;\n  overflow: auto;\n}\n\n.correction-item {\n  padding: 12px;\n  margin-bottom: 12px;\n  border-radius: 8px;\n  border-left: 4px solid #ef4444;\n  background: #fef2f2;\n}\n\n.correction-item .original {\n  text-decoration: line-through;\n  color: #ef4444;\n  font-weight: 500;\n}\n\n.correction-item .suggested {\n  color: #16a34a;\n  font-weight: 600;\n  margin-left: 8px;\n}\n\n.correction-item .explanation {\n  display: block;\n  margin-top: 6px;\n  font-size: 13px;\n  color: #475569;\n}\n\n.alternative-item {\n  padding: 12px;\n  margin-bottom: 12px;\n  border-radius: 8px;\n  border-left: 4px solid #2563eb;\n  background: #eff6ff;\n}\n\n.alternative-item .alt-label {\n  font-size: 12px;\n  color: #2563eb;\n  font-weight: 600;\n  text-transform: uppercase;\n  margin-bottom: 4px;\n}\n\n.alternative-item .alt-text {\n  color: #1e40af;\n}\n\n/* Status Messages */\n.status-message {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  padding: 16px;\n  border-radius: 8px;\n  background: #f1f5f9;\n  color: #475569;\n}\n\n.spinner {\n  width: 20px;\n  height: 20px;\n  border: 3px solid #e2e8f0;\n  border-top-color: #2563eb;\n  border-radius: 50%;\n  animation: spin 0.8s linear infinite;\n}\n\n@keyframes spin {\n  to { transform: rotate(360deg); }\n}\n\n/* Buttons */\n.coach-btn {\n  padding: 10px 20px;\n  border: none;\n  border-radius: 8px;\n  cursor: pointer;\n  font-size: 14px;\n  font-weight: 500;\n  transition: background 0.2s;\n}\n\n.coach-btn.primary {\n  background: #2563eb;\n  color: white;\n}\n\n.coach-btn.primary:hover {\n  background: #1d4ed8;\n}\n\n.coach-btn.primary:disabled {\n  background: #93c5fd;\n  cursor: not-allowed;\n}\n\n.coach-btn.secondary {\n  background: #e2e8f0;\n  color: #334155;\n}\n\n.coach-btn.secondary:hover {\n  background: #cbd5e1;\n}\n\n.actions-bar {\n  display: flex;\n  gap: 10px;\n  margin-top: 12px;\n}\n\n/* Overall summary */\n.summary-box {\n  padding: 14px;\n  background: #f0fdf4;\n  border: 1px solid #bbf7d0;\n  border-radius: 8px;\n  margin-bottom: 16px;\n}\n\n.summary-box h3 {\n  margin: 0 0 4px 0;\n  color: #166534;\n  font-size: 15px;\n}\n\n.summary-box p {\n  margin: 0;\n  color: #15803d;\n  font-size: 13px;\n}\n\n/* Responsive */\n@media (max-width: 768px) {\n  .coach-layout {\n    flex-direction: column;\n  }\n}\n\n\n/* Line numbers in extracted text */\n.text-line {\n  display: flex;\n  gap: 10px;\n  padding: 2px 0;\n  line-height: 1.6;\n}\n\n.text-line .line-number {\n  color: #94a3b8;\n  font-size: 12px;\n  min-width: 24px;\n  text-align: right;\n  user-select: none;\n  flex-shrink: 0;\n}\n\n/* Line badge in corrections */\n.line-badge {\n  display: inline-block;\n  background: #fecaca;\n  color: #991b1b;\n  font-size: 11px;\n  font-weight: 600;\n  padding: 2px 8px;\n  border-radius: 10px;\n  margin-bottom: 4px;\n}\n\n.line-badge.alt {\n  background: #bfdbfe;\n  color: #1e40af;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7157,9 +8135,17 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.about-page {
 .about-suggestion h2 { margin: 0; color: #183b3b; font-size: 27px; }
 .about-suggestion > p:not(.about-eyebrow) { margin: 10px 0 16px; color: #637878; }
 .about-suggestion form { display: grid; gap: 10px; }
-.about-suggestion textarea { min-height: 120px; resize: vertical; border: 1px solid #b8d7d2; border-radius: 9px; padding: 12px; color: #294646; font: inherit; }
+.suggestion-email-label { color: #486363; font-size: 13px; font-weight: 700; }
+.suggestion-email-label span { color: #637878; font-weight: 400; }
+.about-suggestion input[type="email"] { width: 100%; box-sizing: border-box; border: 1px solid #b8d7d2; border-radius: 9px; padding: 11px 12px; color: #294646; font: inherit; }
+.about-suggestion input[type="email"]:focus { outline: 2px solid #99d5ca; outline-offset: 1px; }
+.suggestion-input-wrap { position: relative; }
+.about-suggestion textarea { display: block; width: 100%; box-sizing: border-box; min-height: 120px; resize: vertical; border: 1px solid #b8d7d2; border-radius: 9px; padding: 12px 52px 12px 12px; color: #294646; font: inherit; }
 .about-suggestion textarea:focus { outline: 2px solid #99d5ca; outline-offset: 1px; }
 .about-suggestion button { justify-self: start; border: 0; border-radius: 8px; padding: 10px 15px; background: #0f766e; color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+.about-suggestion .suggestion-mic { position: absolute; right: 10px; top: 10px; min-width: 34px; height: 34px; padding: 0 7px; border: 1px solid #b8d7d2; border-radius: 8px; background: #fff; color: #0f766e; font-size: 12px; }
+.about-suggestion .suggestion-mic:hover:not(:disabled), .about-suggestion .suggestion-mic.active { background: #dff3ee; }
+.about-suggestion .suggestion-mic.active { color: #b42318; }
 .about-suggestion button:hover:not(:disabled) { background: #115e59; }
 .about-suggestion button:disabled { cursor: wait; opacity: 0.7; }
 .suggestion-message { margin: 12px 0 0; font-size: 14px; }
@@ -7185,7 +8171,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.about-page {
   .about-footer { display: block; }
   .about-footer a { display: inline-block; margin-top: 8px; }
 }
-`, "",{"version":3,"sources":["webpack://./src/pages/about.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,cAAc;EACd,oBAAoB;EACpB,cAAc;AAChB;;AAEA;EACE,oBAAoB;EACpB,gCAAgC;AAClC;;AAEA;EACE,eAAe;EACf,cAAc;EACd,eAAe;EACf,gBAAgB;EAChB,qBAAqB;EACrB,yBAAyB;AAC3B;;AAEA;;;EAGE,SAAS;EACT,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,iCAAiC;EACjC,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;EAChB,gBAAgB;EAChB,cAAc;EACd,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,eAAe;AACjB;;AAEA,oBAAoB,eAAe,EAAE,gBAAgB,EAAE;AACvD,yCAAyC,gBAAgB,EAAE,gBAAgB,EAAE;;AAE7E;EACE,aAAa;EACb,gDAAgD;EAChD,SAAS;EACT,mBAAmB;AACrB;;AAEA;EACE,yBAAyB;EACzB,mBAAmB;EACnB,aAAa;EACb,gBAAgB;AAClB;;AAEA,oBAAoB,eAAe,EAAE;AACrC,mBAAmB,eAAe,EAAE,cAAc,EAAE,gBAAgB,EAAE;AACtE,mBAAmB,6BAA6B,EAAE;;AAElD;EACE,gBAAgB;EAChB,6BAA6B;EAC7B,eAAe;AACjB;;AAEA,uBAAuB,SAAS,EAAE,cAAc,EAAE,eAAe,EAAE;AACnE,4CAA4C,mBAAmB,EAAE,cAAc,EAAE;AACjF,yBAAyB,aAAa,EAAE,SAAS,EAAE;AACnD,6BAA6B,iBAAiB,EAAE,gBAAgB,EAAE,yBAAyB,EAAE,kBAAkB,EAAE,aAAa,EAAE,cAAc,EAAE,aAAa,EAAE;AAC/J,mCAAmC,0BAA0B,EAAE,mBAAmB,EAAE;AACpF,2BAA2B,mBAAmB,EAAE,SAAS,EAAE,kBAAkB,EAAE,kBAAkB,EAAE,mBAAmB,EAAE,WAAW,EAAE,aAAa,EAAE,gBAAgB,EAAE,eAAe,EAAE;AACvL,gDAAgD,mBAAmB,EAAE;AACrE,oCAAoC,YAAY,EAAE,YAAY,EAAE;AAChE,sBAAsB,gBAAgB,EAAE,eAAe,EAAE;AACzD,2BAA2B,cAAc,EAAE;AAC3C,4BAA4B,cAAc,EAAE;;AAE5C;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,SAAS;EACT,6BAA6B;EAC7B,iBAAiB;AACnB;;AAEA,kBAAkB,SAAS,EAAE,cAAc,EAAE;AAC7C,kBAAkB,cAAc,EAAE,gBAAgB,EAAE,qBAAqB,EAAE;AAC3E,wBAAwB,0BAA0B,EAAE;;AAEpD;EACE,cAAc,iBAAiB,EAAE;EACjC,sBAAsB,0BAA0B,EAAE;EAClD,gBAAgB,cAAc,EAAE;EAChC,kBAAkB,qBAAqB,EAAE,eAAe,EAAE;AAC5D","sourcesContent":[".about-page {\r\n  max-width: 900px;\r\n  margin: 0 auto;\r\n  padding: 24px 0 56px;\r\n  color: #294646;\r\n}\r\n\r\n.about-hero {\r\n  padding: 28px 0 34px;\r\n  border-bottom: 1px solid #d7e4e5;\r\n}\r\n\r\n.about-eyebrow {\r\n  margin: 0 0 9px;\r\n  color: #0f766e;\r\n  font-size: 12px;\r\n  font-weight: 700;\r\n  letter-spacing: 0.1em;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.about-hero h1,\r\n.about-section h2,\r\n.about-feature h2 {\r\n  margin: 0;\r\n  color: #183b3b;\r\n}\r\n\r\n.about-hero h1 {\r\n  max-width: 650px;\r\n  font-size: clamp(32px, 6vw, 52px);\r\n  line-height: 1.05;\r\n}\r\n\r\n.about-hero > p:last-child {\r\n  max-width: 680px;\r\n  margin: 16px 0 0;\r\n  color: #637878;\r\n  font-size: 18px;\r\n  line-height: 1.6;\r\n}\r\n\r\n.about-section {\r\n  max-width: 760px;\r\n  padding: 34px 0;\r\n}\r\n\r\n.about-section h2 { font-size: 27px; line-height: 1.2; }\r\n.about-section > p:not(.about-eyebrow) { margin: 13px 0 0; line-height: 1.7; }\r\n\r\n.about-feature-grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(2, minmax(0, 1fr));\r\n  gap: 12px;\r\n  padding: 8px 0 28px;\r\n}\r\n\r\n.about-feature {\r\n  border: 1px solid #d7e4e5;\r\n  border-radius: 12px;\r\n  padding: 20px;\r\n  background: #fff;\r\n}\r\n\r\n.about-feature h2 { font-size: 19px; }\r\n.about-feature p { margin: 9px 0 0; color: #637878; line-height: 1.6; }\r\n.about-languages { border-top: 1px solid #d7e4e5; }\r\n\r\n.about-suggestion {\r\n  max-width: 760px;\r\n  border-top: 1px solid #d7e4e5;\r\n  padding: 34px 0;\r\n}\r\n\r\n.about-suggestion h2 { margin: 0; color: #183b3b; font-size: 27px; }\r\n.about-suggestion > p:not(.about-eyebrow) { margin: 10px 0 16px; color: #637878; }\r\n.about-suggestion form { display: grid; gap: 10px; }\r\n.about-suggestion textarea { min-height: 120px; resize: vertical; border: 1px solid #b8d7d2; border-radius: 9px; padding: 12px; color: #294646; font: inherit; }\r\n.about-suggestion textarea:focus { outline: 2px solid #99d5ca; outline-offset: 1px; }\r\n.about-suggestion button { justify-self: start; border: 0; border-radius: 8px; padding: 10px 15px; background: #0f766e; color: #fff; font: inherit; font-weight: 700; cursor: pointer; }\r\n.about-suggestion button:hover:not(:disabled) { background: #115e59; }\r\n.about-suggestion button:disabled { cursor: wait; opacity: 0.7; }\r\n.suggestion-message { margin: 12px 0 0; font-size: 14px; }\r\n.suggestion-message.sent { color: #15803d; }\r\n.suggestion-message.error { color: #b42318; }\r\n\r\n.about-footer {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  gap: 16px;\r\n  border-top: 1px solid #d7e4e5;\r\n  padding-top: 22px;\r\n}\r\n\r\n.about-footer p { margin: 0; color: #637878; }\r\n.about-footer a { color: #0f766e; font-weight: 700; text-decoration: none; }\r\n.about-footer a:hover { text-decoration: underline; }\r\n\r\n@media (max-width: 700px) {\r\n  .about-page { padding-top: 12px; }\r\n  .about-feature-grid { grid-template-columns: 1fr; }\r\n  .about-footer { display: block; }\r\n  .about-footer a { display: inline-block; margin-top: 8px; }\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/pages/about.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,cAAc;EACd,oBAAoB;EACpB,cAAc;AAChB;;AAEA;EACE,oBAAoB;EACpB,gCAAgC;AAClC;;AAEA;EACE,eAAe;EACf,cAAc;EACd,eAAe;EACf,gBAAgB;EAChB,qBAAqB;EACrB,yBAAyB;AAC3B;;AAEA;;;EAGE,SAAS;EACT,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,iCAAiC;EACjC,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;EAChB,gBAAgB;EAChB,cAAc;EACd,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,eAAe;AACjB;;AAEA,oBAAoB,eAAe,EAAE,gBAAgB,EAAE;AACvD,yCAAyC,gBAAgB,EAAE,gBAAgB,EAAE;;AAE7E;EACE,aAAa;EACb,gDAAgD;EAChD,SAAS;EACT,mBAAmB;AACrB;;AAEA;EACE,yBAAyB;EACzB,mBAAmB;EACnB,aAAa;EACb,gBAAgB;AAClB;;AAEA,oBAAoB,eAAe,EAAE;AACrC,mBAAmB,eAAe,EAAE,cAAc,EAAE,gBAAgB,EAAE;AACtE,mBAAmB,6BAA6B,EAAE;;AAElD;EACE,gBAAgB;EAChB,6BAA6B;EAC7B,eAAe;AACjB;;AAEA,uBAAuB,SAAS,EAAE,cAAc,EAAE,eAAe,EAAE;AACnE,4CAA4C,mBAAmB,EAAE,cAAc,EAAE;AACjF,yBAAyB,aAAa,EAAE,SAAS,EAAE;AACnD,0BAA0B,cAAc,EAAE,eAAe,EAAE,gBAAgB,EAAE;AAC7E,+BAA+B,cAAc,EAAE,gBAAgB,EAAE;AACjE,wCAAwC,WAAW,EAAE,sBAAsB,EAAE,yBAAyB,EAAE,kBAAkB,EAAE,kBAAkB,EAAE,cAAc,EAAE,aAAa,EAAE;AAC/K,8CAA8C,0BAA0B,EAAE,mBAAmB,EAAE;AAC/F,yBAAyB,kBAAkB,EAAE;AAC7C,6BAA6B,cAAc,EAAE,WAAW,EAAE,sBAAsB,EAAE,iBAAiB,EAAE,gBAAgB,EAAE,yBAAyB,EAAE,kBAAkB,EAAE,4BAA4B,EAAE,cAAc,EAAE,aAAa,EAAE;AACnO,mCAAmC,0BAA0B,EAAE,mBAAmB,EAAE;AACpF,2BAA2B,mBAAmB,EAAE,SAAS,EAAE,kBAAkB,EAAE,kBAAkB,EAAE,mBAAmB,EAAE,WAAW,EAAE,aAAa,EAAE,gBAAgB,EAAE,eAAe,EAAE;AACvL,oCAAoC,kBAAkB,EAAE,WAAW,EAAE,SAAS,EAAE,eAAe,EAAE,YAAY,EAAE,cAAc,EAAE,yBAAyB,EAAE,kBAAkB,EAAE,gBAAgB,EAAE,cAAc,EAAE,eAAe,EAAE;AACjO,mGAAmG,mBAAmB,EAAE;AACxH,2CAA2C,cAAc,EAAE;AAC3D,gDAAgD,mBAAmB,EAAE;AACrE,oCAAoC,YAAY,EAAE,YAAY,EAAE;AAChE,sBAAsB,gBAAgB,EAAE,eAAe,EAAE;AACzD,2BAA2B,cAAc,EAAE;AAC3C,4BAA4B,cAAc,EAAE;;AAE5C;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,SAAS;EACT,6BAA6B;EAC7B,iBAAiB;AACnB;;AAEA,kBAAkB,SAAS,EAAE,cAAc,EAAE;AAC7C,kBAAkB,cAAc,EAAE,gBAAgB,EAAE,qBAAqB,EAAE;AAC3E,wBAAwB,0BAA0B,EAAE;;AAEpD;EACE,cAAc,iBAAiB,EAAE;EACjC,sBAAsB,0BAA0B,EAAE;EAClD,gBAAgB,cAAc,EAAE;EAChC,kBAAkB,qBAAqB,EAAE,eAAe,EAAE;AAC5D","sourcesContent":[".about-page {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 24px 0 56px;\n  color: #294646;\n}\n\n.about-hero {\n  padding: 28px 0 34px;\n  border-bottom: 1px solid #d7e4e5;\n}\n\n.about-eyebrow {\n  margin: 0 0 9px;\n  color: #0f766e;\n  font-size: 12px;\n  font-weight: 700;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n}\n\n.about-hero h1,\n.about-section h2,\n.about-feature h2 {\n  margin: 0;\n  color: #183b3b;\n}\n\n.about-hero h1 {\n  max-width: 650px;\n  font-size: clamp(32px, 6vw, 52px);\n  line-height: 1.05;\n}\n\n.about-hero > p:last-child {\n  max-width: 680px;\n  margin: 16px 0 0;\n  color: #637878;\n  font-size: 18px;\n  line-height: 1.6;\n}\n\n.about-section {\n  max-width: 760px;\n  padding: 34px 0;\n}\n\n.about-section h2 { font-size: 27px; line-height: 1.2; }\n.about-section > p:not(.about-eyebrow) { margin: 13px 0 0; line-height: 1.7; }\n\n.about-feature-grid {\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  gap: 12px;\n  padding: 8px 0 28px;\n}\n\n.about-feature {\n  border: 1px solid #d7e4e5;\n  border-radius: 12px;\n  padding: 20px;\n  background: #fff;\n}\n\n.about-feature h2 { font-size: 19px; }\n.about-feature p { margin: 9px 0 0; color: #637878; line-height: 1.6; }\n.about-languages { border-top: 1px solid #d7e4e5; }\n\n.about-suggestion {\n  max-width: 760px;\n  border-top: 1px solid #d7e4e5;\n  padding: 34px 0;\n}\n\n.about-suggestion h2 { margin: 0; color: #183b3b; font-size: 27px; }\n.about-suggestion > p:not(.about-eyebrow) { margin: 10px 0 16px; color: #637878; }\n.about-suggestion form { display: grid; gap: 10px; }\n.suggestion-email-label { color: #486363; font-size: 13px; font-weight: 700; }\n.suggestion-email-label span { color: #637878; font-weight: 400; }\n.about-suggestion input[type=\"email\"] { width: 100%; box-sizing: border-box; border: 1px solid #b8d7d2; border-radius: 9px; padding: 11px 12px; color: #294646; font: inherit; }\n.about-suggestion input[type=\"email\"]:focus { outline: 2px solid #99d5ca; outline-offset: 1px; }\n.suggestion-input-wrap { position: relative; }\n.about-suggestion textarea { display: block; width: 100%; box-sizing: border-box; min-height: 120px; resize: vertical; border: 1px solid #b8d7d2; border-radius: 9px; padding: 12px 52px 12px 12px; color: #294646; font: inherit; }\n.about-suggestion textarea:focus { outline: 2px solid #99d5ca; outline-offset: 1px; }\n.about-suggestion button { justify-self: start; border: 0; border-radius: 8px; padding: 10px 15px; background: #0f766e; color: #fff; font: inherit; font-weight: 700; cursor: pointer; }\n.about-suggestion .suggestion-mic { position: absolute; right: 10px; top: 10px; min-width: 34px; height: 34px; padding: 0 7px; border: 1px solid #b8d7d2; border-radius: 8px; background: #fff; color: #0f766e; font-size: 12px; }\n.about-suggestion .suggestion-mic:hover:not(:disabled), .about-suggestion .suggestion-mic.active { background: #dff3ee; }\n.about-suggestion .suggestion-mic.active { color: #b42318; }\n.about-suggestion button:hover:not(:disabled) { background: #115e59; }\n.about-suggestion button:disabled { cursor: wait; opacity: 0.7; }\n.suggestion-message { margin: 12px 0 0; font-size: 14px; }\n.suggestion-message.sent { color: #15803d; }\n.suggestion-message.error { color: #b42318; }\n\n.about-footer {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 16px;\n  border-top: 1px solid #d7e4e5;\n  padding-top: 22px;\n}\n\n.about-footer p { margin: 0; color: #637878; }\n.about-footer a { color: #0f766e; font-weight: 700; text-decoration: none; }\n.about-footer a:hover { text-decoration: underline; }\n\n@media (max-width: 700px) {\n  .about-page { padding-top: 12px; }\n  .about-feature-grid { grid-template-columns: 1fr; }\n  .about-footer { display: block; }\n  .about-footer a { display: inline-block; margin-top: 8px; }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7339,8 +8325,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.bookmarks-page {
   background: #fff;
 }
 
-.bookmark-meta { display: flex; gap: 8px; margin-bottom: 8px; }
+.bookmark-meta { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; }
 .bookmark-meta span { color: #0f766e; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+.bookmark-meta .bookmark-date { margin-left: auto; color: #94a3a3; font-weight: 600; text-transform: none; }
 .bookmark-item h3 { margin: 0; color: #183b3b; font-size: 21px; }
 .bookmark-item p { margin: 8px 0 0; color: #486363; line-height: 1.5; }
 .bookmark-item .bookmark-subtitle { color: #637878; font-style: italic; }
@@ -7431,7 +8418,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.bookmarks-page {
   .bookmark-item { display: block; }
   .bookmark-item button { margin-top: 14px; }
 }
-`, "",{"version":3,"sources":["webpack://./src/pages/bookmarks.css"],"names":[],"mappings":"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","sourcesContent":[".bookmarks-page {\r\n  max-width: 900px;\r\n  margin: 0 auto;\r\n  padding: 28px 0 48px;\r\n}\r\n\r\n.bookmarks-header {\r\n  display: flex;\r\n  align-items: end;\r\n  justify-content: space-between;\r\n  gap: 20px;\r\n  margin-bottom: 24px;\r\n}\r\n\r\n.bookmarks-eyebrow {\r\n  margin: 0 0 8px;\r\n  color: #0f766e;\r\n  font-size: 12px;\r\n  font-weight: 700;\r\n  letter-spacing: 0.1em;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.bookmarks-header h1,\r\n.bookmarks-empty h2,\r\n.bookmark-item h2 {\r\n  margin: 0;\r\n  color: #183b3b;\r\n}\r\n\r\n.bookmarks-header h1 { font-size: 34px; }\r\n.bookmarks-header p:last-child { margin: 8px 0 0; color: #637878; }\r\n.bookmarks-header strong { color: #0f766e; font-size: 14px; }\r\n\r\n.bookmarks-empty {\r\n  border: 1px dashed #99d5ca;\r\n  border-radius: 14px;\r\n  padding: 48px 24px;\r\n  background: #f1fbf8;\r\n  text-align: center;\r\n}\r\n\r\n.bookmarks-empty > span { color: #0f766e; font-size: 36px; }\r\n.bookmarks-empty h2 { margin-top: 10px; font-size: 22px; }\r\n.bookmarks-empty p { margin-bottom: 0; color: #637878; }\r\n\r\n.bookmark-tabs {\r\n  display: flex;\r\n  gap: 10px;\r\n  margin-bottom: 18px;\r\n  border-bottom: 1px solid #d7e4e5;\r\n  overflow-x: auto;\r\n}\r\n\r\n.bookmark-tabs button {\r\n  flex: 0 0 auto;\r\n  border: 0;\r\n  border-bottom: 3px solid transparent;\r\n  padding: 10px 4px;\r\n  background: transparent;\r\n  color: #637878;\r\n  font: inherit;\r\n  font-size: 14px;\r\n  font-weight: 700;\r\n  cursor: pointer;\r\n}\r\n\r\n.bookmark-tabs button span {\r\n  display: inline-flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  min-width: 22px;\r\n  height: 22px;\r\n  border-radius: 999px;\r\n  background: #dff3ee;\r\n  color: #0f766e;\r\n  font-size: 12px;\r\n  font-weight: 700;\r\n}\r\n\r\n.bookmark-tabs button.active {\r\n  border-bottom-color: #0f766e;\r\n  color: #183b3b;\r\n}\r\n\r\n.bookmark-language-tabs {\r\n  display: flex;\r\n  gap: 7px;\r\n  margin: 0 0 18px;\r\n  overflow-x: auto;\r\n}\r\n\r\n.bookmark-language-tabs button {\r\n  flex: 0 0 auto;\r\n  border: 1px solid #b8d7d2;\r\n  border-radius: 999px;\r\n  padding: 6px 11px;\r\n  background: #fff;\r\n  color: #486363;\r\n  font: inherit;\r\n  font-size: 12px;\r\n  cursor: pointer;\r\n}\r\n\r\n.bookmark-language-tabs button.active {\r\n  border-color: #0f766e;\r\n  background: #0f766e;\r\n  color: #fff;\r\n}\r\n\r\n.bookmark-tab-empty {\r\n  padding: 34px 24px;\r\n}\r\n\r\n.bookmarks-list { display: grid; gap: 12px; }\r\n\r\n.bookmark-item {\r\n  display: flex;\r\n  align-items: start;\r\n  justify-content: space-between;\r\n  gap: 18px;\r\n  border: 1px solid #d7e4e5;\r\n  border-radius: 12px;\r\n  padding: 18px;\r\n  background: #fff;\r\n}\r\n\r\n.bookmark-meta { display: flex; gap: 8px; margin-bottom: 8px; }\r\n.bookmark-meta span { color: #0f766e; font-size: 11px; font-weight: 700; text-transform: uppercase; }\r\n.bookmark-item h3 { margin: 0; color: #183b3b; font-size: 21px; }\r\n.bookmark-item p { margin: 8px 0 0; color: #486363; line-height: 1.5; }\r\n.bookmark-item .bookmark-subtitle { color: #637878; font-style: italic; }\r\n\r\n.bookmark-title-row { display: flex; align-items: center; gap: 8px; }\r\n\r\n.bookmark-word-card { min-width: 0; }\r\n\r\n.bookmark-word-row {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 8px;\r\n  flex-wrap: wrap;\r\n}\r\n\r\n.bookmark-word-row h3 { font-size: 28px; text-transform: capitalize; }\r\n.bookmark-word-pos { border-radius: 6px; padding: 3px 8px; background: #f3e8ff; color: #8b5cf6; font-size: 13px; font-style: italic; }\r\n.bookmark-phonetic { color: #637878; font-size: 13px; }\r\n\r\n.bookmark-meaning-row,\r\n.bookmark-example-row {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 8px;\r\n}\r\n\r\n.bookmark-meaning-row p,\r\n.bookmark-example-row p { flex: 1; }\r\n.bookmark-example-row p { border-left: 3px solid #99d5ca; padding-left: 10px; font-style: italic; }\r\n.bookmark-translit { color: #637878 !important; font-size: 13px; font-style: italic; }\r\n\r\n.bookmark-synonyms {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 6px;\r\n  margin-top: 12px;\r\n  flex-wrap: wrap;\r\n  color: #637878;\r\n  font-size: 13px;\r\n}\r\n\r\n.bookmark-synonyms span:not(:first-child) {\r\n  display: inline-flex;\r\n  align-items: center;\r\n  gap: 5px;\r\n  border-radius: 12px;\r\n  padding: 4px 9px;\r\n  background: #e0e7ff;\r\n  color: #4338ca;\r\n}\r\n\r\n.bookmark-mini-voice {\r\n  border: 0;\r\n  padding: 0;\r\n  background: transparent;\r\n  color: inherit;\r\n  font-size: 10px;\r\n  cursor: pointer;\r\n}\r\n\r\n.bookmark-voice {\r\n  border: 1px solid #b8d7d2;\r\n  border-radius: 999px;\r\n  padding: 3px 7px;\r\n  background: #fff;\r\n  color: #0f766e;\r\n  font-size: 12px;\r\n  cursor: pointer;\r\n}\r\n\r\n.bookmark-voice:hover { background: #dff3ee; }\r\n.bookmark-detail-voice { margin-top: 12px; border-radius: 7px; }\r\n\r\n.bookmark-item .bookmark-remove {\r\n  flex: 0 0 auto;\r\n  border: 1px solid #f0b3a1;\r\n  border-radius: 7px;\r\n  padding: 7px 10px;\r\n  background: #fff8f5;\r\n  color: #b42318;\r\n  cursor: pointer;\r\n}\r\n\r\n@media (max-width: 600px) {\r\n  .bookmarks-page { padding-top: 16px; }\r\n  .bookmarks-header { display: block; }\r\n  .bookmarks-header strong { display: block; margin-top: 12px; }\r\n  .bookmark-item { display: block; }\r\n  .bookmark-item button { margin-top: 14px; }\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/pages/bookmarks.css"],"names":[],"mappings":"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","sourcesContent":[".bookmarks-page {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 28px 0 48px;\n}\n\n.bookmarks-header {\n  display: flex;\n  align-items: end;\n  justify-content: space-between;\n  gap: 20px;\n  margin-bottom: 24px;\n}\n\n.bookmarks-eyebrow {\n  margin: 0 0 8px;\n  color: #0f766e;\n  font-size: 12px;\n  font-weight: 700;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n}\n\n.bookmarks-header h1,\n.bookmarks-empty h2,\n.bookmark-item h2 {\n  margin: 0;\n  color: #183b3b;\n}\n\n.bookmarks-header h1 { font-size: 34px; }\n.bookmarks-header p:last-child { margin: 8px 0 0; color: #637878; }\n.bookmarks-header strong { color: #0f766e; font-size: 14px; }\n\n.bookmarks-empty {\n  border: 1px dashed #99d5ca;\n  border-radius: 14px;\n  padding: 48px 24px;\n  background: #f1fbf8;\n  text-align: center;\n}\n\n.bookmarks-empty > span { color: #0f766e; font-size: 36px; }\n.bookmarks-empty h2 { margin-top: 10px; font-size: 22px; }\n.bookmarks-empty p { margin-bottom: 0; color: #637878; }\n\n.bookmark-tabs {\n  display: flex;\n  gap: 10px;\n  margin-bottom: 18px;\n  border-bottom: 1px solid #d7e4e5;\n  overflow-x: auto;\n}\n\n.bookmark-tabs button {\n  flex: 0 0 auto;\n  border: 0;\n  border-bottom: 3px solid transparent;\n  padding: 10px 4px;\n  background: transparent;\n  color: #637878;\n  font: inherit;\n  font-size: 14px;\n  font-weight: 700;\n  cursor: pointer;\n}\n\n.bookmark-tabs button span {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  min-width: 22px;\n  height: 22px;\n  border-radius: 999px;\n  background: #dff3ee;\n  color: #0f766e;\n  font-size: 12px;\n  font-weight: 700;\n}\n\n.bookmark-tabs button.active {\n  border-bottom-color: #0f766e;\n  color: #183b3b;\n}\n\n.bookmark-language-tabs {\n  display: flex;\n  gap: 7px;\n  margin: 0 0 18px;\n  overflow-x: auto;\n}\n\n.bookmark-language-tabs button {\n  flex: 0 0 auto;\n  border: 1px solid #b8d7d2;\n  border-radius: 999px;\n  padding: 6px 11px;\n  background: #fff;\n  color: #486363;\n  font: inherit;\n  font-size: 12px;\n  cursor: pointer;\n}\n\n.bookmark-language-tabs button.active {\n  border-color: #0f766e;\n  background: #0f766e;\n  color: #fff;\n}\n\n.bookmark-tab-empty {\n  padding: 34px 24px;\n}\n\n.bookmarks-list { display: grid; gap: 12px; }\n\n.bookmark-item {\n  display: flex;\n  align-items: start;\n  justify-content: space-between;\n  gap: 18px;\n  border: 1px solid #d7e4e5;\n  border-radius: 12px;\n  padding: 18px;\n  background: #fff;\n}\n\n.bookmark-meta { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; }\n.bookmark-meta span { color: #0f766e; font-size: 11px; font-weight: 700; text-transform: uppercase; }\n.bookmark-meta .bookmark-date { margin-left: auto; color: #94a3a3; font-weight: 600; text-transform: none; }\n.bookmark-item h3 { margin: 0; color: #183b3b; font-size: 21px; }\n.bookmark-item p { margin: 8px 0 0; color: #486363; line-height: 1.5; }\n.bookmark-item .bookmark-subtitle { color: #637878; font-style: italic; }\n\n.bookmark-title-row { display: flex; align-items: center; gap: 8px; }\n\n.bookmark-word-card { min-width: 0; }\n\n.bookmark-word-row {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  flex-wrap: wrap;\n}\n\n.bookmark-word-row h3 { font-size: 28px; text-transform: capitalize; }\n.bookmark-word-pos { border-radius: 6px; padding: 3px 8px; background: #f3e8ff; color: #8b5cf6; font-size: 13px; font-style: italic; }\n.bookmark-phonetic { color: #637878; font-size: 13px; }\n\n.bookmark-meaning-row,\n.bookmark-example-row {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n}\n\n.bookmark-meaning-row p,\n.bookmark-example-row p { flex: 1; }\n.bookmark-example-row p { border-left: 3px solid #99d5ca; padding-left: 10px; font-style: italic; }\n.bookmark-translit { color: #637878 !important; font-size: 13px; font-style: italic; }\n\n.bookmark-synonyms {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  margin-top: 12px;\n  flex-wrap: wrap;\n  color: #637878;\n  font-size: 13px;\n}\n\n.bookmark-synonyms span:not(:first-child) {\n  display: inline-flex;\n  align-items: center;\n  gap: 5px;\n  border-radius: 12px;\n  padding: 4px 9px;\n  background: #e0e7ff;\n  color: #4338ca;\n}\n\n.bookmark-mini-voice {\n  border: 0;\n  padding: 0;\n  background: transparent;\n  color: inherit;\n  font-size: 10px;\n  cursor: pointer;\n}\n\n.bookmark-voice {\n  border: 1px solid #b8d7d2;\n  border-radius: 999px;\n  padding: 3px 7px;\n  background: #fff;\n  color: #0f766e;\n  font-size: 12px;\n  cursor: pointer;\n}\n\n.bookmark-voice:hover { background: #dff3ee; }\n.bookmark-detail-voice { margin-top: 12px; border-radius: 7px; }\n\n.bookmark-item .bookmark-remove {\n  flex: 0 0 auto;\n  border: 1px solid #f0b3a1;\n  border-radius: 7px;\n  padding: 7px 10px;\n  background: #fff8f5;\n  color: #b42318;\n  cursor: pointer;\n}\n\n@media (max-width: 600px) {\n  .bookmarks-page { padding-top: 16px; }\n  .bookmarks-header { display: block; }\n  .bookmarks-header strong { display: block; margin-top: 12px; }\n  .bookmark-item { display: block; }\n  .bookmark-item button { margin-top: 14px; }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7612,7 +8599,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.home-page {
   .home-explore-links {
     grid-template-columns: 1fr;
   }
-}`, "",{"version":3,"sources":["webpack://./src/pages/home.css"],"names":[],"mappings":"AAAA;EACE,iBAAiB;EACjB,cAAc;EACd,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;EACnB,qBAAqB;AACvB;;AAEA;EACE,eAAe;EACf,cAAc;EACd,eAAe;EACf,gBAAgB;EAChB,qBAAqB;EACrB,yBAAyB;AAC3B;;AAEA;;EAEE,SAAS;EACT,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,iCAAiC;EACjC,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;EAChB,gBAAgB;EAChB,cAAc;EACd,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,SAAS;AACX;;AAEA;EACE,WAAW;EACX,eAAe;EACf,SAAS;AACX;;AAEA;EACE,gBAAgB;EAChB,aAAa;EACb,yBAAyB;EACzB,mBAAmB;EACnB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,8BAA8B;EAC9B,SAAS;EACT,mBAAmB;AACrB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,cAAc;EACd,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,gDAAgD;EAChD,QAAQ;AACV;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,SAAS;EACT,yBAAyB;EACzB,kBAAkB;EAClB,kBAAkB;EAClB,cAAc;EACd,gBAAgB;EAChB,qBAAqB;EACrB,iEAAiE;AACnE;;AAEA;EACE,cAAc;EACd,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,oBAAoB;EACpB,mBAAmB;EACnB,QAAQ;EACR,yBAAyB;EACzB,6BAA6B;EAC7B,2BAA2B;AAC7B;;AAEA;EACE,oBAAoB;EACpB,gBAAgB;EAChB,mBAAmB;EACnB,WAAW;EACX,eAAe;EACf,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,qBAAqB;EACrB,mBAAmB;EACnB,2BAA2B;AAC7B;;AAEA;EACE;IACE,0BAA0B;EAC5B;AACF;;AAEA;EACE;IACE,gBAAgB;EAClB;;EAEA;IACE,aAAa;EACf;;EAEA;IACE,cAAc;EAChB;;EAEA;IACE,cAAc;IACd,eAAe;EACjB;;EAEA;IACE,0BAA0B;EAC5B;AACF","sourcesContent":[".home-page {\r\n  max-width: 1120px;\r\n  margin: 0 auto;\r\n  padding: 8px 0 48px;\r\n}\r\n\r\n.home-intro {\r\n  margin-bottom: 22px;\r\n  padding: 20px 4px 8px;\r\n}\r\n\r\n.home-eyebrow {\r\n  margin: 0 0 8px;\r\n  color: #0f766e;\r\n  font-size: 12px;\r\n  font-weight: 700;\r\n  letter-spacing: 0.1em;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.home-intro h1,\r\n.home-section-heading h2 {\r\n  margin: 0;\r\n  color: #183b3b;\r\n}\r\n\r\n.home-intro h1 {\r\n  max-width: 620px;\r\n  font-size: clamp(30px, 5vw, 48px);\r\n  line-height: 1.05;\r\n}\r\n\r\n.home-intro > p:last-child {\r\n  max-width: 560px;\r\n  margin: 12px 0 0;\r\n  color: #637878;\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\n.home-learning-grid {\r\n  display: grid;\r\n  gap: 18px;\r\n}\r\n\r\n.home-learning-grid > * {\r\n  width: auto;\r\n  max-width: none;\r\n  margin: 0;\r\n}\r\n\r\n.home-explore {\r\n  margin-top: 28px;\r\n  padding: 22px;\r\n  border: 1px solid #d7e4e5;\r\n  border-radius: 14px;\r\n  background: #fff;\r\n}\r\n\r\n.home-section-heading {\r\n  display: flex;\r\n  align-items: end;\r\n  justify-content: space-between;\r\n  gap: 16px;\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.home-section-heading h2 {\r\n  font-size: 22px;\r\n}\r\n\r\n.home-section-heading > span {\r\n  color: #637878;\r\n  font-size: 13px;\r\n}\r\n\r\n.home-explore-links {\r\n  display: grid;\r\n  grid-template-columns: repeat(2, minmax(0, 1fr));\r\n  gap: 8px;\r\n}\r\n\r\n.home-explore-links a {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  gap: 12px;\r\n  border: 1px solid #d7e4e5;\r\n  border-radius: 9px;\r\n  padding: 12px 14px;\r\n  color: #183b3b;\r\n  font-weight: 700;\r\n  text-decoration: none;\r\n  transition: border-color 0.15s, background 0.15s, transform 0.15s;\r\n}\r\n\r\n.home-explore-links a span {\r\n  color: #0f766e;\r\n  font-size: 12px;\r\n  font-weight: 600;\r\n}\r\n\r\n.home-feature-title {\r\n  display: inline-flex;\r\n  align-items: center;\r\n  gap: 7px;\r\n  color: #183b3b !important;\r\n  font-size: inherit !important;\r\n  font-weight: 700 !important;\r\n}\r\n\r\n.home-feature-title .home-ai-badge {\r\n  border-radius: 999px;\r\n  padding: 2px 5px;\r\n  background: #e36f4b;\r\n  color: #fff;\r\n  font-size: 10px;\r\n  font-weight: 700;\r\n  line-height: 1;\r\n}\r\n\r\n.home-explore-links a:hover {\r\n  border-color: #99d5ca;\r\n  background: #f1fbf8;\r\n  transform: translateY(-1px);\r\n}\r\n\r\n@media (min-width: 601px) and (max-width: 1099px) and (orientation: portrait) {\r\n  .home-learning-grid {\r\n    grid-template-columns: 1fr;\r\n  }\r\n}\r\n\r\n@media (max-width: 600px) {\r\n  .home-intro {\r\n    padding-top: 8px;\r\n  }\r\n\r\n  .home-explore {\r\n    padding: 16px;\r\n  }\r\n\r\n  .home-section-heading {\r\n    display: block;\r\n  }\r\n\r\n  .home-section-heading > span {\r\n    display: block;\r\n    margin-top: 6px;\r\n  }\r\n\r\n  .home-explore-links {\r\n    grid-template-columns: 1fr;\r\n  }\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/home.css"],"names":[],"mappings":"AAAA;EACE,iBAAiB;EACjB,cAAc;EACd,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;EACnB,qBAAqB;AACvB;;AAEA;EACE,eAAe;EACf,cAAc;EACd,eAAe;EACf,gBAAgB;EAChB,qBAAqB;EACrB,yBAAyB;AAC3B;;AAEA;;EAEE,SAAS;EACT,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,iCAAiC;EACjC,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;EAChB,gBAAgB;EAChB,cAAc;EACd,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,SAAS;AACX;;AAEA;EACE,WAAW;EACX,eAAe;EACf,SAAS;AACX;;AAEA;EACE,gBAAgB;EAChB,aAAa;EACb,yBAAyB;EACzB,mBAAmB;EACnB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,8BAA8B;EAC9B,SAAS;EACT,mBAAmB;AACrB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,cAAc;EACd,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,gDAAgD;EAChD,QAAQ;AACV;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,SAAS;EACT,yBAAyB;EACzB,kBAAkB;EAClB,kBAAkB;EAClB,cAAc;EACd,gBAAgB;EAChB,qBAAqB;EACrB,iEAAiE;AACnE;;AAEA;EACE,cAAc;EACd,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,oBAAoB;EACpB,mBAAmB;EACnB,QAAQ;EACR,yBAAyB;EACzB,6BAA6B;EAC7B,2BAA2B;AAC7B;;AAEA;EACE,oBAAoB;EACpB,gBAAgB;EAChB,mBAAmB;EACnB,WAAW;EACX,eAAe;EACf,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,qBAAqB;EACrB,mBAAmB;EACnB,2BAA2B;AAC7B;;AAEA;EACE;IACE,0BAA0B;EAC5B;AACF;;AAEA;EACE;IACE,gBAAgB;EAClB;;EAEA;IACE,aAAa;EACf;;EAEA;IACE,cAAc;EAChB;;EAEA;IACE,cAAc;IACd,eAAe;EACjB;;EAEA;IACE,0BAA0B;EAC5B;AACF","sourcesContent":[".home-page {\n  max-width: 1120px;\n  margin: 0 auto;\n  padding: 8px 0 48px;\n}\n\n.home-intro {\n  margin-bottom: 22px;\n  padding: 20px 4px 8px;\n}\n\n.home-eyebrow {\n  margin: 0 0 8px;\n  color: #0f766e;\n  font-size: 12px;\n  font-weight: 700;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n}\n\n.home-intro h1,\n.home-section-heading h2 {\n  margin: 0;\n  color: #183b3b;\n}\n\n.home-intro h1 {\n  max-width: 620px;\n  font-size: clamp(30px, 5vw, 48px);\n  line-height: 1.05;\n}\n\n.home-intro > p:last-child {\n  max-width: 560px;\n  margin: 12px 0 0;\n  color: #637878;\n  font-size: 16px;\n  line-height: 1.5;\n}\n\n.home-learning-grid {\n  display: grid;\n  gap: 18px;\n}\n\n.home-learning-grid > * {\n  width: auto;\n  max-width: none;\n  margin: 0;\n}\n\n.home-explore {\n  margin-top: 28px;\n  padding: 22px;\n  border: 1px solid #d7e4e5;\n  border-radius: 14px;\n  background: #fff;\n}\n\n.home-section-heading {\n  display: flex;\n  align-items: end;\n  justify-content: space-between;\n  gap: 16px;\n  margin-bottom: 16px;\n}\n\n.home-section-heading h2 {\n  font-size: 22px;\n}\n\n.home-section-heading > span {\n  color: #637878;\n  font-size: 13px;\n}\n\n.home-explore-links {\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  gap: 8px;\n}\n\n.home-explore-links a {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 12px;\n  border: 1px solid #d7e4e5;\n  border-radius: 9px;\n  padding: 12px 14px;\n  color: #183b3b;\n  font-weight: 700;\n  text-decoration: none;\n  transition: border-color 0.15s, background 0.15s, transform 0.15s;\n}\n\n.home-explore-links a span {\n  color: #0f766e;\n  font-size: 12px;\n  font-weight: 600;\n}\n\n.home-feature-title {\n  display: inline-flex;\n  align-items: center;\n  gap: 7px;\n  color: #183b3b !important;\n  font-size: inherit !important;\n  font-weight: 700 !important;\n}\n\n.home-feature-title .home-ai-badge {\n  border-radius: 999px;\n  padding: 2px 5px;\n  background: #e36f4b;\n  color: #fff;\n  font-size: 10px;\n  font-weight: 700;\n  line-height: 1;\n}\n\n.home-explore-links a:hover {\n  border-color: #99d5ca;\n  background: #f1fbf8;\n  transform: translateY(-1px);\n}\n\n@media (min-width: 601px) and (max-width: 1099px) and (orientation: portrait) {\n  .home-learning-grid {\n    grid-template-columns: 1fr;\n  }\n}\n\n@media (max-width: 600px) {\n  .home-intro {\n    padding-top: 8px;\n  }\n\n  .home-explore {\n    padding: 16px;\n  }\n\n  .home-section-heading {\n    display: block;\n  }\n\n  .home-section-heading > span {\n    display: block;\n    margin-top: 6px;\n  }\n\n  .home-explore-links {\n    grid-template-columns: 1fr;\n  }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7686,7 +8673,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.idioms-page {
   .idioms-tabs a { padding-inline: 12px; }
   .idioms-list { padding-inline: 0; }
 }
-`, "",{"version":3,"sources":["webpack://./src/pages/idiomsPage.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,cAAc;EACd,oBAAoB;AACtB;;AAEA,iBAAiB,mBAAmB,EAAE;AACtC,kBAAkB,eAAe,EAAE,cAAc,EAAE,eAAe,EAAE,gBAAgB,EAAE,qBAAqB,EAAE,yBAAyB,EAAE;AACxI,oBAAoB,SAAS,EAAE,cAAc,EAAE,iCAAiC,EAAE,gBAAgB,EAAE;AACpG,8BAA8B,gBAAgB,EAAE,cAAc,EAAE;;AAEhE;EACE,aAAa;EACb,QAAQ;EACR,mBAAmB;EACnB,gCAAgC;EAChC,gBAAgB;AAClB;;AAEA;EACE,cAAc;EACd,oCAAoC;EACpC,kBAAkB;EAClB,cAAc;EACd,gBAAgB;EAChB,kBAAkB;EAClB,qBAAqB;EACrB,mBAAmB;AACrB;;AAEA,uBAAuB,mBAAmB,EAAE,cAAc,EAAE;AAC5D,wBAAwB,4BAA4B,EAAE,cAAc,EAAE;;AAEtE;EACE,+BAA+B;EAC/B,gBAAgB;EAChB,qBAAqB;AACvB;;AAEA,iBAAiB,eAAe,EAAE,cAAc,EAAE,kBAAkB,EAAE;AACtE,uBAAuB,cAAc,EAAE;;AAEvC;EACE,eAAe,iBAAiB,EAAE;EAClC,iBAAiB,oBAAoB,EAAE;EACvC,eAAe,iBAAiB,EAAE;AACpC","sourcesContent":[".idioms-page {\r\n  max-width: 900px;\r\n  margin: 0 auto;\r\n  padding: 22px 0 48px;\r\n}\r\n\r\n.idioms-header { margin-bottom: 20px; }\r\n.idioms-eyebrow { margin: 0 0 8px; color: #0f766e; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }\r\n.idioms-header h1 { margin: 0; color: #183b3b; font-size: clamp(28px, 5vw, 42px); line-height: 1.1; }\r\n.idioms-header p:last-child { margin: 10px 0 0; color: #637878; }\r\n\r\n.idioms-tabs {\r\n  display: flex;\r\n  gap: 6px;\r\n  margin-bottom: 18px;\r\n  border-bottom: 1px solid #d7e4e5;\r\n  overflow-x: auto;\r\n}\r\n\r\n.idioms-tabs a {\r\n  flex: 1 0 auto;\r\n  border-bottom: 3px solid transparent;\r\n  padding: 11px 16px;\r\n  color: #637878;\r\n  font-weight: 700;\r\n  text-align: center;\r\n  text-decoration: none;\r\n  white-space: nowrap;\r\n}\r\n\r\n.idioms-tabs a:hover { background: #f1fbf8; color: #0f766e; }\r\n.idioms-tabs a.active { border-bottom-color: #0f766e; color: #183b3b; }\r\n\r\n.idioms-list {\r\n  max-height: calc(100vh - 250px);\r\n  overflow-y: auto;\r\n  padding: 4px 8px 10px;\r\n}\r\n\r\n.idioms-status { padding: 30px 0; color: #637878; text-align: center; }\r\n.idioms-status.error { color: #b42318; }\r\n\r\n@media (max-width: 600px) {\r\n  .idioms-page { padding-top: 12px; }\r\n  .idioms-tabs a { padding-inline: 12px; }\r\n  .idioms-list { padding-inline: 0; }\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/pages/idiomsPage.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,cAAc;EACd,oBAAoB;AACtB;;AAEA,iBAAiB,mBAAmB,EAAE;AACtC,kBAAkB,eAAe,EAAE,cAAc,EAAE,eAAe,EAAE,gBAAgB,EAAE,qBAAqB,EAAE,yBAAyB,EAAE;AACxI,oBAAoB,SAAS,EAAE,cAAc,EAAE,iCAAiC,EAAE,gBAAgB,EAAE;AACpG,8BAA8B,gBAAgB,EAAE,cAAc,EAAE;;AAEhE;EACE,aAAa;EACb,QAAQ;EACR,mBAAmB;EACnB,gCAAgC;EAChC,gBAAgB;AAClB;;AAEA;EACE,cAAc;EACd,oCAAoC;EACpC,kBAAkB;EAClB,cAAc;EACd,gBAAgB;EAChB,kBAAkB;EAClB,qBAAqB;EACrB,mBAAmB;AACrB;;AAEA,uBAAuB,mBAAmB,EAAE,cAAc,EAAE;AAC5D,wBAAwB,4BAA4B,EAAE,cAAc,EAAE;;AAEtE;EACE,+BAA+B;EAC/B,gBAAgB;EAChB,qBAAqB;AACvB;;AAEA,iBAAiB,eAAe,EAAE,cAAc,EAAE,kBAAkB,EAAE;AACtE,uBAAuB,cAAc,EAAE;;AAEvC;EACE,eAAe,iBAAiB,EAAE;EAClC,iBAAiB,oBAAoB,EAAE;EACvC,eAAe,iBAAiB,EAAE;AACpC","sourcesContent":[".idioms-page {\n  max-width: 900px;\n  margin: 0 auto;\n  padding: 22px 0 48px;\n}\n\n.idioms-header { margin-bottom: 20px; }\n.idioms-eyebrow { margin: 0 0 8px; color: #0f766e; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }\n.idioms-header h1 { margin: 0; color: #183b3b; font-size: clamp(28px, 5vw, 42px); line-height: 1.1; }\n.idioms-header p:last-child { margin: 10px 0 0; color: #637878; }\n\n.idioms-tabs {\n  display: flex;\n  gap: 6px;\n  margin-bottom: 18px;\n  border-bottom: 1px solid #d7e4e5;\n  overflow-x: auto;\n}\n\n.idioms-tabs a {\n  flex: 1 0 auto;\n  border-bottom: 3px solid transparent;\n  padding: 11px 16px;\n  color: #637878;\n  font-weight: 700;\n  text-align: center;\n  text-decoration: none;\n  white-space: nowrap;\n}\n\n.idioms-tabs a:hover { background: #f1fbf8; color: #0f766e; }\n.idioms-tabs a.active { border-bottom-color: #0f766e; color: #183b3b; }\n\n.idioms-list {\n  max-height: calc(100vh - 250px);\n  overflow-y: auto;\n  padding: 4px 8px 10px;\n}\n\n.idioms-status { padding: 30px 0; color: #637878; text-align: center; }\n.idioms-status.error { color: #b42318; }\n\n@media (max-width: 600px) {\n  .idioms-page { padding-top: 12px; }\n  .idioms-tabs a { padding-inline: 12px; }\n  .idioms-list { padding-inline: 0; }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7788,7 +8775,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
   padding: 16px;
   border: 1px solid #2c2c3a;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-}`, "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,yBAAyB;EACzB,kBAAkB;EAClB,gBAAgB;EAChB,uBAAuB;EACvB,WAAW;EACX,eAAe;EACf,cAAc;EACd,eAAe;AACjB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE;IACE,oBAAoB;IACpB,mBAAmB;IACnB,uBAAuB;EACzB;;EAEA;IACE,cAAc;IACd,eAAe;IACf,eAAe;IACf,aAAa;IACb,SAAS;IACT,kCAAkC;IAClC,eAAe;EACjB;AACF;;AAEA;EACE,oBAAoB;EACpB,mBAAmB;EACnB,QAAQ;EACR,kBAAkB;EAClB,yBAAyB;EACzB,kBAAkB;EAClB,iBAAiB;EACjB,mBAAmB;EACnB,cAAc;EACd,aAAa;EACb,eAAe;EACf,gBAAgB;EAChB,eAAe;AACjB;;AAEA;EACE,qBAAqB;EACrB,mBAAmB;AACrB;;;AAGA;EACE;;;;;0DAKwD;EACxD,mBAAmB;EACnB,YAAY;EACZ,mBAAmB;EACnB,aAAa;EACb,yBAAyB;EACzB,yCAAyC;AAC3C","sourcesContent":["body {\r\n  margin: 0;\r\n  font-family: Arial, sans-serif;\r\n}\r\n\r\n.sidebar-menu-button {\r\n  display: none;\r\n  margin-right: 14px;\r\n  border: 1px solid #475569;\r\n  border-radius: 7px;\r\n  padding: 6px 9px;\r\n  background: transparent;\r\n  color: #fff;\r\n  font-size: 18px;\r\n  line-height: 1;\r\n  cursor: pointer;\r\n}\r\n\r\n.sidebar-overlay {\r\n  display: none;\r\n}\r\n\r\n@media (max-width: 1199px) {\r\n  .sidebar-menu-button {\r\n    display: inline-flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n  }\r\n\r\n  .sidebar-overlay {\r\n    display: block;\r\n    position: fixed;\r\n    inset: 60px 0 0;\r\n    z-index: 1090;\r\n    border: 0;\r\n    background: rgba(15, 23, 42, 0.42);\r\n    cursor: pointer;\r\n  }\r\n}\r\n\r\n.route-back-button {\r\n  display: inline-flex;\r\n  align-items: center;\r\n  gap: 8px;\r\n  margin: 16px 0 4px;\r\n  border: 1px solid #cbd5e1;\r\n  border-radius: 8px;\r\n  padding: 8px 12px;\r\n  background: #ffffff;\r\n  color: #334155;\r\n  font: inherit;\r\n  font-size: 13px;\r\n  font-weight: 600;\r\n  cursor: pointer;\r\n}\r\n\r\n.route-back-button:hover {\r\n  border-color: #94a3b8;\r\n  background: #f8fafc;\r\n}\r\n\r\n\r\n.card-global {\r\n  /* background: #ffffff;\r\n  border-radius: 12px;\r\n  padding: 16px;\r\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);\r\n  border: 1px solid #eee;\r\n  transition: transform 0.2s ease, box-shadow 0.2s ease; */\r\n  background: #fdf6e3;\r\n  color: black;\r\n  border-radius: 12px;\r\n  padding: 16px;\r\n  border: 1px solid #2c2c3a;\r\n  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,yBAAyB;EACzB,kBAAkB;EAClB,gBAAgB;EAChB,uBAAuB;EACvB,WAAW;EACX,eAAe;EACf,cAAc;EACd,eAAe;AACjB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE;IACE,oBAAoB;IACpB,mBAAmB;IACnB,uBAAuB;EACzB;;EAEA;IACE,cAAc;IACd,eAAe;IACf,eAAe;IACf,aAAa;IACb,SAAS;IACT,kCAAkC;IAClC,eAAe;EACjB;AACF;;AAEA;EACE,oBAAoB;EACpB,mBAAmB;EACnB,QAAQ;EACR,kBAAkB;EAClB,yBAAyB;EACzB,kBAAkB;EAClB,iBAAiB;EACjB,mBAAmB;EACnB,cAAc;EACd,aAAa;EACb,eAAe;EACf,gBAAgB;EAChB,eAAe;AACjB;;AAEA;EACE,qBAAqB;EACrB,mBAAmB;AACrB;;;AAGA;EACE;;;;;0DAKwD;EACxD,mBAAmB;EACnB,YAAY;EACZ,mBAAmB;EACnB,aAAa;EACb,yBAAyB;EACzB,yCAAyC;AAC3C","sourcesContent":["body {\n  margin: 0;\n  font-family: Arial, sans-serif;\n}\n\n.sidebar-menu-button {\n  display: none;\n  margin-right: 14px;\n  border: 1px solid #475569;\n  border-radius: 7px;\n  padding: 6px 9px;\n  background: transparent;\n  color: #fff;\n  font-size: 18px;\n  line-height: 1;\n  cursor: pointer;\n}\n\n.sidebar-overlay {\n  display: none;\n}\n\n@media (max-width: 1199px) {\n  .sidebar-menu-button {\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .sidebar-overlay {\n    display: block;\n    position: fixed;\n    inset: 60px 0 0;\n    z-index: 1090;\n    border: 0;\n    background: rgba(15, 23, 42, 0.42);\n    cursor: pointer;\n  }\n}\n\n.route-back-button {\n  display: inline-flex;\n  align-items: center;\n  gap: 8px;\n  margin: 16px 0 4px;\n  border: 1px solid #cbd5e1;\n  border-radius: 8px;\n  padding: 8px 12px;\n  background: #ffffff;\n  color: #334155;\n  font: inherit;\n  font-size: 13px;\n  font-weight: 600;\n  cursor: pointer;\n}\n\n.route-back-button:hover {\n  border-color: #94a3b8;\n  background: #f8fafc;\n}\n\n\n.card-global {\n  /* background: #ffffff;\n  border-radius: 12px;\n  padding: 16px;\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);\n  border: 1px solid #eee;\n  transition: transform 0.2s ease, box-shadow 0.2s ease; */\n  background: #fdf6e3;\n  color: black;\n  border-radius: 12px;\n  padding: 16px;\n  border: 1px solid #2c2c3a;\n  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -39840,6 +40827,112 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ },
 
+/***/ "./src/components/suggestionBox/suggestion.css"
+/*!*****************************************************!*\
+  !*** ./src/components/suggestionBox/suggestion.css ***!
+  \*****************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_suggestion_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./suggestion.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/suggestionBox/suggestion.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_suggestion_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_suggestion_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_suggestion_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_suggestion_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ },
+
+/***/ "./src/components/suggestionBoxLite/suggestionBoxLite.css"
+/*!****************************************************************!*\
+  !*** ./src/components/suggestionBoxLite/suggestionBoxLite.css ***!
+  \****************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_suggestionBoxLite_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./suggestionBoxLite.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/suggestionBoxLite/suggestionBoxLite.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_suggestionBoxLite_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_suggestionBoxLite_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_suggestionBoxLite_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_suggestionBoxLite_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ },
+
 /***/ "./src/features/DailyWords/dailyWords.css"
 /*!************************************************!*\
   !*** ./src/features/DailyWords/dailyWords.css ***!
@@ -53249,7 +54342,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"tesseract.js","version":"7.0.
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "bundle." + "682488625bd6799041b7" + ".js";
+/******/ 			return "bundle." + "d57b34093d82719eff93" + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -53483,4 +54576,4 @@ root.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle.7e6b5636a7ce816e2d94.js.map
+//# sourceMappingURL=bundle.7119eba0ed2ab1f7b7db.js.map

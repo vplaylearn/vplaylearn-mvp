@@ -9513,7 +9513,7 @@ async function node_utils_fetchData(url) {
 class NodeFilterFactory extends BaseFilterFactory {}
 class NodeCanvasFactory extends BaseCanvasFactory {
   _createCanvas(width, height) {
-    const require = process.getBuiltinModule("module").createRequire("file:///D:/iview_prep_2026/projects/playground/react-webpack/node_modules/pdfjs-dist/build/pdf.mjs");
+    const require = process.getBuiltinModule("module").createRequire("file:///Users/roshan/Documents/AI_students/vplaylearn-mvp/node_modules/pdfjs-dist/build/pdf.mjs");
     const canvas = require("@napi-rs/canvas");
     return canvas.createCanvas(width, height);
   }
@@ -27996,4 +27996,4 @@ globalThis.pdfjsLib = {
 /***/ }
 
 }]);
-//# sourceMappingURL=bundle.682488625bd6799041b7.js.map
+//# sourceMappingURL=bundle.d57b34093d82719eff93.js.map
