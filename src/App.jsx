@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
+
+import { syncFromServer } from "./utils/bookmarks";
 
 import Topbar from "./components/Topbar";
 import Sidebar from "./components/Sidebar";
@@ -29,6 +31,12 @@ const App = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  // Hydrate the local bookmark cache from MongoDB on load so saved items
+  // follow the user's account (or device) across sessions.
+  useEffect(() => {
+    syncFromServer();
+  }, []);
 
   return (
     <div>

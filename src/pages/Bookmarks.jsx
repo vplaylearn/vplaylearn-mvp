@@ -33,6 +33,17 @@ export default function Bookmarks() {
     setBookmarks((current) => current.filter((bookmark) => bookmark.id !== id));
   }
 
+  function formatSavedAt(value) {
+    if (!value) return null;
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return null;
+    return date.toLocaleDateString(undefined, {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+  }
+
   function speakText(text, language) {
     if (!text || typeof window === "undefined" || !("speechSynthesis" in window)) return;
 
@@ -206,6 +217,9 @@ export default function Bookmarks() {
                     <div className="bookmark-meta">
                       <span>{bookmark.type}</span>
                       {bookmark.language && <span>{bookmark.language}</span>}
+                      {formatSavedAt(bookmark.savedAt) && (
+                        <span className="bookmark-date">Saved {formatSavedAt(bookmark.savedAt)}</span>
+                      )}
                     </div>
                     {renderBookmarkContent(bookmark)}
                   </div>
