@@ -17,13 +17,17 @@ function getClientPromise() {
   return cached;
 }
 
-async function getBookmarksCollection() {
+async function getDb() {
   const client = await getClientPromise();
   const dbName = process.env.MONGODB_DB || "vplaylearn";
-  const collection = client.db(dbName).collection("bookmarks");
+  return client.db(dbName);
+}
+
+async function getBookmarksCollection() {
+  const collection = (await getDb()).collection("bookmarks");
   // Owner lookups are the only query pattern; index makes them cheap.
   await collection.createIndex({ userId: 1, id: 1 }, { unique: true });
   return collection;
 }
 
-module.exports = { getBookmarksCollection };
+module.exports = { getDb, getBookmarksCollection };

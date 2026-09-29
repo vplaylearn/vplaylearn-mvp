@@ -64,3 +64,43 @@
 .hub-btn:hover {
   background: #6366f1;
 }
+
+/* Proverb-gate CTA */
+.hub-unlock-cta {
+  display: inline-block;
+  margin-bottom: 24px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #0f766e;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.hub-unlock-cta:hover {
+  background: #0d635c;
+}
+
+/* Locked game slots */
+.hub-slot {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hub-slot-locked {
+  opacity: 0.65;
+}
+
+.hub-slot-locked .mini-card {
+  cursor: pointer;
+}
+
+.hub-lock-note {
+  margin-top: 6px;
+  font-size: 12px;
+  opacity: 0.8;
+}

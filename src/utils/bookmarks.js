@@ -31,8 +31,12 @@ export function setUserId(userId) {
   } catch {
     // Ignore storage errors; sync just falls back to the previous id.
   }
-  // Bring the new owner's bookmarks into the local cache.
+  // Bring the new owner's data into the local caches. Dynamic import for game
+  // progress avoids a static import cycle (gameProgress imports getUserId here).
   syncFromServer();
+  import("./gameProgress")
+    .then((m) => m.syncProgressFromServer())
+    .catch(() => {});
 }
 
 // localStorage is the synchronous read source of truth so render paths stay

@@ -1,4 +1,5 @@
 import MiniCard from "../../../components/minicard/Minicard";
+import { isUnlocked, nextLockedGame } from "../../../utils/gameProgress";
 import "./gameshub.css";
 
 const gamesList = [
@@ -22,40 +23,40 @@ const gamesList = [
   },
 ];
 
-export default function GamesHub({ onSelectGame }) {
+// onSelectGame: play an already-unlocked game.
+// onStartGate: begin the read-a-proverb flow to unlock the next game.
+export default function GamesHub({ onSelectGame, onStartGate }) {
+  const next = nextLockedGame();
+
   return (
     <div className="hub-container">
-        <h1 className="hub-title">Games Hub</h1>
-        <p className="hub-subtitle">Choose a game to start playing</p>
-     <div className="mini-grid">
-      {gamesList.map((game) => (
-        <MiniCard
-          key={game.title}
-          title={game.title}
-          icon={game.icon}
-          onClick={() => onSelectGame(game.id)}
-        />
-      ))}
-    </div>
-    </div>
-    // <div className="hub-container">
-    //   <h1 className="hub-title">Games Hub</h1>
-    //   <p className="hub-subtitle">Choose a game to start playing</p>
+      <h1 className="hub-title">Games Hub</h1>
+      <p className="hub-subtitle">Read a proverb aloud to unlock each game</p>
 
-    //   <div className="hub-grid">
-    //     {gamesList.map((game) => (
-    //       <div
-    //         key={game.id}
-    //         className="hub-card"
-    //         onClick={() => onSelectGame(game.id)}
-    //       >
-    //         <div className="hub-icon">{game.icon}</div>
-    //         <h2>{game.title}</h2>
-    //         <p>{game.desc}</p>
-    //         <button className="hub-btn">Play</button>
-    //       </div>
-    //     ))}
-    //   </div>
-    // </div>
+      {next && (
+        <button type="button" className="hub-unlock-cta" onClick={onStartGate}>
+          🎙 Read a proverb to unlock the next game
+        </button>
+      )}
+
+      <div className="mini-grid">
+        {gamesList.map((game) => {
+          const unlocked = isUnlocked(game.id);
+          return (
+            <div
+              key={game.id}
+              className={`hub-slot ${unlocked ? "" : "hub-slot-locked"}`}
+            >
+              <MiniCard
+                title={unlocked ? game.title : `${game.title} 🔒`}
+                icon={unlocked ? game.icon : "🔒"}
+                onClick={() => (unlocked ? onSelectGame(game.id) : onStartGate())}
+              />
+              {!unlocked && <span className="hub-lock-note">Locked — read a proverb</span>}
+            </div>
+          );
+        })}
+      </div>
+    </div>
   );
 }
