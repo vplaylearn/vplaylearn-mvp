@@ -22,6 +22,11 @@ export default function Sidebar({ isOpen = false, onClose }) {
       external: true,
     },
     {
+      title: "PDF Tutor",
+      href: "https://tutor-pdf.vercel.app/",
+      external: true,
+    },
+    {
       title: "Idioms and proverbs",
       key: "idioms",
       children: [
