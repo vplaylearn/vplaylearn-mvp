@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@clerk/backend": "^3.21.0",
+    "@clerk/clerk-react": "^5.61.10",
     "mongodb": "^6.21.0",
     "pdfjs-dist": "^6.2.108",
     "react": "^19.2.5",

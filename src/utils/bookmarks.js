@@ -1,4 +1,6 @@
 const BOOKMARKS_KEY = "vplaylearn_bookmarks";
+import { getAuthToken } from "./authToken";
+
 const USER_ID_KEY = "vplaylearn_user_id";
 const API_URL = "/api/bookmarks";
 
@@ -59,8 +61,15 @@ function persist(bookmarks) {
 }
 
 function apiHeaders() {
-  return { "Content-Type": "application/json", "x-user-id": readUserId() };
+  const headers = { "Content-Type": "application/json", "x-user-id": readUserId() };
+  // When logged in, attach the Clerk token so the server derives (and trusts)
+  // the real user id from it instead of the client-supplied x-user-id.
+  const token = getAuthToken();
+  if (token) headers.Authorization = `Bearer ${token}`;
+  return headers;
 }
+
+export { apiHeaders };
 
 // Fire-and-forget: local write already succeeded, so a failed sync must not
 // break the UI. Server reconciles on the next successful call.

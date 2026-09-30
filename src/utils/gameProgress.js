@@ -2,7 +2,7 @@
 // sequence. localStorage is the synchronous read source of truth (render paths
 // stay sync); MongoDB is the durable backing store, keyed by the same userId as
 // bookmarks so a future login swaps both at once.
-import { getUserId } from "./bookmarks";
+import { apiHeaders } from "./bookmarks";
 
 const PROGRESS_KEY = "vplaylearn_game_progress";
 const API_URL = "/api/progress";
@@ -36,7 +36,7 @@ function write(progress) {
 function pushProgress(progress) {
   fetch(API_URL, {
     method: "PUT",
-    headers: { "Content-Type": "application/json", "x-user-id": getUserId() },
+    headers: apiHeaders(),
     body: JSON.stringify({
       progress: { unlocked: progress.unlocked, proverbIndex: progress.proverbIndex },
     }),
@@ -46,9 +46,7 @@ function pushProgress(progress) {
 // Pull the server copy into the local cache. Call on app load and after login.
 export async function syncProgressFromServer() {
   try {
-    const res = await fetch(API_URL, {
-      headers: { "Content-Type": "application/json", "x-user-id": getUserId() },
-    });
+    const res = await fetch(API_URL, { headers: apiHeaders() });
     if (!res.ok) return read();
     const data = await res.json();
     const p = data.progress;

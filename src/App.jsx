@@ -7,6 +7,9 @@ import { syncProgressFromServer } from "./utils/gameProgress";
 import Topbar from "./components/Topbar";
 import Sidebar from "./components/Sidebar";
 import RightPane from "./components/RightPane.jsx";
+import AuthSync from "./components/AuthSync.jsx";
+
+const clerkConfigured = Boolean(process.env.CLERK_PUBLISHABLE_KEY);
 
 import Home from "./pages/Home";
 import Users from "./pages/Users";
@@ -42,6 +45,7 @@ const App = () => {
 
   return (
     <div>
+      {clerkConfigured && <AuthSync />}
       <Topbar onMenuClick={() => setIsSidebarOpen(true)} />
 
       <div style={styles.layout}>

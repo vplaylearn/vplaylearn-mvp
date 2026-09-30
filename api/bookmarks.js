@@ -1,20 +1,13 @@
 const { getBookmarksCollection } = require("./_db");
-
-// Ownership key. Today this is an anonymous device id sent by the client; once a
-// login flow exists, pass the authenticated user id under the same field and
-// nothing else here changes.
-function getUserId(request) {
-  const fromHeader = request.headers["x-user-id"];
-  if (typeof fromHeader === "string" && fromHeader.trim()) return fromHeader.trim();
-  const fromQuery = request.query && request.query.userId;
-  if (typeof fromQuery === "string" && fromQuery.trim()) return fromQuery.trim();
-  const fromBody = request.body && request.body.userId;
-  if (typeof fromBody === "string" && fromBody.trim()) return fromBody.trim();
-  return null;
-}
+const { resolveUser } = require("./_auth");
 
 module.exports = async function handler(request, response) {
-  const userId = getUserId(request);
+  // Owner id comes from a verified Clerk token when logged in, else the
+  // anonymous device id. A present-but-invalid token is rejected outright.
+  const { userId, invalidToken } = await resolveUser(request);
+  if (invalidToken) {
+    return response.status(401).json({ error: "Invalid or expired session." });
+  }
   if (!userId) {
     return response.status(400).json({ error: "Missing user id." });
   }
