@@ -17,6 +17,11 @@ export default function Sidebar({ isOpen = false, onClose }) {
     { title: "Games", path: "/games" },
     { title: "Puzzles", path: "/puzzles" },
     {
+      title: "Translate & Read",
+      href: "https://indian-language-document-translator.vercel.app/",
+      external: true,
+    },
+    {
       title: "Idioms and proverbs",
       key: "idioms",
       children: [
@@ -76,7 +81,17 @@ export default function Sidebar({ isOpen = false, onClose }) {
       <li key={item.title}>
         
         {/* MAIN ITEM */}
-        {item.path ? (
+        {item.external ? (
+          <a
+            href={item.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={onClose}
+            className="menu-item link"
+          >
+            <span>{item.title} <small className="menu-badge">↗</small></span>
+          </a>
+        ) : item.path ? (
           <NavLink
             to={item.path}
             onClick={onClose}
