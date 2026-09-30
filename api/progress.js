@@ -1,4 +1,5 @@
 const { getDb } = require("./_db");
+const { resolveUser } = require("./_auth");
 
 async function getProgressCollection() {
   const collection = (await getDb()).collection("game_progress");
@@ -6,19 +7,13 @@ async function getProgressCollection() {
   return collection;
 }
 
-// Same ownership key as bookmarks: device id now, real user id after login.
-function getUserId(request) {
-  const fromHeader = request.headers["x-user-id"];
-  if (typeof fromHeader === "string" && fromHeader.trim()) return fromHeader.trim();
-  const fromQuery = request.query && request.query.userId;
-  if (typeof fromQuery === "string" && fromQuery.trim()) return fromQuery.trim();
-  const fromBody = request.body && request.body.userId;
-  if (typeof fromBody === "string" && fromBody.trim()) return fromBody.trim();
-  return null;
-}
-
 module.exports = async function handler(request, response) {
-  const userId = getUserId(request);
+  // Verified Clerk id when logged in, else anonymous device id; reject a
+  // present-but-invalid token.
+  const { userId, invalidToken } = await resolveUser(request);
+  if (invalidToken) {
+    return response.status(401).json({ error: "Invalid or expired session." });
+  }
   if (!userId) return response.status(400).json({ error: "Missing user id." });
 
   let collection;

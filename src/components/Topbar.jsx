@@ -1,4 +1,5 @@
 import React from "react";
+import AuthButton from "./AuthButton";
 
 const Topbar = ({ onMenuClick }) => {
   return (
@@ -12,7 +13,9 @@ const Topbar = ({ onMenuClick }) => {
       >
         <span aria-hidden="true">☰</span>
       </button>
-      <h2>vPlayLearn</h2>
+      <h2 style={styles.title}>vPlayLearn</h2>
+      <div style={styles.spacer} />
+      <AuthButton />
     </div>
   );
 };
@@ -30,6 +33,12 @@ const styles = {
     left: 0,
     right: 0,
     zIndex: 1000,
+  },
+  title: {
+    margin: 0,
+  },
+  spacer: {
+    flex: 1,
   },
 };
 

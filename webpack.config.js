@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
@@ -41,6 +42,13 @@ module.exports = {
   },
 
   plugins: [
+    // Expose only the Clerk publishable key to the browser bundle. It is a
+    // public key (safe to ship); the secret key stays server-side only.
+    new webpack.DefinePlugin({
+      "process.env.CLERK_PUBLISHABLE_KEY": JSON.stringify(
+        process.env.CLERK_PUBLISHABLE_KEY || ""
+      ),
+    }),
     new CopyWebpackPlugin({
       patterns: [
         { from: 'public', to: '', 
